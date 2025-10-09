@@ -1,5 +1,5 @@
 /* ========== CONFIG ========== */
-const PLAYLIST_URL = 'https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/playlists.json';
+const PLAYLIST_URL = 'json/playlists.json';
 const FALLBACK = 'https://i.ibb.co/n8LFzxmb/reprodutor-de-musica-2.png';
 const $ = s => document.querySelector(s);
 
