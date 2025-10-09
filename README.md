@@ -1,0 +1,2 @@
+# shufflesquare
+Shuffle Playlist ;)
