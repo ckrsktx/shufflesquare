@@ -570,62 +570,6 @@ titObs.observe($('#tit'), { childList: true, characterData: true, subtree: true 
 ajustaFonteTitulo();
 
 
-/* ===== BLOQUEIO DE ANSIEDADE (centralizado sobre a capa) ===== */
-let skipCount = 0;
-let lastSkipTime = 0;
-const SKIP_WINDOW = 1500;          // ms
-const SKIP_LIMIT = 5;
-
-/* cria o quadrinho (toast) */
-const toast = document.createElement('div');
-toast.innerHTML = 'Ei, calma!<br>Menos ansiedade, curta a playlist. ;)';
-Object.assign(toast.style, {
-  position: 'fixed',
-  /* centraliza em relação à capa */
-  top: `${capa.getBoundingClientRect().top + capa.offsetHeight/2}px`,
-  left: `${capa.getBoundingClientRect().left + capa.offsetWidth/2}px`,
-  transform: 'translate(-50%,-50%)',
-  background: 'rgba(0,0,0,.55)',
-  backdropFilter: 'blur(10px)',
-  color: '#fff',
-  padding: '1.2rem 1.8rem',
-  borderRadius: '1rem',
-  fontSize: '1.05rem',
-  textAlign: 'center',
-  lineHeight: '1.4',
-  zIndex: '999',
-  pointerEvents: 'none',
-  opacity: '0',
-  transition: 'opacity .35s ease'
-});
-document.body.appendChild(toast);
-
-function showToast() {
-  /* recalcula centro da capa (caso resize/rotate) */
-  toast.style.top = `${capa.getBoundingClientRect().top + capa.offsetHeight/2}px`;
-  toast.style.left = `${capa.getBoundingClientRect().left + capa.offsetWidth/2}px`;
-  toast.style.opacity = '1';
-  setTimeout(() => toast.style.opacity = '0', 3000);
-}
-
-/* intercepta next/prev */
-[next, prev].forEach(btn =>
-  btn.addEventListener('click', () => {
-    const now = Date.now();
-    if (now - lastSkipTime < SKIP_WINDOW) {
-      skipCount++;
-    } else {
-      skipCount = 1;
-    }
-    lastSkipTime = now;
-    if (skipCount >= SKIP_LIMIT) {
-      skipCount = 0;
-      showToast();
-    }
-  })
-);
-
-
 /* ===== TEXTO SIMPLES “Escolha a playlist ;)” ===== */
 (() => {
   const menu = $('#menuBtn');
