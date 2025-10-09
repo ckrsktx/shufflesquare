@@ -1,10 +1,5 @@
 [
   {
-    "artist": "Tool",
-    "title": "Schism",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/tool_lateralus_05_schism.m4a"
-  },
-  {
     "artist": "Red Hot Chili Peppers",
     "title": "Snow (Hey Oh)",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/redhotchilipepper_stadiumarcadiumju_02snowheyoh.m4a"
@@ -98,11 +93,6 @@
     "artist": "Alien Ant Farm",
     "title": "Smooth Criminal",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/alienantfarm_al0358_745-02smoothcriminal.m4a"
-  },
-  {
-    "artist": "Beastie Boys",
-    "title": "You Gotta Fight for Your Right",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/beastieboys_al316_yougottafightfory.m4a"
   },
   {
     "artist": "Sum 41",
@@ -305,11 +295,6 @@
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/soundgarden_al0363_799-06outshinedlpversio.m4a"
   },
   {
-    "artist": "Tool",
-    "title": "Sober",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/tool_al336_soberamendedalbum.m4a"
-  },
-  {
     "artist": "Alice in Chains",
     "title": "Man in the Box",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/aliceinchains_facelift_02_maninthebox.m4a"
@@ -348,11 +333,6 @@
     "artist": "The White Stripes",
     "title": "Seven Nation Army",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/whitestripesthe_elephant_01sevennationarmy.m4a"
-  },
-  {
-    "artist": "Linkin Park",
-    "title": "Burn It Down",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/linkinpark_hb201217_03_burnitdown.m4a"
   },
   {
     "artist": "Nirvana",
@@ -433,11 +413,6 @@
     "artist": "The Police",
     "title": "So Lonely",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/policethe_outlandosdamour_02solonely.m4a"
-  },
-  {
-    "artist": "Unknown Artist",
-    "title": "Unknown Title",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/wmvy/01522.m4a"
   },
   {
     "artist": "Collective Soul",
@@ -903,11 +878,6 @@
     "artist": "Brian Eno",
     "title": "Needle in the Camel's",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/enobrian_herecomethewarmje_01needleinthecamels.m4a"
-  },
-  {
-    "artist": "Violent Femmes",
-    "title": "Gone Daddy Gone",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/violentfemmes_al333_gonedaddygone.m4a"
   },
   {
     "artist": "Kaiser Chiefs",
