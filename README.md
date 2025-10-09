@@ -27,10 +27,4 @@ No ShuffleSquare, acreditamos que a música deve ser uma experiência enriqueced
 
 ---
 
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
 Obrigado por visitar o ShuffleSquare! Esperamos que você encontre a trilha sonora perfeita para sua vida!
