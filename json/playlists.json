@@ -1,0 +1,20 @@
+
+{ 
+  "Home | Mix": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/home.json",
+  "60s | 70s": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/60s70s.json",
+  "80s | 90s": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/80s90s.json",
+  "Alternative | Now": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/AlternativeNow.json",
+  "Ambient | Lo-fi | Trip-Hop": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/ambient.json",
+  "Christian | Gospel": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/christian-gospel.json",
+  "Cinema | Soundtrack": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/cinema.json",
+  "Classical | Vocal | Opera": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/classical.json",
+  "Eletronic | House | Tech": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/eletronic.json",
+  "Hip-Hop | Rap | RnB": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/hip-hop.json",
+  "Jazz | Smooth": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/jazz.json",
+  "New Brazil | Bossa | MPB": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/new-brazil.json",
+  "Nu-Metal | Metalcore": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/numetal.json",
+  "Pop | Adult": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/pop.json",
+  "Retro | Dance | Club": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/retro-dance.json",
+  "Rock | Metal | Hard | Heavy": "https://raw.githubusercontent.com/ckrsktx/RetroPlayer/refs/heads/main/rock.json"
+  
+}

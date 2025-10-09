@@ -1,0 +1,632 @@
+[
+  {
+    "artist": "Kid Rock",
+    "title": "I Am the Bullgod Davi",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/kidrock_al333_iamthebullgoddavi.m4a"
+  },
+  {
+    "artist": "Alter Bridge",
+    "title": "Addicted to Pain",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/alterbridge_hb201333_10_addictedtopain.m4a"
+  },
+  {
+    "artist": "Audioslave",
+    "title": "Your Time Has Come",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/critics/audioslave_outofexile_01yourtimehascome.m4a"
+  },
+  {
+    "artist": "Saliva",
+    "title": "Click Click Boom Album",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/saliva_al0358_745-11clickclickboomalb.m4a"
+  },
+  {
+    "artist": "Velvet Revolver",
+    "title": "Slither",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/velvetrevolver_hd580a_12slither.m4a"
+  },
+  {
+    "artist": "Fozzy",
+    "title": "Let the Madness Begin",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/fozzy_chasingthegrail_05_letthemadnessbegin.m4a"
+  },
+  {
+    "artist": "Shinedown",
+    "title": "Adrenaline",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/shinedown_hb201331_02_adrenaline.m4a"
+  },
+  {
+    "artist": "Clutch",
+    "title": "Pure Rock Fury",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/clutch_purerockfury_02_purerockfury.m4a"
+  },
+  {
+    "artist": "Adelitas Way",
+    "title": "Invincible",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/adelitasway_hb200921_04_invincible.m4a"
+  },
+  {
+    "artist": "Deftones",
+    "title": "Swerve City",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/deftones_hb201312_01_swervecity.m4a"
+  },
+  {
+    "artist": "Union Underground",
+    "title": "Turn Me On Mr Deadman",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/unionunderground_al0357_739-04turnmeonmrdeadman.m4a"
+  },
+  {
+    "artist": "Tool",
+    "title": "Opiate Album Version",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/tool_al336_opiatealbumversio.m4a"
+  },
+  {
+    "artist": "Staind",
+    "title": "Mudshovel LP Version",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/staind_al031_1601-01mudshovellpversio.m4a"
+  },
+  {
+    "artist": "Five Finger Death Punch",
+    "title": "Inside Out",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/fivefingerdeathpunch_f8_02_insideout.m4a"
+  },
+  {
+    "artist": "Deftones",
+    "title": "7 Words",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/deftones_adrenaline_07_7words.m4a"
+  },
+  {
+    "artist": "Pretty Reckless",
+    "title": "Only Love Can Save Me Now",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/prettyrecklessthe_deathbyrockandroll_2_onlylovecansavemenow.m4a"
+  },
+  {
+    "artist": "I Prevail",
+    "title": "Deep End",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/iprevail_truepower_09_deepend.m4a"
+  },
+  {
+    "artist": "Type O Negative",
+    "title": "Christian Woman",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/typeonegative_bloodykisses_02_christianwoman.m4a"
+  },
+  {
+    "artist": "Shinedown",
+    "title": "Diamond Eyes Boom Lay Boom",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/shinedown_hb201047_03_diamondeyesboomlaybo.m4a"
+  },
+  {
+    "artist": "Disturbed",
+    "title": "Hey You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/disturbed_heyyousingle_1_heyyou.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "The Devil in I",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/slipknot_hb201435_03_thedevilini.m4a"
+  },
+  {
+    "artist": "All That Remains",
+    "title": "Stand Up Stand Up",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/allthatremains_hb201236_05_standupstandup.m4a"
+  },
+  {
+    "artist": "Disturbed",
+    "title": "Open Your Eyes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/disturbed_hb201629_02_openyoureyes.m4a"
+  },
+  {
+    "artist": "Five Finger Death Punch",
+    "title": "Coming Down",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/fivefingerdeath_hb201219_09_comingdown.m4a"
+  },
+  {
+    "artist": "Ghost",
+    "title": "Rats",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/ghost_hb201816_01_rats.m4a"
+  },
+  {
+    "artist": "Papa Roach",
+    "title": "Born for Greatness",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/paparoach_crookedteeth_02_bornforgreatness.m4a"
+  },
+  {
+    "artist": "Highly Suspect",
+    "title": "16",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/highlysuspect_mcid_02_16.m4a"
+  },
+  {
+    "artist": "Deftones",
+    "title": "My Own Summer Shove I",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/deftones_al319_myownsummershovei.m4a"
+  },
+  {
+    "artist": "Halestorm",
+    "title": "Do Not Disturb",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/halestorm_hb201842_01_donotdisturb.m4a"
+  },
+  {
+    "artist": "Trivium",
+    "title": "Villainy Thrives",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/trivium_hb201428_02_villainythrives.m4a"
+  },
+  {
+    "artist": "Theory of a Deadman",
+    "title": "Angel",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/theoryofadeadma_hb201505_02_angel.m4a"
+  },
+  {
+    "artist": "In Flames",
+    "title": "Resin",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/inflames_colony_08resin.m4a"
+  },
+  {
+    "artist": "Seether",
+    "title": "Same Damn Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/seether_hb201437_08_samedamnlife.m4a"
+  },
+  {
+    "artist": "Pop Evil",
+    "title": "Torn to Pieces",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/popevil_hb201405_01_torntopieces.m4a"
+  },
+  {
+    "artist": "Godsmack",
+    "title": "When Legends Rise",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/godsmack_hb201838_04_whenlegendsrise.m4a"
+  },
+  {
+    "artist": "Stone Sour",
+    "title": "Zzyzx Rd",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/stonesour_hb200738_02zzyzxrd.m4a"
+  },
+  {
+    "artist": "Godsmack",
+    "title": "The Enemy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/godsmack_iv_03_theenemy.m4a"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "title": "Tell Me Baby",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/redhotchilipepper_stadiumarcadiumma_02tellmebaby.m4a"
+  },
+  {
+    "artist": "Buckcherry",
+    "title": "Everything",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/buckcherry_ha200707_07everything.m4a"
+  },
+  {
+    "artist": "The Killers",
+    "title": "Read My Mind",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/killersthe_ha200708_08readmymind.m4a"
+  },
+  {
+    "artist": "The Raconteurs",
+    "title": "Hands",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/critics/raconteursthe_brokenboysoldiers_02hands.m4a"
+  },
+  {
+    "artist": "Staind",
+    "title": "Everything Changes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/staind_ha200622_10everythingchanges.m4a"
+  },
+  {
+    "artist": "Mastodon",
+    "title": "Colony of Birchmen",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/mastodon_bloodmountain_07colonyofbirchmen.m4a"
+  },
+  {
+    "artist": "Korn",
+    "title": "Creep",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/korn_mtvunplugged_05_creep.m4a"
+  },
+  {
+    "artist": "Bullet For My Valentine",
+    "title": "All These Things I Hate",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/bulletformyvale_thepoison_11_allthesethingsihate.m4a"
+  },
+  {
+    "artist": "Disturbed",
+    "title": "Just Stop",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/disturbed_tenthousandfists_02_juststop.m4a"
+  },
+  {
+    "artist": "Evanescence",
+    "title": "Lithium",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/evanescence_ha200703_07lithium.m4a"
+  },
+  {
+    "artist": "Saliva",
+    "title": "Ladies and Gentlemen",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/saliva_bloodstainedlovestory_01_ladiesandgentlemen.m4a"
+  },
+  {
+    "artist": "Three Days Grace",
+    "title": "Riot",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/threedaysgrace_hb200804_06riot.m4a"
+  },
+  {
+    "artist": "Breaking Benjamin",
+    "title": "Breath",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/breakingbenjamin_ha200715_09breath.m4a"
+  },
+  {
+    "artist": "Limp Bizkit",
+    "title": "Take a Look Around R",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/limpbizkit_al338_takealookaroundra.m4a"
+  },
+  {
+    "artist": "Godsmack",
+    "title": "Voodoo",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/godsmack_al032_1603-02voodoo.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "Snuff",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/slipknot_hb200937_02_snuff.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "Left Behind",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/slipknot_iowa_08_leftbehind.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "Unsainted",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/slipknot_wearenotyourkind_02_unsainted.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "Dead Memories",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/slipknot_hb200841_06_deadmemories.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "Before I Forget",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/slipknot_volume3thesubli_01_beforeiforget.m4a"
+  },
+  {
+    "artist": "Killswitch Engage",
+    "title": "New Awakening",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/killswitchengag_disarmthedescen_03_newawakening.m4a"
+  },
+  {
+    "artist": "Five Finger Death Punch",
+    "title": "Never Enough",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/fivefingerdeathpu_hb200816_05neverenough.m4a"
+  },
+  {
+    "artist": "Papa Roach",
+    "title": "Last Resort Clean Version",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/paparoach_al033_1607-01lastresortcleanve.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "The Emptiness Machine",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/linkinpark_fromzero_02_theemptinessmachine.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Heavy is the Crow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/linkinpark_fromzero_04_heavyisthecrow.m4a"
+  },
+  {
+    "artist": "Slipknot",
+    "title": "Wait and Bleed",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/slipknot_al332_waitandbleed.m4a"
+  },
+  {
+    "artist": "Hed PE",
+    "title": "Feel Good",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/hedpe_broke_03_feelgood.m4a"
+  },
+  {
+    "artist": "Hed PE",
+    "title": "Bartender",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/hedpe_broke_04_bartender.m4a"
+  },
+  {
+    "artist": "Hed PE",
+    "title": "Killing Time",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/hedpe_broke_01_killingtime.m4a"
+  },
+  {
+    "artist": "Hed PE",
+    "title": "No Tomorrow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/hedpe_hb201512_02_notomorrow.m4a"
+  },
+  {
+    "artist": "Avenged Sevenfold",
+    "title": "Nightmare",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/avengedsevenfol_hb201021_04_nightmare.m4a"
+  },
+  {
+    "artist": "Seether",
+    "title": "Words as Weapons",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/seether_hb201419_06_wordsasweapons.m4a"
+  },
+  {
+    "artist": "Pretty Reckless",
+    "title": "Heaven Knows",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/prettyrecklesst_hb201347_02_heavenknows.m4a"
+  },
+  {
+    "artist": "Sevendust",
+    "title": "Denial",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/sevendust_al0356_732-12denial.m4a"
+  },
+  {
+    "artist": "Sevendust",
+    "title": "Waffle Radio Mix",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/sevendust_al0357_735-11waffleradiomix.m4a"
+  },
+  {
+    "artist": "Sevendust",
+    "title": "Decay",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/sevendust_hb201303_01_decay.m4a"
+  },
+  {
+    "artist": "Three Days Grace",
+    "title": "Mayday",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/threedaysgrace_mayday_01_mayday.m4a"
+  },
+  {
+    "artist": "Three Days Grace",
+    "title": "The Good Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/threedaysgrace_hb201006_04_thegoodlife.m4a"
+  },
+  {
+    "artist": "Static-X",
+    "title": "Push It Radio Death Trip",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/staticx_al0356_732-17pushitradiodeatht.m4a"
+  },
+  {
+    "artist": "System of a Down",
+    "title": "Sugar",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/systemofadown_al323_sugar.m4a"
+  },
+  {
+    "artist": "Deftones",
+    "title": "Change in the House of Flies",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/deftones_al034_1608-07changeinthehouseo.m4a"
+  },
+  {
+    "artist": "Bad Omens",
+    "title": "Specter Radio Edit",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/badomens_impose_02_specterradioedit.m4a"
+  },
+  {
+    "artist": "Deftones",
+    "title": "Infinite Source",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/deftones_privatemusic_04_infinitesource.m4a"
+  },
+  {
+    "artist": "Jelly Roll",
+    "title": "Dead Man Walking",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/jellyroll_balladsofthebroken_01_deadmanwalking.m4a"
+  },
+  {
+    "artist": "Ghost & Def Leppard",
+    "title": "Spillways",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/ghostdefleppard_spillwayssingle_01_spillways.m4a"
+  },
+  {
+    "artist": "Bad Wolves",
+    "title": "Sober",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/badwolves_nation_7_sober.m4a"
+  },
+  {
+    "artist": "Volbeat",
+    "title": "Die to Live",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/volbeat_rewindreplayrebound_01_dietolive.m4a"
+  },
+  {
+    "artist": "Pretty Reckless",
+    "title": "And So It Went",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/prettyrecklessthe_deathbyrockandroll_3_andsoitwent.m4a"
+  },
+  {
+    "artist": "Deftones",
+    "title": "Ohms",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/deftones_ohms_10_ohms.m4a"
+  },
+  {
+    "artist": "Shinedown",
+    "title": "A Symptom of Being Human",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/shinedown_planetzero_10_asymptomofbeinghumanalbumversion.m4a"
+  },
+  {
+    "artist": "Breaking Benjamin",
+    "title": "Far Away",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/breakingbenjamin_aurora_03_faraway.m4a"
+  },
+  {
+    "artist": "Five Finger Death Punch",
+    "title": "Afterlife",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/fivefingerdeathpunch_afterlifesingle_01_afterlife.m4a"
+  },
+  {
+    "artist": "Disturbed",
+    "title": "Unstoppable",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/disturbed_divisive_4_unstoppable.m4a"
+  },
+  {
+    "artist": "Seether",
+    "title": "Cruise and Bloodied",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/seether_sivispacemparabellum_2_cruisedandbloodied.m4a"
+  },
+  {
+    "artist": "Three Days Grace",
+    "title": "So Called Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/threedaysgrace_socalledlifesingle_01_socalledlife.m4a"
+  },
+  {
+    "artist": "Corey Taylor",
+    "title": "Black Eyes Blue",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/taylorcorey_cmft_02_blackeyesblue.m4a"
+  },
+  {
+    "artist": "Shinedown",
+    "title": "Dead Don't Die",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/shinedown_planetzero_06_deaddontdie.m4a"
+  },
+  {
+    "artist": "Five Finger Death Punch",
+    "title": "A Little Bit Off",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/fivefingerdeathpunch_f8_5_alittlebitoff.m4a"
+  },
+  {
+    "artist": "Staind",
+    "title": "Lowest in Me Clean Edit",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/staind_lowestinmesingle_1_lowestinmecleanedit.m4a"
+  },
+  {
+    "artist": "Papa Roach",
+    "title": "Leave a Light on Talk Away the Dark",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/paparoach_egotrip_10_leavealightontalkawaythedark.m4a"
+  },
+  {
+    "artist": "Nothing More",
+    "title": "If It Doesn't Hurt",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/nothingmore_ifitdoesnthurtsingle_1_ifitdoesnthurt.m4a"
+  },
+  {
+    "artist": "Tool",
+    "title": "Schism",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/tool_lateralus_05_schism.m4a"
+  },
+  {
+    "artist": "Adema",
+    "title": "Giving In",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/adema_al039_1616-06givingin.m4a"
+  },
+  {
+    "artist": "Butthole Surfers",
+    "title": "The Shame of Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/buttholesurfers_al323_theshameoflife.m4a"
+  },
+  {
+    "artist": "Adema",
+    "title": "The Way You Like It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/adema_al0360_749-14thewayyoulikeit.m4a"
+  },
+  {
+    "artist": "Mushroomhead",
+    "title": "Sun Doesn't Rise",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/mushroomhead_xiii_02_sundoesntrise.m4a"
+  },
+  {
+    "artist": "Tantric",
+    "title": "Breakdown",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/tantric_al037_1613-04breakdown.m4a"
+  },
+  {
+    "artist": "Chevelle",
+    "title": "Self Destructor",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/chevelle_niratias_05_selfdestructor.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "New Divide",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/linkinpark_ha200928_05_newdivide.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Shadow of the Day",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/linkinpark_ha200739_08shadowoftheday.m4a"
+  },
+  {
+    "artist": "Pretty Reckless",
+    "title": "Death by Rock and Roll",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/prettyrecklessthe_deathbyrockandrollsingle_1_deathbyrockandroll.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "In the End",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/linkinpark_ch0345_intheend.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Crawling Album Version",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/linkinpark_al037_1614-02crawlingalbumvers.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "What I've Done",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/linkinpark_hb200714_04whativedone.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Castle of Glass",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/linkinpark_hb201309_04_castleofglass.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Lost",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/linkinpark_meteora20thanniversaryedition_1_lost.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Up from the Bottom",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/linkinpark_fromzerodeluxeedition_12_upfromthebottom.m4a"
+  },
+  {
+    "artist": "Linkin Park",
+    "title": "Faint",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/linkinpark_meteora_07_faint.m4a"
+  },
+  {
+    "artist": "Nine Inch Nails",
+    "title": "Head Like a Hole",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/nineinchnails_al323_headlikeahole.m4a"
+  },
+  {
+    "artist": "Staind",
+    "title": "Outside Studio Version",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/staind_al038_1615-08outsidestudiovers.m4a"
+  },
+  {
+    "artist": "White Zombie",
+    "title": "More Human Than Human",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/whitezombie_al0349_699-09morehumanthanhuma.m4a"
+  },
+  {
+    "artist": "Korn",
+    "title": "Got the Life",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/korn_al0354_725-05gotthelife.m4a"
+  },
+  {
+    "artist": "311",
+    "title": "Come Original",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/311_al325_comeoriginal.m4a"
+  },
+  {
+    "artist": "Rage Against the Machine",
+    "title": "Testify",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/rageagainstthemac_al035_1611-01testify.m4a"
+  },
+  {
+    "artist": "System of a Down",
+    "title": "Chop Suey",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/systemofadown_al0358_745-18chopsuey.m4a"
+  },
+  {
+    "artist": "Incubus",
+    "title": "Pardon Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/incubus_al032_1602-06pardonme.m4a"
+  },
+  {
+    "artist": "Deftones",
+    "title": "Engine No. 9",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/deftones_adrenaline_09_engineno9.m4a"
+  },
+  {
+    "artist": "Staind",
+    "title": "For You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/staind_al0359_748-01foryou.m4a"
+  },
+  {
+    "artist": "Cold",
+    "title": "No One",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/cold_al038_1614-07noone.m4a"
+  }
+]

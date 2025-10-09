@@ -1,0 +1,697 @@
+[
+  {
+    "artist": "Tangerine Dream",
+    "title": "Phaedra",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/tangerinedream_phaedra_01_phaedra.m4a"
+  },
+  {
+    "artist": "The Prodigy",
+    "title": "Poison",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/prodigythe_musicforthejilt_08_poison.m4a"
+  },
+  {
+    "artist": "Florence and The Machine",
+    "title": "Drumming Song",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/florenceandthem_lungs_00_drummingsongboy8bitr.m4a"
+  },
+  {
+    "artist": "The Prodigy",
+    "title": "Voodoo People",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/prodigythe_musicforthejilt_05_voodoopeople.m4a"
+  },
+  {
+    "artist": "Kayzo and Gammer",
+    "title": "Forever",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/kayzoandgammer_foreversingle_01_forever.m4a"
+  },
+  {
+    "artist": "Bassnectar",
+    "title": "Wildstyle Method",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/bassnectar_wildstyle_02_wildstylemethod.m4a"
+  },
+  {
+    "artist": "Mike Posner",
+    "title": "Cooler Than Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/posnermike_coolerthanmesingle_02_coolerthanmebosonremix.m4a"
+  },
+  {
+    "artist": "Technimatic",
+    "title": "Sphere",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/technimatic_intersectionep_04_sphere.m4a"
+  },
+  {
+    "artist": "Friction Ktee",
+    "title": "Jupiter",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/frictionktee_wayofthewarrior_03_jupitermefjusremix.m4a"
+  },
+  {
+    "artist": "Nero",
+    "title": "Innocence",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/nero_welcomereality_07_innocence.m4a"
+  },
+  {
+    "artist": "Skream",
+    "title": "Filth",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/skream_top50tracksofte_38_filth.m4a"
+  },
+  {
+    "artist": "The Prodigy",
+    "title": "Out Of Space",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/prodigythe_theirlawthesingle_04outofspace.m4a"
+  },
+  {
+    "artist": "Deadboy",
+    "title": "Nova",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/deadboy_blaquewerkep_04_nova.m4a"
+  },
+  {
+    "artist": "Eptic",
+    "title": "Dimension 7",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/eptic_theend_01_dimension7.m4a"
+  },
+  {
+    "artist": "Snails and Herobust",
+    "title": "Pump This",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/snailsandherobust_pumpthisremixes_02_pumpthisgetterremix.m4a"
+  },
+  {
+    "artist": "Friction Dimension",
+    "title": "Kinetic",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/frictiondimensi_frictionvsvol3_01_kinetic.m4a"
+  },
+  {
+    "artist": "Major Lazer",
+    "title": "Jah No Partial",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/majorlazer_freetheuniverse_04_jahnopartial.m4a"
+  },
+  {
+    "artist": "Flaxen",
+    "title": "Tape N Vinyl",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/flaxen_silenceinarbore_01_tapenvinyl.m4a"
+  },
+  {
+    "artist": "Deadmau5",
+    "title": "Ghosts N Stuff",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/deadmau5_cheapthrills_3_ghostsnstuffneromix.m4a"
+  },
+  {
+    "artist": "Excision and Downlink",
+    "title": "Existence",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/excisionanddownlink_existenceep_01_existencevip.m4a"
+  },
+  {
+    "artist": "The Prodigy",
+    "title": "Breathe",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/prodigy_al338_breathe.m4a"
+  },
+  {
+    "artist": "KD",
+    "title": "Electronic Memories",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/kd_findparadise_1_electronicmemories.m4a"
+  },
+  {
+    "artist": "The Chainsmokers",
+    "title": "Save Yourself",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/chainsmokersthe_sickboythisfeeling_2_saveyourself.m4a"
+  },
+  {
+    "artist": "Krewella",
+    "title": "Live For The Night",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/krewella_liveforthenightremixes_03_liveforthenightpegboardnerdsremix.m4a"
+  },
+  {
+    "artist": "Ducky",
+    "title": "Addicted To Your Distance",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/ducky_addictedtoyourdistancesingle_01_addictedtoyourdistance.m4a"
+  },
+  {
+    "artist": "Dada Life",
+    "title": "Kick Out The Epic Motherfker",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/dadalife_kickouttheepicmotherfkerremixes_02_kickouttheepicmotherfkerdatsikremix.m4a"
+  },
+  {
+    "artist": "Bassnectar",
+    "title": "Vava Voom",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/bassnectar_ha201215_06_vavavoom.m4a"
+  },
+  {
+    "artist": "The Crystal Method",
+    "title": "Trip Like I Do",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/thecrystalmethod_vegas_01triplikeido.m4a"
+  },
+  {
+    "artist": "The Crystal Method",
+    "title": "Dubiliscous Groove",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/crystalmethodthe_thetriphoptestpart1_08_dubiliscousgroove.m4a"
+  },
+  {
+    "artist": "The Crystal Method",
+    "title": "Comin Back",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/thecrystalmethod_vegas_05cominback.m4a"
+  },
+  {
+    "artist": "The Crystal Method",
+    "title": "Emulator",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/crystalmethodth_thecrystalmetho_00_emulator.m4a"
+  },
+  {
+    "artist": "The Crystal Method",
+    "title": "Bad Stone",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/thecrystalmethod_vegas_10badstone.m4a"
+  },
+  {
+    "artist": "The Crystal Method",
+    "title": "Ready For Action",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/thecrystalmethod_tweekend_07readyforaction.m4a"
+  },
+  {
+    "artist": "Crystal Method",
+    "title": "Busy Child",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/crystalmethod_al326_busychild.m4a"
+  },
+  {
+    "artist": "Crystal Method",
+    "title": "Name Of The Game",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/crystalmethod_al039_1616-08nameofthegameclea.m4a"
+  },
+  {
+    "artist": "The Crystal Method",
+    "title": "Theres A Difference",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/crystalmethodthe_hb201833_6_theresadifference.m4a"
+  },
+  {
+    "artist": "Schnauss Ulrich",
+    "title": "A Strangely Isolated Place",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/schnaussulrich_astrangelyisola_08_astrangelyisolatedpl.m4a"
+  },
+  {
+    "artist": "Orsini Gabriele",
+    "title": "Ninnananna",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/orsinigabriele_ninnanannaep_01_ninnananna.m4a"
+  },
+  {
+    "artist": "The Orb",
+    "title": "Blue Room",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/orbthe_blueroom_02_blueroomfrankdewulfr.m4a"
+  },
+  {
+    "artist": "Miles Robert",
+    "title": "Red Zone",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/milesrobert_dreamland_11_redzone.m4a"
+  },
+  {
+    "artist": "Toba Ricardo",
+    "title": "Garden",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/tobarricardo_hundredsgardenr_01_gardendanielaveryrem.m4a"
+  },
+  {
+    "artist": "Efdemin",
+    "title": "Parallaxis",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/efdemin_decay_09_parallaxis.m4a"
+  },
+  {
+    "artist": "Younger Brother",
+    "title": "The Receptive",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/youngerbrother_aflockofbleeps_02_thereceptive.m4a"
+  },
+  {
+    "artist": "Trentemoller",
+    "title": "Moan",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/trentemoller_thelastresort_12moan.m4a"
+  },
+  {
+    "artist": "Kolsch Tiga",
+    "title": "Hal",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/kolschtiga_halsingle_01_hal.m4a"
+  },
+  {
+    "artist": "Bakradze",
+    "title": "The Silence Between Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/bakradze_letterep_02_thesilencebetweenmea.m4a"
+  },
+  {
+    "artist": "Efdemin",
+    "title": "Subatomic",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/efdemin_decay_06_subatomic.m4a"
+  },
+  {
+    "artist": "Tobias",
+    "title": "Cursor Item Only",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/tobias_aseriesofshocks_08_cursoritemonly.m4a"
+  },
+  {
+    "artist": "Gorgon City Kaskade",
+    "title": "Go Slow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/gorgoncitykaskade_goslow_01_goslow.m4a"
+  },
+  {
+    "artist": "Summit John",
+    "title": "Tears With Paige Cavell",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/summitjohn_comfortinchaos_02_tearswithpaigecavell.m4a"
+  },
+  {
+    "artist": "Synkro",
+    "title": "Don't Want",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/synkro_acceptance_08_dontwant.m4a"
+  },
+  {
+    "artist": "Spiritualized",
+    "title": "Ladies And Gentleme",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/spiritualized_ladiesandgentleme_01ladiesandgentleme.m4a"
+  },
+  {
+    "artist": "Otherwish",
+    "title": "Repeat Again",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/otherwish_iiiemptyspaces__repeatagain.m4a"
+  },
+  {
+    "artist": "Shek Krystian",
+    "title": "So I Honey",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/shekkrystian_destroyrebuildv_02_soihoney.m4a"
+  },
+  {
+    "artist": "Heard Right Floa",
+    "title": "Finding",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/heardrightfloa_findingfracture_01_finding.m4a"
+  },
+  {
+    "artist": "Cartagiles Cheyenne",
+    "title": "Sun Goes Down",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/cartagilescheyenne_sungoesdownsingle_01_sungoesdown.m4a"
+  },
+  {
+    "artist": "Tube Berger Lunochris",
+    "title": "Daily Twist",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/tubebergerlunochris_dailytwistsingle_01_dailytwist.m4a"
+  },
+  {
+    "artist": "Nora En Pure",
+    "title": "Heartbeating",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/noraenpure_heartbeatingsingle_01_heartbeating.m4a"
+  },
+  {
+    "artist": "Coil",
+    "title": "Red Birds Will Fly Out Of",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/coil_musicktoplayint_02_redbirdswillflyoutof.m4a"
+  },
+  {
+    "artist": "Vector Lovers",
+    "title": "Boulevard",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/vectorlovers_capsuleforone_09_boulevard.m4a"
+  },
+  {
+    "artist": "Ubartmar",
+    "title": "Flying Saucer Landing",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/ubartmar_fusion_02_flyingsaucerlandingd.m4a"
+  },
+  {
+    "artist": "Onyx",
+    "title": "Atlantis",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/onyx_grooveon_07_atlantis.m4a"
+  },
+  {
+    "artist": "Jefferson Marsha",
+    "title": "Mushroom Strevino Sins",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/jeffersonmarsha_nastyripsshifti_13_mushroomstrevinosins.m4a"
+  },
+  {
+    "artist": "Freak Show The",
+    "title": "The Less You Freak",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/freakshowthe_thelessyoufreak_01_thelessyoufreak.m4a"
+  },
+  {
+    "artist": "Rain Or Shine",
+    "title": "Find A Way",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/rainorshine_elementssingle_02_findaway.m4a"
+  },
+  {
+    "artist": "Liviu Ghita",
+    "title": "Sense",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/liviughita_senssingle_04_sensechologistremix.m4a"
+  },
+  {
+    "artist": "Juno Reactor",
+    "title": "Pistolero Bombay Dub",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/junoreactor_insidethereacto_06_pistolerobombaydubor.m4a"
+  },
+  {
+    "artist": "Trentemoller",
+    "title": "Always Something Be",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/trentemoller_thelastresort_04alwayssomethingbe.m4a"
+  },
+  {
+    "artist": "Proxima",
+    "title": "Formal Junction",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/proxima_formaljunctions_01_formaljunction.m4a"
+  },
+  {
+    "artist": "Hybrid",
+    "title": "Marrakech",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/hybrid_morningscifi_04_marrakech.m4a"
+  },
+  {
+    "artist": "Corticyte",
+    "title": "Modulate",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/corticyte_modulatesingle_01_modulate.m4a"
+  },
+  {
+    "artist": "Poncet Roman",
+    "title": "Afterglow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/poncetroman_walfischep_04_afterglowpsykremix.m4a"
+  },
+  {
+    "artist": "Diplo",
+    "title": "Hold You Tight",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/diplo_holdyoutightsingle_01_holdyoutight.m4a"
+  },
+  {
+    "artist": "Bunny On Acid",
+    "title": "Locked",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/bunnyonacid_studiorockersth_05_locked.m4a"
+  },
+  {
+    "artist": "Aphex Twin",
+    "title": "Alberto Balsalm",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/aphextwin_icarebecauseyoudo_10albertobalsalm.m4a"
+  },
+  {
+    "artist": "Nphonix",
+    "title": "Reach Out",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/nphonix_nastyripsshifti_03_reachout.m4a"
+  },
+  {
+    "artist": "Black Sun Empire",
+    "title": "Hideous",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/blacksunempiren_summerslammers2_06_hideousrawtheoryremi.m4a"
+  },
+  {
+    "artist": "Lplus",
+    "title": "Rock That B",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/lplus_pricelessep_04_rockthatb.m4a"
+  },
+  {
+    "artist": "Calvin Harris",
+    "title": "This Is What You Came For",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/harriscalvin_ha201619_6_thisiswhatyoucamefor.m4a"
+  },
+  {
+    "artist": "Good Times Ahead Jstjr",
+    "title": "Belong",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/goodtimesaheadjstjr_belongsingle_01_belong.m4a"
+  },
+  {
+    "artist": "Swedish House Mafia",
+    "title": "Wait So Long",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/swedishhousemafia_waitsolongsingle_01_waitsolongradioedit.m4a"
+  },
+  {
+    "artist": "Joel Corry",
+    "title": "Sorry",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/corryjoel_sorrysingle_1_sorry.m4a"
+  },
+  {
+    "artist": "MG",
+    "title": "Brink",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/mg_mg_05_brink.m4a"
+  },
+  {
+    "artist": "Wiley",
+    "title": "Flying",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/wiley_flyingsingle_02_flyingbassmix.m4a"
+  },
+  {
+    "artist": "CMC Terror Jr",
+    "title": "Risk It All",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/cmcterrorjr_riskitallsingle_01_riskitall.m4a"
+  },
+  {
+    "artist": "Ritual",
+    "title": "Using Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/ritual_usingmeduzaremixeditsingle_01_usingmeduzaremixedit.m4a"
+  },
+  {
+    "artist": "Berton Beats",
+    "title": "Dunk Tune",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/bertonbeats_damoveltbucketm_12_dunktune.m4a"
+  },
+  {
+    "artist": "Algae Bloom",
+    "title": "Algatinge",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/algaebloom_theblossom_07_algatinge.m4a"
+  },
+  {
+    "artist": "Fractal Glider",
+    "title": "The Stem Cell",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/fractalglider_digitalmandala_09_thestemcell.m4a"
+  },
+  {
+    "artist": "Flucturion 2.0",
+    "title": "Amber In The Sand",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/flucturion20_rhythmofpsoulch_03_amberinthesand.m4a"
+  },
+  {
+    "artist": "Shpongle",
+    "title": "A New Way To Say Hooray",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/shpongle_talesoftheinexp_03_anewwaytosayhooray.m4a"
+  },
+  {
+    "artist": "Fatali",
+    "title": "Dawn",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/fatali_dawn_07_dawn.m4a"
+  },
+  {
+    "artist": "Zero To Nine",
+    "title": "Arkturus",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/zerotonine_psybrationfunda_02_arkturus.m4a"
+  },
+  {
+    "artist": "Satori",
+    "title": "The Nature Of Reality",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/satori_asharpkicktothe_03_thenatureofreality.m4a"
+  },
+  {
+    "artist": "Melicia",
+    "title": "Experience",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/melicia_runningoutoftim_01_experience.m4a"
+  },
+  {
+    "artist": "Astrix",
+    "title": "Scientific Reality",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/astrix_eyetoeye_07_scientificreality.m4a"
+  },
+  {
+    "artist": "Astrix",
+    "title": "Freestyle Cafe",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/astrix_eyetoeye_10_freestylecafe.m4a"
+  },
+  {
+    "artist": "Shpongle",
+    "title": "A New Way To Say Hooray (Remix)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/shpongle_shpongleremixed_04_anewwaytosayhooraypr.m4a"
+  },
+  {
+    "artist": "Infected Mushroom",
+    "title": "Cream",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/infectedmushroo_citiesofthefutu_04_cream.m4a"
+  },
+  {
+    "artist": "Algae Bloom",
+    "title": "Cloudwalker",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/algaebloom_theblossom_04_cloudwalker.m4a"
+  },
+  {
+    "artist": "Yahel",
+    "title": "Scratch",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/yahel_privatecollecti_05_scratch.m4a"
+  },
+  {
+    "artist": "Freak Show The",
+    "title": "Wolfmen",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/freakshowthe_thelessyoufreak_09_wolfmen.m4a"
+  },
+  {
+    "artist": "Talamasca",
+    "title": "Make Some Noise",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/talamasca_makesomenoise_01_makesomenoise.m4a"
+  },
+  {
+    "artist": "Freak Show The",
+    "title": "Danger",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/freakshowthe_thelessyoufreak_04_danger.m4a"
+  },
+  {
+    "artist": "Sesto Sento",
+    "title": "Key To The Universe",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/sestosento_keytotheunivers_02_keytotheuniverse.m4a"
+  },
+  {
+    "artist": "Etnoscope",
+    "title": "Screamer Slice",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/etnoscope_psybrationfunda_08_screamerslice.m4a"
+  },
+  {
+    "artist": "Blue Vortex",
+    "title": "Frozen Waters",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/bluevortex_mirage_06_frozenwaters.m4a"
+  },
+  {
+    "artist": "EvsY",
+    "title": "Corelectronics",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/evsy_casualfreaks_05_corelectronics.m4a"
+  },
+  {
+    "artist": "Atomic Pulse",
+    "title": "Single Cell",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/atomicpulse_directsource_03_singlecell.m4a"
+  },
+  {
+    "artist": "Future Prophecy",
+    "title": "Unisex",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/futureprophecy_bodyshaker_06_unisex.m4a"
+  },
+  {
+    "artist": "Talamasca",
+    "title": "Apocalypse",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/talamasca_makesomenoise_05_apocalypse.m4a"
+  },
+  {
+    "artist": "Silent Hill",
+    "title": "Father Connection",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/silenthill_findme_05_fatherconnectionprog.m4a"
+  },
+  {
+    "artist": "Astrix",
+    "title": "Technowidows",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/astrix_futuremusic_05_technowidowsgmsremix.m4a"
+  },
+  {
+    "artist": "Panpsychic",
+    "title": "Ms Kks Pre Mix",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/panpsychic_wearenotwhowear_10_mskkspremix.m4a"
+  },
+  {
+    "artist": "Armin van Buuren",
+    "title": "Forever Is Ours",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/vanbuurenarmin_astateoftrancey_12_foreverisours.m4a"
+  },
+  {
+    "artist": "Onyx",
+    "title": "Groove On",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/onyx_grooveon_08_grooveon.m4a"
+  },
+  {
+    "artist": "Danny Daze",
+    "title": "Silicon",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/dannydaze_siliconremixes_04_siliconambivalentrem.m4a"
+  },
+  {
+    "artist": "Shpongle",
+    "title": "Crystal Skulls",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/shpongle_shpongleremixed_01_crystalskullswestern.m4a"
+  },
+  {
+    "artist": "Data",
+    "title": "Doors Of Perception",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/data_top50tracksofte_34_doorsofperception.m4a"
+  },
+  {
+    "artist": "King",
+    "title": "Read You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/king_readyousingle_03_readyoupawnremix.m4a"
+  },
+  {
+    "artist": "Sesto Sento Elect",
+    "title": "Connecting Minds",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/sestosentoelect_keytotheunivers_04_connectingminds.m4a"
+  },
+  {
+    "artist": "P John",
+    "title": "Aprodisiak",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/pjohn_aprodisiaksingle_1_aprodisiak.m4a"
+  },
+  {
+    "artist": "Hydra",
+    "title": "Transmitter",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/hydra_superhuman_09_transmitter.m4a"
+  },
+  {
+    "artist": "1200 Micrograms",
+    "title": "DMT",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/1200micrograms_1200mics_09_dmt.m4a"
+  },
+  {
+    "artist": "Mynu Leng Taiki Nulight",
+    "title": "Reset",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/mynulengtaikinu_blackbutterspre_06_reset.m4a"
+  },
+  {
+    "artist": "Gravious",
+    "title": "Jupiter Jazz",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/gravious_futuristep_01_jupiterjazz.m4a"
+  },
+  {
+    "artist": "Sieren",
+    "title": "Blue Memories",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/sieren_faces12seriesvo_10_bluememories.m4a"
+  },
+  {
+    "artist": "Pole",
+    "title": "Steingarten",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/pole_steingarten_01warum.m4a"
+  },
+  {
+    "artist": "Infected Mushroom",
+    "title": "Statik Dancin",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/infectedmushroo_birthday_02_statikdancin.m4a"
+  },
+  {
+    "artist": "Knock2",
+    "title": "Hold My Hand",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/knock2_holdmyhandsingle__holdmyhand.m4a"
+  },
+  {
+    "artist": "Tritonal Williams Brooke",
+    "title": "Someone To Love You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/tritonalwilliamsbrooke_someonetoloveyousingle_01_someonetoloveyou.m4a"
+  },
+  {
+    "artist": "Calvin Harris",
+    "title": "I'm Not Alone",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/harriscalvin_imnotalone2019_01_imnotalonecamelphatremix.m4a"
+  },
+  {
+    "artist": "Nemea",
+    "title": "Glow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/nemea_glowep_01_glow.m4a"
+  },
+  {
+    "artist": "Phantoms",
+    "title": "Are You Up",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/phantoms_areyouupsingle_1_areyouup.m4a"
+  },
+  {
+    "artist": "We Are Vol 1",
+    "title": "Fast As A Car",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/wearevol1_wearevol1_11fastasacar.m4a"
+  },
+  {
+    "artist": "Kodak To Graph",
+    "title": "I Am Anthem",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/kodaktograph_iamanthemremixe_04_iamanthembigwildremi.m4a"
+  },
+  {
+    "artist": "Novaspace Kloud 9",
+    "title": "Gorgeous",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/novaspacekloud9_gorgeoussingle_01_gorgeous.m4a"
+  },
+  {
+    "artist": "Sofi Tukker",
+    "title": "Purple Hat",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/sofitukker_purplehatdillonfrancisremixsingle_01_purplehatdillonfrancisremix.m4a"
+  },
+  {
+    "artist": "Hydra",
+    "title": "Visitors Goodbye",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/hydra_superhuman_11_visitorsgoodbye.m4a"
+  }
+]
