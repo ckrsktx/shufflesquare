@@ -1,5 +1,95 @@
 [
   {
+    "artist": "Taylor Dayne",
+    "title": "With Every Beat of My Heart",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/dance/daynetaylor_cantfightfate_01_witheverybeatofmyheart.m4a"
+  },
+  {
+    "artist": "The B-52's",
+    "title": "Love Shack",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/b52sthe_ch034_loveshack.m4a"
+  },
+  {
+    "artist": "Rod Stewart",
+    "title": "Some Guys Have All the Luck",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/stewartrod_chrgold26_someguyshaveallth.m4a"
+  },
+  {
+    "artist": "Journey",
+    "title": "Don't Stop Believin'",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/journey_ch0351_dontstopbelievin.m4a"
+  },
+  {
+    "artist": "Jackson Browne",
+    "title": "Somebody's Baby",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/brownejackson_chrgold03_somebodysbaby.m4a"
+  },
+  {
+    "artist": "Talking Heads",
+    "title": "Burning Down the House",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/talkingheads_crgold067_burningdownthehou.m4a"
+  },
+  {
+    "artist": "Cher",
+    "title": "If I Could Turn Back Time",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/cher_chrgold04_ificouldturnbackt.m4a"
+  },
+  {
+    "artist": "Milli Vanilli",
+    "title": "I'm Gonna Miss You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/millivanilli_allornothing_04_imgonnamissyou.m4a"
+  },
+  {
+    "artist": "Annie Lennox",
+    "title": "Walking on Broken Glass",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/lennoxannie_chrgold46_walkingonbrokengl.m4a"
+  },
+  {
+    "artist": "Stevie Nicks",
+    "title": "Stop Draggin' My Heart Around",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/nicksstevie_crgold055_stopdragginmyhear.m4a"
+  },
+  {
+    "artist": "The Cars",
+    "title": "Drive",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/carsthe_gd908_01drive.m4a"
+  },
+  {
+    "artist": "Wham!",
+    "title": "Wake Me Up Before You Go-Go",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/wham_gd930_02wakemeupbeforeyou.m4a"
+  },
+  {
+    "artist": "Bonnie Raitt",
+    "title": "Something to Talk About",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/raittbonnie_chrgold37_somethingtotalkab.m4a"
+  },
+  {
+    "artist": "Stevie Wonder",
+    "title": "Part-Time Lover",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/wonderstevie_chrgold30_parttimelover.m4a"
+  },
+  {
+    "artist": "ABC",
+    "title": "The Look of Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/abc_likeomigodthe80sp_02thelookoflovept1.m4a"
+  },
+  {
+    "artist": "Men At Work",
+    "title": "Who Can It Be Now?",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/menatwork_chrgold20_whocanitbenow.m4a"
+  },
+  {
+    "artist": "Rick Springfield",
+    "title": "I've Done Everything for You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/springfieldrick_workingclassdog_05_ivedoneeverythingforyou.m4a"
+  },
+  {
+    "artist": "INXS",
+    "title": "Never Tear Us Apart",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/inxs_kick_08_nevertearusapart.m4a"
+  },
+  {
     "artist": "The Fall",
     "title": "Hip Priest",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/fallthe_50000fallfanscant_11hippriest.m4a"
