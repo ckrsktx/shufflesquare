@@ -1,5 +1,130 @@
 [
   {
+    "artist": "Maze",
+    "title": "Happy Feelings",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/maze_maze_03_happyfeelings.m4a"
+  },
+  {
+    "artist": "James Fortune & Fiy",
+    "title": "I Believe",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/christian/fortunejamesfiy_klovegospel_01_ibelieve.m4a"
+  },
+  {
+    "artist": "Dave Hollister",
+    "title": "My Favorite Girl",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/hollisterdave_ghettohymns_03_myfavoritegirl.m4a"
+  },
+  {
+    "artist": "Donnie McClurkin",
+    "title": "That's What I Believe",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/christian/mcclurkindonnie_liveinlondonand_03_thatswhatibelieve.m4a"
+  },
+  {
+    "artist": "Warren G",
+    "title": "I Want It All",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/warreng_iwantitallfeatmack10_05_iwantitall.m4a"
+  },
+  {
+    "artist": "Les Nubians",
+    "title": "Makeda",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/lesnubians_princessesnubie_04_makeda.m4a"
+  },
+  {
+    "artist": "Kelis",
+    "title": "Caught Out There",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/kelis_kaleidoscope_03_caughtoutthere.m4a"
+  },
+  {
+    "artist": "Mary J. Blige",
+    "title": "Sexy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/bligemaryj_mary_02_sexy.m4a"
+  },
+  {
+    "artist": "Nas",
+    "title": "Hate Me Now",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/nas_iam_03_hatemenow.m4a"
+  },
+  {
+    "artist": "Chico DeBarge",
+    "title": "Give You What You Want",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/debargechico_thegame_2_giveyouwhatyouwantfasure.m4a"
+  },
+  {
+    "artist": "Ice Cube",
+    "title": "You Can Do It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/icecube_ch0366_youcandoit.m4a"
+  },
+  {
+    "artist": "The Winans",
+    "title": "Ain't No Need to Worry",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/winansthe_thebestofanitab_09_aintnoneedtoworry.m4a"
+  },
+  {
+    "artist": "Common",
+    "title": "1999",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/common_soundbombingii_201999.m4a"
+  },
+  {
+    "artist": "Roan Chappell",
+    "title": "The Subway (Clean)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/roanchappell_thesupwaysingle__thesubwayclean.m4a"
+  },
+  {
+    "artist": "Earth, Wind & Fire",
+    "title": "Can't Hide Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/smoothjazz/earthwindfire_theessentialcd2_12_canthidelove.m4a"
+  },
+  {
+    "artist": "Blaque",
+    "title": "808",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/blaque_ch0325_808.m4a"
+  },
+  {
+    "artist": "Franklin Kirk",
+    "title": "Looking for You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/christian/franklinkirk_hero_02_lookingforyou.m4a"
+  },
+  {
+    "artist": "Donell Jones",
+    "title": "U Know What's Up",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/jonesdonell_whereiwannabe_01_uknowwhatsup.m4a"
+  },
+  {
+    "artist": "Ol Dirty Bastard",
+    "title": "Got Your Money",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/oldirtybastard_ch0326_gotyourmoney.m4a"
+  },
+  {
+    "artist": "Eve",
+    "title": "Gotta Man",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/eve_ch0326_gottaman.m4a"
+  },
+  {
+    "artist": "Mary J. Blige",
+    "title": "All That I Can Say",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/bligemaryj_mary_01_allthaticansay.m4a"
+  },
+  {
+    "artist": "Crowded House",
+    "title": "Don't Dream It's Over",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/crowdedhouse_chrgold45_dontdreamitsover.m4a"
+  },
+  {
+    "artist": "Blackstreet",
+    "title": "Think About You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/blackstreet_blackstreetfina_02_thinkaboutyou.m4a"
+  },
+  {
+    "artist": "702",
+    "title": "Where My Girls At",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/702_ch0321_wheremygirlsat.m4a"
+  },
+  {
+    "artist": "TLC",
+    "title": "Creep",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adult/tlc_saturdaynightli_07_creep.m4a"
+  },
+  {
     "artist": "T.I.",
     "title": "Dead and Gone",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/ti_ha200850_18_deadandgone.m4a"
