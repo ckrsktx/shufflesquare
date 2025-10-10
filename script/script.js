@@ -61,7 +61,7 @@ function fillMenu() {
     div.onclick = () => {
       dropMenu.style.display = 'none';           // 1. fecha NA HORA
       menuBtn.disabled = true;                   // 2. anti-spam
-      (async () => {                              // 3. background
+      (async () => {                              // 3. carrega em BACKGROUND
         a.pause(); a.currentTime = 0;
         currentPl = g; playlistName.textContent = g;
         recentPlayed.clear(); playsSinceReset = 0; lastCountedKey = null; playedInCycle.clear(); clearStartTimeout();
@@ -123,7 +123,7 @@ async function loadPool({ resetIdx = false, stopPlayback = true } = {}) {
   } catch { originalPool = []; pool = []; }
 }
 
-/* ========== COVER (máx. 3 tentativas + cancelável) ========== */
+/* ========== COVER (cancelável) ========== */
 async function getCoverForTrack(t, signal = null) {
   const key = safeKeyForTrack(t);
   if (coverCache.has(key)) return coverCache.get(key);
@@ -167,7 +167,7 @@ async function getCoverForTrack(t, signal = null) {
   coverCache.set(key, FALLBACK); return FALLBACK;
 }
 
-/* ========== PRELOAD NEXT (apenas 1x, no ended) ========== */
+/* ========== PRELOAD NEXT (só no ended) ========== */
 async function preloadNext() {
   if (!pool.length) return;
   let nextIdx = (idx + 1) % pool.length;
@@ -272,7 +272,7 @@ window.changePlaylist = async function (name) {
 /* ========== DEBUG ========== */
 window._playerState = () => ({ idx, shuffleOn, currentPl, poolLength: pool.length, playsSinceReset, recentPlayedSize: recentPlayed.size, playedInCycleSize: playedInCycle.size, startTimeout: !!startTimeoutId });
 
-/* ========== ANSIEDADE (centralizado, sem fundo pesado) ========== */
+/* ========== ANSIEDADE (centralizado sobre a capa) ========== */
 let skipCount = 0, lastSkipTime = 0; const SKIP_WINDOW = 1500, SKIP_LIMIT = 5;
 const toast = document.createElement('div'); toast.innerHTML = 'Ei, calma!<br>Menos ansiedade, curta a playlist. ;)'; Object.assign(toast.style, { position: 'fixed', top: `${capa.getBoundingClientRect().top + capa.offsetHeight/2}px`, left: `${capa.getBoundingClientRect().left + capa.offsetWidth/2}px`, transform: 'translate(-50%,-50%)', background: 'rgba(0,0,0,.55)', color: '#fff', padding: '1.2rem 1.8rem', borderRadius: '1rem', fontSize: '1.05rem', textAlign: 'center', lineHeight: '1.4', zIndex: '999', pointerEvents: 'none', opacity: '0', willChange: 'opacity' }); document.body.appendChild(toast);
 function showToast() { toast.style.top = `${capa.getBoundingClientRect().top + capa.offsetHeight/2}px`; toast.style.left = `${capa.getBoundingClientRect().left + capa.offsetWidth/2}px`; toast.style.opacity = '1'; setTimeout(() => toast.style.opacity = '0', 3000); }
