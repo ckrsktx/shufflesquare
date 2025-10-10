@@ -11,10 +11,10 @@ const a = $('#a'), capa = $('#capa'), tit = $('#tit'), art = $('#art'),
 
 /* ========== STATE ========== */
 let playlists = {}, originalPool = [], pool = [], idx = 0, shuffleOn = false,
-    isLoading = false, currentPl = '', coverCache = new Map(), COVER_TIMEOUT = 2000,
+    isLoading = false, currentPl = '', coverCache = new Map(), COVER_TIMEOUT = 4000,
     RESET_AFTER = 5, recentPlayed = new Set(), playsSinceReset = 0,
     lastCountedKey = null, playedInCycle = new Set(),
-    startTimeoutId = null, START_TIMEOUT_MS = 2000, abortCtrl = new AbortController();
+    startTimeoutId = null, START_TIMEOUT_MS = 4000;
 
 /* ========== UTILS ========== */
 function safeKeyForTrack(t) {
@@ -23,23 +23,25 @@ function safeKeyForTrack(t) {
   return t.url || (typeof t === 'string' ? t : JSON.stringify(t));
 }
 async function fetchJsonWithTimestamp(url) {
-  const res = await fetch(url + '?t=' + Date.now(), {cache:'no-store'});
+  const res = await fetch(url + '?t=' + Date.now(), {cache: 'no-store'});
   if (!res.ok) throw new Error('fetch error ' + res.status);
   return res.json();
 }
 function normalizeText(s) {
   if (!s) return '';
-  return (''+s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\w\s]/g,'').replace(/\s+/g,' ').trim();
+  return (''+s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^\w\s]/g, '').replace(/\s+/g, ' ').trim();
 }
 function fetchWithTimeout(url, opts = {}, timeout = COVER_TIMEOUT) {
-  const controller = new AbortController();
-  const id = setTimeout(() => controller.abort(), timeout);
+  const controller = new AbortController(), id = setTimeout(() => controller.abort(), timeout);
   return fetch(url, {...opts, signal: controller.signal}).finally(() => clearTimeout(id));
+}
+function clearStartTimeout() {
+  if (startTimeoutId) { clearTimeout(startTimeoutId); startTimeoutId = null; }
 }
 
 /* ========== INIT ========== */
 (async () => {
-  try { playlists = await fetchJsonWithTimestamp(PLAYLIST_URL); } catch {
+  try { playlists = await fetchJsonWithTimestamp(PLAYLIST_URL); } catch (err) {
     loader.textContent = 'erro ao carregar playlists'; return;
   }
   fillMenu();
@@ -50,7 +52,7 @@ function fetchWithTimeout(url, opts = {}, timeout = COVER_TIMEOUT) {
   idx = Math.floor(Math.random() * pool.length);
   loader.style.display = 'none';
   await loadTrack({ autoplay: false });
-  preloadNext();
+  preloadNext();               // apenas 1x
 })();
 
 /* ========== MENU ========== */
@@ -58,19 +60,12 @@ function fillMenu() {
   dropMenu.innerHTML = '';
   Object.keys(playlists).forEach(g => {
     const div = document.createElement('div'); div.className = 'menuItem'; div.textContent = g;
-    div.onclick = () => {
-      dropMenu.style.display = 'none';           // 1. fecha NA HORA
-      menuBtn.disabled = true;                   // 2. anti-spam
-      (async () => {                              // 3. background
-        a.pause(); a.currentTime = 0;
-        currentPl = g; playlistName.textContent = g;
-        recentPlayed.clear(); playsSinceReset = 0; lastCountedKey = null; playedInCycle.clear(); clearStartTimeout();
-        await loadPool({ resetIdx: true, stopPlayback: true });
-        idx = Math.floor(Math.random() * pool.length);
-        await loadTrack({ autoplay: false });
-        preloadNext();
-        menuBtn.disabled = false;
-      })();
+    div.onclick = async () => {
+      a.pause(); a.currentTime = 0; currentPl = g; playlistName.textContent = g;
+      recentPlayed.clear(); playsSinceReset = 0; lastCountedKey = null; playedInCycle.clear(); clearStartTimeout();
+      await loadPool({ resetIdx: true, stopPlayback: true });
+      idx = Math.floor(Math.random() * pool.length);
+      await loadTrack({ autoplay: false }); preloadNext(); dropMenu.style.display = 'none';
     }; dropMenu.appendChild(div);
   });
 }
@@ -120,11 +115,11 @@ async function loadPool({ resetIdx = false, stopPlayback = true } = {}) {
     pool = shuffleOn ? shuffleArray(originalPool) : [...originalPool];
     if (resetIdx) idx = 0;
     recentPlayed.clear(); playsSinceReset = 0; lastCountedKey = null; playedInCycle.clear(); clearStartTimeout();
-  } catch { originalPool = []; pool = []; }
+  } catch (err) { console.error('loadPool error', err); originalPool = []; pool = []; }
 }
 
-/* ========== COVER (máx. 3 tentativas + cancelável) ========== */
-async function getCoverForTrack(t, signal = null) {
+/* ========== COVER (máx. 3 tentativas) ========== */
+async function getCoverForTrack(t) {
   const key = safeKeyForTrack(t);
   if (coverCache.has(key)) return coverCache.get(key);
   if (t.cover && typeof t.cover === 'string' && t.cover.trim()) { coverCache.set(key, t.cover); return t.cover; }
@@ -136,12 +131,11 @@ async function getCoverForTrack(t, signal = null) {
   const attempts = [];
   if (artist && title && year) attempts.push({ term: `${artist} ${title} ${year}`, entity: wantMovie ? 'movie' : 'song' });
   if (artist && title) attempts.push({ term: `${artist} ${title}`, entity: wantMovie ? 'movie' : 'song' });
-  if (title) attempts.push({ term: `${title}`, entity: wantMovie ? 'movie' : 'song' }); // 3 apenas
+  if (title) attempts.push({ term: `${title}`, entity: wantMovie ? 'movie' : 'song' }); // apenas 3
   for (const att of attempts) {
-    if (signal?.aborted) break;
     const q = encodeURIComponent(att.term), entity = att.entity === 'movie' ? 'movie' : 'song';
     try {
-      const resp = await fetchWithTimeout(`https://itunes.apple.com/search?term=${q}&limit=3&entity=${entity}`, { signal }, 3000);
+      const resp = await fetchWithTimeout(`https://itunes.apple.com/search?term=${q}&limit=3&entity=${entity}`, {}, 4000);
       if (!resp.ok) continue;
       const json = await resp.json();
       if (!Array.isArray(json.results) || !json.results.length) continue;
@@ -159,10 +153,10 @@ async function getCoverForTrack(t, signal = null) {
         if (score > bestScore) { bestScore = score; best = r; }
       }
       if (best && bestScore >= 4) {
-        const artUrl = (best.artworkUrl100 || best.artworkUrl60 || '').replace('100x100', '300x300');
+        const artUrl = (best.artworkUrl100 || best.artworkUrl60 || '').replace('100x100', '300x300'); // menor
         if (artUrl) { coverCache.set(key, artUrl); return artUrl; }
       }
-    } catch { if (signal?.aborted) break; }
+    } catch {}
   }
   coverCache.set(key, FALLBACK); return FALLBACK;
 }
@@ -172,37 +166,31 @@ async function preloadNext() {
   if (!pool.length) return;
   let nextIdx = (idx + 1) % pool.length;
   if (shuffleOn) {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 10; i++) { // limite menor
       const cand = Math.floor(Math.random() * pool.length);
       if (cand !== idx && !playedInCycle.has(safeKeyForTrack(pool[cand]))) { nextIdx = cand; break; }
     }
   }
   const nextT = pool[nextIdx]; if (!nextT) return;
   const key = safeKeyForTrack(nextT); if (coverCache.has(key)) return;
-  getCoverForTrack(nextT, abortCtrl.signal).catch(() => {});
+  getCoverForTrack(nextT).catch(() => {});
 }
 
 /* ========== CURRENT TRACK HELPERS ========== */
 function currentTrack() { return pool && pool[idx]; }
 
-/* ========== LOAD & PLAY (fallback primeiro + cancelável) ========== */
+/* ========== LOAD & PLAY ========== */
 async function loadTrack({ autoplay = false } = {}) {
-  abortCtrl.abort(); abortCtrl = new AbortController(); // cancela anterior
   if (isLoading) return;
   const t = currentTrack();
   if (!t) { tit.textContent = art.textContent = '–'; a.removeAttribute('src'); capa.src = FALLBACK; capa.style.opacity = '1'; updatePlayButton(); return; }
   isLoading = true; a.pause(); a.currentTime = 0; capa.style.opacity = '0';
   tit.textContent = t.title || '—'; art.textContent = t.artist || '—'; a.src = t.url;
-  /* capa padrão NA HORA */
-  capa.src = FALLBACK; capa.style.opacity = '1'; isLoading = false;
-  /* tenta real em background */
-  getCoverForTrack(t, abortCtrl.signal).then(url => { if (!abortCtrl.signal.aborted) capa.src = url; }).catch(() => {});
-  updateMediaSession();
-  if (autoplay) {
-    a.play().catch(() => {});
-    clearStartTimeout(); startTimeoutId = setTimeout(() => { if (a.paused || a.readyState < 3) goToNext(true).catch(() => {}); clearStartTimeout(); }, START_TIMEOUT_MS);
-  }
-  updatePlayButton();
+  let cover = FALLBACK; try { cover = await getCoverForTrack(t); } catch { /* ignore */ }
+  capa.src = cover;
+  capa.onload = () => { capa.style.opacity = '1'; isLoading = false; };
+  capa.onerror = () => { capa.style.opacity = '1'; isLoading = false; };
+  updateMediaSession(); if (autoplay) { a.play().catch(() => {}); startTimeoutId = setTimeout(() => { if (a.paused || a.readyState < 3) goToNext(true).catch(() => {}); clearStartTimeout(); }, START_TIMEOUT_MS); } updatePlayButton();
 }
 
 /* ========== PLAY BUTTON UI ========== */
@@ -221,17 +209,14 @@ a.addEventListener('playing', () => {
   playedInCycle.add(key); if (playedInCycle.size >= pool.length) playedInCycle.clear(); updatePlayButton();
 });
 
-/* ========== NEXT / PREV (throttle 200 ms) ========== */
-let lastSkip = 0;
+/* ========== NEXT / PREV ========== */
 async function goToNext(autoplay = true) {
-  const now = Date.now(); if (now - lastSkip < 200) return; lastSkip = now;
-  clearStartTimeout();
+  if (!pool.length) return; clearStartTimeout();
   if (shuffleOn) { let unplayed = pool.map((_, i) => i).filter(i => i !== idx && !playedInCycle.has(safeKeyForTrack(pool[i]))); if (!unplayed.length) { playedInCycle.clear(); unplayed = pool.map((_, i) => i).filter(i => i !== idx); } idx = unplayed.length ? unplayed[Math.floor(Math.random() * unplayed.length)] : (idx + 1) % pool.length; } else { idx = (idx + 1) % pool.length; }
   await loadTrack({ autoplay });
 }
 async function goToPrev(autoplay = true) {
-  const now = Date.now(); if (now - lastSkip < 200) return; lastSkip = now;
-  clearStartTimeout();
+  if (!pool.length) return; clearStartTimeout();
   if (shuffleOn) { let candidate = idx, attempts = 0; do { candidate = Math.floor(Math.random() * pool.length); attempts++; } while (candidate === idx && attempts < 40); idx = candidate; } else { idx = (idx - 1 + pool.length) % pool.length; }
   await loadTrack({ autoplay });
 }
@@ -272,13 +257,14 @@ window.changePlaylist = async function (name) {
 /* ========== DEBUG ========== */
 window._playerState = () => ({ idx, shuffleOn, currentPl, poolLength: pool.length, playsSinceReset, recentPlayedSize: recentPlayed.size, playedInCycleSize: playedInCycle.size, startTimeout: !!startTimeoutId });
 
-/* ========== ANSIEDADE (centralizado, sem fundo pesado) ========== */
+/* ===== ANSIEDADE (sem animação pesada) ===== */
 let skipCount = 0, lastSkipTime = 0; const SKIP_WINDOW = 1500, SKIP_LIMIT = 5;
-const toast = document.createElement('div'); toast.innerHTML = 'Ei, calma!<br>Menos ansiedade, curta a playlist. ;)'; Object.assign(toast.style, { position: 'fixed', top: `${capa.getBoundingClientRect().top + capa.offsetHeight/2}px`, left: `${capa.getBoundingClientRect().left + capa.offsetWidth/2}px`, transform: 'translate(-50%,-50%)', background: 'rgba(0,0,0,.55)', color: '#fff', padding: '1.2rem 1.8rem', borderRadius: '1rem', fontSize: '1.05rem', textAlign: 'center', lineHeight: '1.4', zIndex: '999', pointerEvents: 'none', opacity: '0', willChange: 'opacity' }); document.body.appendChild(toast);
+const toast = document.createElement('div'); toast.innerHTML = 'Ei, calma!<br>Menos ansiedade, curta a playlist. ;)';
+Object.assign(toast.style, { position: 'fixed', top: `${capa.getBoundingClientRect().top + capa.offsetHeight/2}px`, left: `${capa.getBoundingClientRect().left + capa.offsetWidth/2}px`, transform: 'translate(-50%,-50%)', background: 'rgba(0,0,0,.55)', color: '#fff', padding: '1.2rem 1.8rem', borderRadius: '1rem', fontSize: '1.05rem', textAlign: 'center', lineHeight: '1.4', zIndex: '999', pointerEvents: 'none', opacity: '0', willChange: 'opacity' }); document.body.appendChild(toast);
 function showToast() { toast.style.top = `${capa.getBoundingClientRect().top + capa.offsetHeight/2}px`; toast.style.left = `${capa.getBoundingClientRect().left + capa.offsetWidth/2}px`; toast.style.opacity = '1'; setTimeout(() => toast.style.opacity = '0', 3000); }
-[next, prev].forEach(btn => btn.addEventListener('click', () => { const now = Date.now(); if (now - lastSkipTime < SKIP_WINDOW) { skipCount++; } else { skipCount = 1; } lastSkipTime = now; if (skipCount >= SKIP_LIMIT) { skipCount = 0; showToast(); } }));
+[next, prev].forEach(btn => btn.addEventListener('click', () => { const now = Date.now(); if (now - lastSkipTime < SKIP_WINDOW) skipCount++; else skipCount = 1; lastSkipTime = now; if (skipCount >= SKIP_LIMIT) { skipCount = 0; showToast(); } }));
 
-/* ========== TEXTO SIMPLES “Escolha a playlist ;)” ========== */
+/* ===== TEXTO SIMPLES “Escolha a playlist ;)” ===== */
 (() => {
   const menu = $('#menuBtn'); if (!menu) return; const texto = document.createElement('div'); texto.innerHTML = 'Escolha a playlist ;)';
   Object.assign(texto.style, { position: 'fixed', top: '4.2rem', right: '1.2rem', color: 'var(--fg)', fontSize: '.85rem', opacity: '0', willChange: 'opacity' }); document.body.appendChild(texto);
@@ -287,5 +273,6 @@ function showToast() { toast.style.top = `${capa.getBoundingClientRect().top + c
   menu.addEventListener('click', esconde);
 })();
 
-/* ========== HEARTBEAT LEVE (15 s) ========== */
+/* ===== HEARTBEAT LEVE (15 s) ===== */
 setInterval(() => { if (!a.paused && a.src) fetch(PLAYLIST_URL, { mode: 'no-cors' }); }, 15_000);
+          
