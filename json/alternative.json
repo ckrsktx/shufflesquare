@@ -1,5 +1,195 @@
 [
   {
+    "title": "Another Kind of Green",
+    "artist": "John Mayer",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/critics/mayerjohn_try_07anotherkindofgree.m4a"
+  },
+  {
+    "title": "Counting Blue Cars",
+    "artist": "Dishwalla",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/dishwalla_ch0311_countingbluecars.m4a"
+  },
+  {
+    "title": "Counting Stars",
+    "artist": "OneRepublic",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/onerepublic_ha201322_02_countingstars.m4a"
+  },
+  {
+    "title": "Hello My Old Heart",
+    "artist": "The Oh Hellos",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/ohhellosthe_hb201510_15_hellomyoldheart.m4a"
+  },
+  {
+    "title": "Haven't Met You Yet",
+    "artist": "Michael Buble",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/bublemichael_ha200937_02_haventmetyouyet.m4a"
+  },
+  {
+    "title": "You Found Me",
+    "artist": "The Fray",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/fraythe_ha200848_06_youfoundme.m4a"
+  },
+  {
+    "title": "Adia",
+    "artist": "Sarah McLachlan",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/mclachlansarah_ch0316_adia.m4a"
+  },
+  {
+    "title": "I Won't Give Up",
+    "artist": "Jason Mraz",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/mrazjason_hb201205_17_iwontgiveup.m4a"
+  },
+  {
+    "title": "Hey There Delilah",
+    "artist": "Plain White T's",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/plainwhitets_hb200709_11heytheredelilah.m4a"
+  },
+  {
+    "title": "It's Your Move",
+    "artist": "Josh Kelley",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/kelleyjosh_hb201613_18_itsyourmove.m4a"
+  },
+  {
+    "title": "Burn",
+    "artist": "Ellie Goulding",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/gouldingellie_ha201332_10_burn.m4a"
+  },
+  {
+    "title": "If I Ain't Got You",
+    "artist": "Alicia Keys",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/aliciakeys_hd579a_04ifiaintgotyou.m4a"
+  },
+  {
+    "title": "Brand New",
+    "artist": "Ben Rector",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/rectorben_brandnew_2_brandnew.m4a"
+  },
+  {
+    "title": "Only Love",
+    "artist": "Ben Howard",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/howardben_hb201226_19_onlylove.m4a"
+  },
+  {
+    "title": "Wanted",
+    "artist": "Hunter Hayes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/hayeshunter_hc201208_07_wanted.m4a"
+  },
+  {
+    "title": "Fireflies",
+    "artist": "Owl City",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/owlcity_hb200929_06_fireflies.m4a"
+  },
+  {
+    "title": "Come On",
+    "artist": "Ben Jelen",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/jelenben_hd553a_10comeonalbum.m4a"
+  },
+  {
+    "title": "She's So High",
+    "artist": "Tal Bachman",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/bachmantal_al0355_728-17shessohighalbumve.m4a"
+  },
+  {
+    "title": "Suit and Jacket",
+    "artist": "Judah & the Lion",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/judahandthelion_hb201709_13_suitandjacket.m4a"
+  },
+  {
+    "title": "Brave",
+    "artist": "Sara Bareilles",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/bareillessara_hb201317_19_brave.m4a"
+  },
+  {
+    "title": "A Drop in the Ocean",
+    "artist": "Ron Pope",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/poperon_hb201003_14_adropintheocean.m4a"
+  },
+  {
+    "title": "Ghosts",
+    "artist": "Ella Henderson",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/hendersonella_ha201433_03_ghosts.m4a"
+  },
+  {
+    "title": "Can't Stop Loving",
+    "artist": "Joe Firstman",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/firstmanjoe_hd573a_04cantstoploving.m4a"
+  },
+  {
+    "title": "Love Me Now",
+    "artist": "John Legend",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/legendjohn_ha201642_5_lovemenow.m4a"
+  },
+  {
+    "title": "Gives You Hell",
+    "artist": "All American Rejects",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/allamericanreje_ha200839_09_givesyouhell.m4a"
+  },
+  {
+    "title": "Say You Won't Let Go",
+    "artist": "James Arthur",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/arthurjames_ha201643_02_sayyouwontletgo.m4a"
+  },
+  {
+    "title": "Rain",
+    "artist": "The Script",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/scriptthe_ha201730_03_rain.m4a"
+  },
+  {
+    "title": "Gone Gone Gone",
+    "artist": "Phillip Phillips",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/phillipsphillip_hb201305_15_gonegonegone.m4a"
+  },
+  {
+    "title": "Breathless",
+    "artist": "The Corrs",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/corrsthe_chrgold53_breathless.m4a"
+  },
+  {
+    "title": "You're Beautiful",
+    "artist": "James Blunt",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/bluntjames_hd630a_04yourebeautiful.m4a"
+  },
+  {
+    "title": "Budapest",
+    "artist": "George Ezra",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/ezrageorge_hb201432_11_budapest.m4a"
+  },
+  {
+    "title": "Riptide",
+    "artist": "Vance Joy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/vancejoy_ha201434_01_riptide.m4a"
+  },
+  {
+    "title": "Shut Up and Dance",
+    "artist": "Walk the Moon",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/walkthemoon_ha201501_04_shutupanddance.m4a"
+  },
+  {
+    "title": "Her Eyes",
+    "artist": "Pat Monahan",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/monahanpat_ha200729_02hereyes.m4a"
+  },
+  {
+    "title": "Next to Me",
+    "artist": "Emeli Sande",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/sandeemeli_ha201302_04_nexttome.m4a"
+  },
+  {
+    "title": "Beautiful Soul",
+    "artist": "Jesse McCartney",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/jessemccartney_hd582a_007beautifulsoul.m4a"
+  },
+  {
+    "title": "Good",
+    "artist": "Better Than Ezra",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/betterthanezra_al0349_698-14good.m4a"
+  },
+  {
+    "title": "5:19",
+    "artist": "Matt Wertz",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/wertzmatt_hb200816_16519.m4a"
+  },
+  {
     "title": "Purple Haze",
     "artist": "The Cure",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/curethe_stonefreeatributetojimihendrix_01_purplehaze.m4a"
