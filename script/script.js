@@ -186,8 +186,13 @@ async function loadTrack({ autoplay = false } = {}) {
   if (!t) { tit.textContent = art.textContent = '–'; a.removeAttribute('src'); capa.src = FALLBACK; capa.style.opacity = '1'; updatePlayButton(); return; }
   isLoading = true; a.pause(); a.currentTime = 0; capa.style.opacity = '0';
   tit.textContent = t.title || '—'; art.textContent = t.artist || '—'; a.src = t.url;
-  let cover = FALLBACK; try { cover = await getCoverForTrack(t); } catch { /* ignore */ }
-  capa.src = cover;
+  /* capa: não bloqueia o play */
+capa.src = FALLBACK;                 // aparece NA HORA
+capa.style.opacity = '1';
+isLoading = false;                   // libera os controles
+/* busca real em background */
+getCoverForTrack(t).then(url => { if (url !== FALLBACK) capa.src = url; }).catch(() => {});
+
   capa.onload = () => { capa.style.opacity = '1'; isLoading = false; };
   capa.onerror = () => { capa.style.opacity = '1'; isLoading = false; };
   updateMediaSession(); if (autoplay) { a.play().catch(() => {}); startTimeoutId = setTimeout(() => { if (a.paused || a.readyState < 3) goToNext(true).catch(() => {}); clearStartTimeout(); }, START_TIMEOUT_MS); } updatePlayButton();
