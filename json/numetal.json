@@ -1,5 +1,100 @@
 [
   {
+    "artist": "Tool",
+    "title": "Jambi Half Solo Edit",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/tool_hb200705_05jambihalfsoloedit.m4a"
+  },
+  {
+    "artist": "Black Label Society",
+    "title": "Fire It Up",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/blacklabelsociety_mafia_01_fireitup.m4a"
+  },
+  {
+    "artist": "Godsmack",
+    "title": "Shinedown",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/godsmack_iv_04_shinedown.m4a"
+  },
+  {
+    "artist": "Disturbed",
+    "title": "Land of Confusion",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/disturbed_tenthousandfists_11_landofconfusion.m4a"
+  },
+  {
+    "artist": "Kid Rock",
+    "title": "American Bad Ass",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/kidrock_normal_01_americanbadass.m4a"
+  },
+  {
+    "artist": "Volbeat",
+    "title": "A Warrior's Call",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/volbeat_hb201134_01_awarriorscall.m4a"
+  },
+  {
+    "artist": "Alter Bridge",
+    "title": "Rise Today",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/alterbridge_blackbird_07_risetoday.m4a"
+  },
+  {
+    "artist": "Incubus",
+    "title": "Dig",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/incubus_ha200709_02dig.m4a"
+  },
+  {
+    "artist": "Shinedown",
+    "title": "Get Up",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/shinedown_hb201833_04_getup.m4a"
+  },
+  {
+    "artist": "Evanescence",
+    "title": "Good Enough",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/evanescence_ha200745_01goodenough.m4a"
+  },
+  {
+    "artist": "Fort Minor",
+    "title": "Remember the Name",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/fortminor_ha200608_07rememberthename.m4a"
+  },
+  {
+    "artist": "Korn",
+    "title": "Freak on a Leash Unplugged",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/korn_hb200705_09freakonaleashunpl.m4a"
+  },
+  {
+    "artist": "Bullet For My Valentine",
+    "title": "Suffocating Under Words",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/bulletformyvale_thepoison_05_suffocatingunderword.m4a"
+  },
+  {
+    "artist": "Papa Roach",
+    "title": "Reckless",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/paparoach_hb200748_02reckless.m4a"
+  },
+  {
+    "artist": "AFI",
+    "title": "Miss Murder",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/afi_decemberundergrou_03missmurder.m4a"
+  },
+  {
+    "artist": "Stone Sour",
+    "title": "Made of Scars",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/stonesour_hb200717_04madeofscars.m4a"
+  },
+  {
+    "artist": "Pop Evil",
+    "title": "Last Man Standing",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/popevil_hb201047_01_lastmanstanding.m4a"
+  },
+  {
+    "artist": "System of a Down",
+    "title": "Hypnotize",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/systemofadown_hypnotize_04_hypnotize.m4a"
+  },
+  {
+    "artist": "Mudvayne",
+    "title": "Scream With Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/mudvayne_hb200946_03_screamwithme.m4a"
+  },
+  {
     "artist": "Avenged Sevenfold",
     "title": "Seize the Day",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/avengedsevenfol_cityofevil_06_seizetheday.m4a"
