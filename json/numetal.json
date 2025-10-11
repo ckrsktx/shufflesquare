@@ -1,5 +1,105 @@
 [
   {
+    "artist": "Avenged Sevenfold",
+    "title": "Seize the Day",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/avengedsevenfol_cityofevil_06_seizetheday.m4a"
+  },
+  {
+    "artist": "Filter",
+    "title": "Hey Man Nice Shot Album",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/filter_al0349_700-02heymanniceshotalb.m4a"
+  },
+  {
+    "artist": "Killswitch Engage",
+    "title": "Holy Diver",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/killswitchengage_hb200734_01holydiver.m4a"
+  },
+  {
+    "artist": "Killswitch Engage",
+    "title": "I Can't Be the Only One",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/killswitchengage_atonement_10_icantbetheonlyone.m4a"
+  },
+  {
+    "artist": "Stone Sour",
+    "title": "Song 3",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/stonesour_hb201719_03_song3.m4a"
+  },
+  {
+    "artist": "Shinedown",
+    "title": "Sound of Madness",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/shinedown_hb200910_04_soundofmadness.m4a"
+  },
+  {
+    "artist": "Saliva",
+    "title": "Always",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/saliva_backintoyoursystem_03_always.m4a"
+  },
+  {
+    "artist": "Killswitch Engage",
+    "title": "The Arms of Sorrow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/killswitchengag_asdaylightdies_03_thearmsofsorrow.m4a"
+  },
+  {
+    "artist": "Rob Zombie",
+    "title": "Dragula",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/zombierob_al0354_724-09dragula.m4a"
+  },
+  {
+    "artist": "Shinedown",
+    "title": "Cut the Cord",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/shinedown_hb201527_01_cutthecord.m4a"
+  },
+  {
+    "artist": "Five Finger Death Punch",
+    "title": "Battleborn",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/fivefingerdeath_hb2013337_06_battleborn.m4a"
+  },
+  {
+    "artist": "Red Sun Rising",
+    "title": "Emotionless",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/redsunrising_hb201601_04_emotionless.m4a"
+  },
+  {
+    "artist": "Pop Evil",
+    "title": "Trenches",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/popevil_hb201310_01_trenches.m4a"
+  },
+  {
+    "artist": "I Prevail",
+    "title": "Every Time You Leave",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/iprevail_trauma_03_everytimeyouleave.m4a"
+  },
+  {
+    "artist": "Killswitch Engage",
+    "title": "I Believe",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/killswitchengage_thisconsequence_05_ibelieve.m4a"
+  },
+  {
+    "artist": "My Darkest Days",
+    "title": "Porn Star Dancing",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/mydarkestdays_hb201024_05_pornstardancing.m4a"
+  },
+  {
+    "artist": "Gary Clark Jr",
+    "title": "Come Together",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/clarkgaryjr_hb201738_02_cometogether.m4a"
+  },
+  {
+    "artist": "Highly Suspect",
+    "title": "These Days",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/highlysuspect_mcid_14_thesedays.m4a"
+  },
+  {
+    "artist": "Three Days Grace",
+    "title": "Painkiller",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/threedaysgrace_hb201414_03_painkiller.m4a"
+  },
+  {
+    "artist": "Killswitch Engage",
+    "title": "Reckoning",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/killswitchengag_killswitchengag_04_reckoning.m4a"
+  },
+  {
     "artist": "Marilyn Manson",
     "title": "The Beautiful People",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/marilynmanson_al0342_709-04thebeautifulpeopl.m4a"
