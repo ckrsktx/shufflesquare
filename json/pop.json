@@ -1,5 +1,110 @@
 [
   {
+    "artist": "Irene Cara",
+    "title": "Flashdance...What a Feeling",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/carairene_chrgold46_flashdancewhatafe.m4a"
+  },
+  {
+    "artist": "Lewis Capaldi",
+    "title": "Survive",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/capaldilewis_survivesingle_01_survive.m4a"
+  },
+  {
+    "artist": "Bruno Mars",
+    "title": "Just the Way You Are",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/marsbruno_ha201036_03_justthewayyouare.m4a"
+  },
+  {
+    "artist": "The Weeknd",
+    "title": "Save Your Tears",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/weekndthe_afterhours_11_saveyourtears.m4a"
+  },
+  {
+    "artist": "Nivea",
+    "title": "Don't Mess With My Man",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/nivea_nivea_03_dontmesswithmyman.m4a"
+  },
+  {
+    "artist": "Pink",
+    "title": "Who Knew",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/pink_ha200621_01whoknew.m4a"
+  },
+  {
+    "artist": "Elton John & Dua Lipa",
+    "title": "Cold Heart (PNAU Remix)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/johneltonlipadua_coldheartpnauremixsingle_01_coldheartpnauremix.m4a"
+  },
+  {
+    "artist": "Jennifer Lopez",
+    "title": "Play",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/lopezjennifer_ch0340_play.m4a"
+  },
+  {
+    "artist": "Miley Cyrus",
+    "title": "Flowers",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/cyrusmiley_endlesssummervacation_1_flowers.m4a"
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Golden (from Netflix's K-Pop Demon Hunters)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/huntrxejaenunaaudreyamireikpopdemonhunterscast_kpopdemonhunterssoundtrackfromthenetflixfilm_04_goldenfromnetflixskpopdemonhunters.m4a"
+  },
+  {
+    "artist": "Billy Joel",
+    "title": "Uptown Girl",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/joelbilly_chrgold15_uptowngirl.m4a"
+  },
+  {
+    "artist": "Prince",
+    "title": "Little Red Corvette",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/prince_chrgold23_littleredcorvette.m4a"
+  },
+  {
+    "artist": "Andy Grammer",
+    "title": "Keep Your Head Up",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/grammerandy_ha201049_12_keepyourheadup.m4a"
+  },
+  {
+    "artist": "Miley Cyrus",
+    "title": "Easy Lover",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/cyrusmiley_somethingbeautiful_06_easylover.m4a"
+  },
+  {
+    "artist": "Sabrina Carpenter",
+    "title": "Christmas the Whole Year Round",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/xmas/carpentersabrina_christmasthewholeyearroundsingle_01_christmasthewholeyearround.m4a"
+  },
+  {
+    "artist": "Moli, Slientaddy & Shenseea",
+    "title": "Shake It to the Max (Fly Remix)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/moliyslientaddyshenseea_shakeittothemaxflyremixsingle_01_shakeittothemaxflyremixclean.m4a"
+  },
+  {
+    "artist": "Justin Bieber",
+    "title": "Daisies",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/bieberjustin_swag_02_daisies.m4a"
+  },
+  {
+    "artist": "Machine Gun Kelly",
+    "title": "Cliché",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/machinegunkelly_clichesingle_01_cliche.m4a"
+  },
+  {
+    "artist": "Laufey",
+    "title": "Lover Girl",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/laufey_amatteroftime_02_lovergirl.m4a"
+  },
+  {
+    "artist": "Tyla",
+    "title": "Is It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/tyla_isitsingle_01_isit.m4a"
+  },
+  {
+    "artist": "Miley Cyrus",
+    "title": "Santa Claus Is Coming to Town",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/xmas/cyrusmiley_allwrappedup_02_santaclausiscomintotown.m4a"
+  },
+  {
     "artist": "Alicia Keys",
     "title": "A Woman's Worth",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/keysalicia_ch0344_07awomansworth.m4a"
