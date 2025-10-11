@@ -1,5 +1,75 @@
 [
   {
+    "artist": "Nas",
+    "title": "If I Ruled the World",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/nas_itwaswritten_14ifiruledtheworldi.m4a"
+  },
+  {
+    "artist": "Ja Rule",
+    "title": "Put It On Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/jarule_ch0338_putitonme.m4a"
+  },
+  {
+    "artist": "Bone Thugs-N-Harmony",
+    "title": "1st of tha Month",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/bonethugsnharmony_e1999eternal_12_1stofthamonth.m4a"
+  },
+  {
+    "artist": "Snoop Dogg",
+    "title": "Drop It Like It's Hot",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/snoopdoggfeat_hd582a_009dropitlikeits.m4a"
+  },
+  {
+    "artist": "Mystikal",
+    "title": "Shake It Fast",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/mystikal_ch0326_shakeitfast.m4a"
+  },
+  {
+    "artist": "Ini Kamoze",
+    "title": "Here Comes the Hotstepper",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/kamozeini_ch039_herecomesthehotst.m4a"
+  },
+  {
+    "artist": "2Pac",
+    "title": "2 of Amerikaz Most Wanted",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/2pac_2pacgreatesthitsd_022ofamerikazmostwa.m4a"
+  },
+  {
+    "artist": "Twista",
+    "title": "Overnight",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/twista_hd564a_09overnight.m4a"
+  },
+  {
+    "artist": "Fat Joe",
+    "title": "What's Luv?",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/fatjoe_ch0346_whatsluv.m4a"
+  },
+  {
+    "artist": "DMX",
+    "title": "Ruff Ryders' Anthem",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/dmx_itsdarkandhellishot_02_ruffrydersanthem.m4a"
+  },
+  {
+    "artist": "Mystikal",
+    "title": "Danger (Been So Long)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/mystikal_ch0356_dangerbeensolong.m4a"
+  },
+  {
+    "artist": "Blaze Ya Dead Homie",
+    "title": "Hoodratz",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/blazeyadeadhomie_1lessgndahood_11_hoodratz.m4a"
+  },
+  {
+    "artist": "Jay-Z",
+    "title": "Hard Knock Life (Ghetto Anthem)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/jayz_ch0323_hardknocklifeghet.m4a"
+  },
+  {
+    "artist": "Madchild",
+    "title": "Judgment Day",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/madchild_ha201234_14_judgmentday.m4a"
+  },
+  {
     "artist": "Maze",
     "title": "Happy Feelings",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/maze_maze_03_happyfeelings.m4a"
