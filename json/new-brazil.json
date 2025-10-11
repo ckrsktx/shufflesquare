@@ -1,5 +1,120 @@
 [
   {
+    "artist": "Pat Metheny Group",
+    "title": "So May It Secretly Be",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/jazz/patmethenygroup_stilllifetalking_02somayitsecretlybe.m4a"
+  },
+  {
+    "artist": "Alex Malheiros",
+    "title": "Alto Verao",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/jazz2/malheirosalex_temposfuturos_11_altoverao.m4a"
+  },
+  {
+    "artist": "Dani Assis",
+    "title": "My Own Embrace (Blue and Green)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/assisdani_myownembraceblueandgreensingle_1_myownembraceblueandgreen.m4a"
+  },
+  {
+    "artist": "Robert Hebert",
+    "title": "Gift of Heart (Christmas in Rio)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/jazz2/hebertrobert_giftofheartsingle_01_giftofheartchristmasinrio.m4a"
+  },
+  {
+    "artist": "Paulinho Garcia",
+    "title": "Chorinho Novo",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/jazz/garciapaulinho_myverylife_03_chorinhonovo.m4a"
+  },
+  {
+    "artist": "Velas",
+    "title": "Ilha dos Frades",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/latin/velas_velas_01_ilhadosfrades.m4a"
+  },
+  {
+    "artist": "Stan Getz",
+    "title": "Sweet Rain",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/jazz/getzstan_sweetrain_02_track02.m4a"
+  },
+  {
+    "artist": "David Benoit",
+    "title": "A Midnight Rendezvous",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/smoothjazz/benoitdavid_amidnightrendezvous_01_amidnightrendezvous.m4a"
+  },
+  {
+    "artist": "Django Gilberto",
+    "title": "N'Vula Leza Ki Humbi Umbi",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/latin/djavangilgilberto_axebraziltheafrobrazilianmusicofbrazil_09_nvulalezakiahumbiumbi.m4a"
+  },
+  {
+    "artist": "Bossa Nova Noites",
+    "title": "Give Me Your Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/latin/bossanovanoites_bossanovanoitesbahianights_04_givemeyourlove.m4a"
+  },
+  {
+    "artist": "Les Sabler",
+    "title": "Triste",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/sablerles_jobimtribute_10_triste.m4a"
+  },
+  {
+    "artist": "Adolfo Antonio",
+    "title": "Maria Moita",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/adolfoantonio_bossa65celebratingcarloslyraandrobertomenescal_05_mariamoita.m4a"
+  },
+  {
+    "artist": "Greg Karukas",
+    "title": "Travessia",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/easy/karukasgreg_serenata_1_travessia.m4a"
+  },
+  {
+    "artist": "Bianca Rossini",
+    "title": "Return to Brazil",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/rossinibianca_rioparadise_05_returntobrazil.m4a"
+  },
+  {
+    "artist": "Claudio Zoli",
+    "title": "Noite do Prazer",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/latin/zoliclaudio_napista_01_noitedoprazer.m4a"
+  },
+  {
+    "artist": "Toquinho & Paulin",
+    "title": "Caso Encerrado",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/brazilian/toquinhoandpaulin_sinalabertodisc2_01casoencerrado.m4a"
+  },
+  {
+    "artist": "Alexia Bomtempo",
+    "title": "Mais Devagar",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/bomtempoalexia_suspiro_6_maisdevagar.m4a"
+  },
+  {
+    "artist": "Gilson's, Reis, Rachel Mulu",
+    "title": "Bateu",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/gilsonsreisrachelmulu_bateusingle_01_bateu.m4a"
+  },
+  {
+    "artist": "Joao Bosco",
+    "title": "Vendendo Amendoim com o El Manisero",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/latin/boscojoao_bosco_05_vendendoamendoimcomelmanisero.m4a"
+  },
+  {
+    "artist": "Arthur Nogueira & Fernanda Takai",
+    "title": "Pontal",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/jazz2/nogueiraarthurtakaifernanda_pontalsingle_01_pontal.m4a"
+  },
+  {
+    "artist": "Clara Ana",
+    "title": "Sou Eu",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/latin/claraana_agentesempreganha_9_soueu.m4a"
+  },
+  {
+    "artist": "Mariana Nolasco & Allan Brown",
+    "title": "Vamos Fugir (Redo)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/latin/nolascomarianabrownallman_vamosfugirsingle_1_vamosfugirredo.m4a"
+  },
+  {
+    "artist": "Antonio Carlos Jobim",
+    "title": "The Girl From Ipanema",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/brazilian/jobimantoniocarlo_thecomposerplays_01thegirlfromipanem.m4a"
+  },
+  {
     "artist": "Phill Fest",
     "title": "Song For My Son",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/festphill_seresta_04_songformyson.m4a"
