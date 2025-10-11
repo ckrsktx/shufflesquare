@@ -1,6 +1,6 @@
 /* ========== CONFIG ========== */
 const PLAYLIST_URL = 'json/playlists.json';
-const FALLBACK = 'https://i.ibb.co/n8LFzxmb/reprodutor-de-musica-2.png';
+const FALLBACK = 'img/cd.png';
 const $ = s => document.querySelector(s);
 
 /* ========== DOM ========== */
