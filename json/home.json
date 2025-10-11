@@ -1,5 +1,85 @@
 [
 {
+  "artist": "Black Sabbath",
+  "title": "War Pigs / Luke's Wall",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/blacksabbath_crgold012_warpigslukeswall.m4a"
+},
+{
+  "artist": "Grandmaster Flash",
+  "title": "The Message",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/grandmasterflash_oldschoolrapv1_04themessage.m4a"
+},
+{
+  "artist": "Metallica",
+  "title": "Enter Sandman",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/metallica_crgold030_entersandman.m4a"
+},
+{
+  "artist": "Midnight Oil",
+  "title": "Earth and Sun and Moon",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/midnightoil_earthandsunandmoon_04_earthandsunandmoon.m4a"
+},
+{
+  "artist": "Fugees",
+  "title": "No Woman, No Cry",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/fugees_thescore_12nowomannocry.m4a"
+},
+{
+  "artist": "Nine Inch Nails",
+  "title": "Terrible Lie",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/nineinchnails_al329_terriblelie.m4a"
+},
+{
+  "artist": "Queen",
+  "title": "Under Pressure",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/queen_crgold024_underpressure.m4a"
+},
+{
+  "artist": "Green Day",
+  "title": "Holiday",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/critics/greenday_americanidiot_03holiday.m4a"
+},
+{
+  "artist": "Poison",
+  "title": "Nothin' But a Good Time",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/poison_crgold044_nothinbutagoodtim.m4a"
+},
+{
+  "artist": "Ice Cube",
+  "title": "Good Cop Bad Cop",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/icecube_ha201725_14_goodcopbadcop.m4a"
+},
+{
+  "artist": "Timbaland",
+  "title": "The Way I Are",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/timbaland_pulsemusic_00_thewayiare.m4a"
+},
+{
+  "artist": "The Thermals",
+  "title": "A Pillar of Salt",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/thermalsthe_thebodytheblood_04_apillarofsalt.m4a"
+},
+{
+  "artist": "Post Malone",
+  "title": "I Had Some Help",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/postmalone_ihadsomehelpsingle_01_ihadsomehelp.m4a"
+},
+{
+  "artist": "Creedence Clearwater Revival",
+  "title": "Down on the Corner",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/creedenceclearwat_crgold063_downonthecorner.m4a"
+},
+{
+  "artist": "The Beatles",
+  "title": "Blackbird",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/beatlesthe_whitealbumdisc1_11blackbird.m4a"
+},
+{
+  "artist": "Bad Religion",
+  "title": "I Want to Conquer the World",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/badreligion_allages_01iwanttoconquerthe.m4a"
+},
+{
   "artist": "Fire Inc",
   "title": "Tonight Is What It Means to Be Young",
   "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/fireinc_streetsoffirearockandrollfableoriginalmotionpicturesoundtrack_6_tonightiswhatitmeanstobeyoung.m4a"
