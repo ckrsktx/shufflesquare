@@ -1,5 +1,65 @@
 [
   {
+    "artist": "Brasuka",
+    "title": "Mara Kandombe",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/jazz2/brasuka_avidacompaixao_04_marakandombe.m4a"
+  },
+  {
+    "artist": "Gilberto Gil",
+    "title": "So Quero Um Xodo",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/gilgilberto_brazilclassics1belezatropical_3_soqueroumxodo.m4a"
+  },
+  {
+    "artist": "Scott Mayo",
+    "title": "Valsa Soprano",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/mayoscott_meubrasil_15_valsasoprano.m4a"
+  },
+  {
+    "artist": "Steve Adorno & Lori Rose",
+    "title": "Sergio's Samba",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/latin/adornosteveroselori_espiritoabrazilianmusicfantasy_02_sergiossamba.m4a"
+  },
+  {
+    "artist": "Tania Alves",
+    "title": "Amor de Matar",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/latin/alvestania_donademim_07_amordematar.m4a"
+  },
+  {
+    "artist": "Chris Botti & John Splitthoff",
+    "title": "Paris",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/bottichrissplithoffjohn_vol1_4_paris.m4a"
+  },
+  {
+    "artist": "Flavia Coelho",
+    "title": "Passageiro",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/coelhoflavia_ginga_04_passageiro.m4a"
+  },
+  {
+    "artist": "Sergio Mendes",
+    "title": "Mas Que Nada (Remix)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/mendessergio_masquenadasingle_01_masquenadaremix.m4a"
+  },
+  {
+    "artist": "Maiá Tim",
+    "title": "Sossego",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/latin/maiatim_discoclub_05_sossego.m4a"
+  },
+  {
+    "artist": "Luisa Sonza",
+    "title": "Chico (English Version)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/sonzaluisa_escandalointimodeluxe_06_chicoenglishversion.m4a"
+  },
+  {
+    "artist": "Tiago Iorc",
+    "title": "Saudade Boa",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/iorctiago_daramo_01_saudadeboa.m4a"
+  },
+  {
+    "artist": "Alegria",
+    "title": "Vinil e Vinho",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/world/alegria_vinilevinhosingle_01_vinilevinho.m4a"
+  },
+  {
     "artist": "Pat Metheny Group",
     "title": "So May It Secretly Be",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/jazz/patmethenygroup_stilllifetalking_02somayitsecretlybe.m4a"
