@@ -1,5 +1,15 @@
 [
   {
+    "artist": "Rammstein",
+    "title": "Deutschland",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/rammstein_rammstein_01_deutschland.m4a"
+  },
+  {
+    "artist": "Rammstein",
+    "title": "Du Hast Single Version",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/rammstein_al0353_723-02duhastsingleversi.m4a"
+  },
+  {
     "artist": "Kittie",
     "title": "Brackish",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/kittie_al324_brackish.m4a"
