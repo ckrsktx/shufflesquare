@@ -1,5 +1,105 @@
 [
   {
+    "artist": "Britney Spears",
+    "title": "From the Bottom of My Broken Heart",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/spearsbritney_babyonemoretime_06fromthebottomofmy.m4a"
+  },
+  {
+    "artist": "Sade",
+    "title": "By Your Side",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/smoothjazz/sade_loversrock_01_byyourside.m4a"
+  },
+  {
+    "artist": "NSYNC",
+    "title": "This I Promise You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/nsync_chrgold57_thisipromiseyoura.m4a"
+  },
+  {
+    "artist": "Toni Braxton",
+    "title": "He Wasn't Man Enough",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/braxtontoni_ch0335_hewasntmanenough.m4a"
+  },
+  {
+    "artist": "Whitney Houston",
+    "title": "My Love Is Your Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/houstonwhitney_ch0322_myloveisyourlove.m4a"
+  },
+  {
+    "artist": "Janet Jackson",
+    "title": "Doesn't Really Matter",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/jacksonjanet_ch0336_doesntreallymatte.m4a"
+  },
+  {
+    "artist": "Kid Rock",
+    "title": "Only God Knows Why",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/kidrock_ch0334_onlygodknowswhy.m4a"
+  },
+  {
+    "artist": "Counting Crows",
+    "title": "Hanginaround",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/countingcrows_ch0323_hanginaround.m4a"
+  },
+  {
+    "artist": "Avant",
+    "title": "Separated",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/avant_mythoughts_01_separated.m4a"
+  },
+  {
+    "artist": "Faith Hill",
+    "title": "Breathe",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/hillfaith_cw0340_1195-16breathe.m4a"
+  },
+  {
+    "artist": "Aaliyah",
+    "title": "Try Again",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/aaliyah_ch0334_tryagain.m4a"
+  },
+  {
+    "artist": "Jill Scott",
+    "title": "Gettin' in the Way",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/scottjill_whoisjillscottw_04_gettinintheway.m4a"
+  },
+  {
+    "artist": "LeAnn Rimes",
+    "title": "I Need You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/rimesleann_chrgold55_ineedyou.m4a"
+  },
+  {
+    "artist": "Barenaked Ladies",
+    "title": "Pinch Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/barenakedladies_al035_1610-03pinchme.m4a"
+  },
+  {
+    "artist": "Savage Garden",
+    "title": "I Knew I Loved You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/savagegarden_chrgold55_iknewilovedyou.m4a"
+  },
+  {
+    "artist": "Enrique Iglesias",
+    "title": "Be With You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/iglesiasenrique_ch0334_bewithyou.m4a"
+  },
+  {
+    "artist": "Groove Armada",
+    "title": "I See You Baby (Fatboy Slim Remix)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/dance/groovearmada_vertigobonustrackedition_06_iseeyoubabyfatboyslimremix.m4a"
+  },
+  {
+    "artist": "Faith Hill",
+    "title": "The Way You Love Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/hillfaith_ch0337_thewayyouloveme.m4a"
+  },
+  {
+    "artist": "Toby Keith",
+    "title": "How Do You Like Me Now?!",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/keithtoby_cw0343_1201-01howdoyoulikemenow.m4a"
+  },
+  {
+    "artist": "Marc Anthony",
+    "title": "I Need to Know",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/anthonymarc_ch0322_ineedtoknow.m4a"
+  },
+  {
     "artist": "Madonna",
     "title": "Ray of Light",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/madonna_ch0316_rayoflight.m4a"
