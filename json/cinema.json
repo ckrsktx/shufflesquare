@@ -1,5 +1,215 @@
 [
   {
+    "artist": "Jean-Pierre Rampal",
+    "title": "Halil Nocturne for Flute",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/rampaljeanpierr_bernsteinconduc_14_halilnocturneforflut.m4a"
+  },
+  {
+    "artist": "Wiener Philharmoniker",
+    "title": "Symphony No. 3 in E-Flat Major",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/wienerphilharmo_cd2schumannthef_01_symphonyno3ineflatma.m4a"
+  },
+  {
+    "artist": "Cinderella OST",
+    "title": "Cinderella Medley",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/cinderella_themusicofdisne_05_cinderellamedley.m4a"
+  },
+  {
+    "artist": "Eduardo Chamajos",
+    "title": "Concerto for Orchestra",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/eduardochamajos_bernsteinconduc_03_concertofororchestra.m4a"
+  },
+  {
+    "artist": "Sleeping Beauty OST",
+    "title": "Battle with the Forces of Evil/Awakening Finale",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/sleepingbeauty_sleepingbeautyoriginalmotionpicturesoundtrack_12_battlewiththeforcesofevilawakeningfinale.m4a"
+  },
+  {
+    "artist": "GoldenEye OST",
+    "title": "Tank Drive Around St. Petersburg",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/goldeneye_theultimatebond_07_tankdrivearoundstpet.m4a"
+  },
+  {
+    "artist": "Howard Shore",
+    "title": "TV Passions",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/shorehoward_videodrome_05_tvpassions.m4a"
+  },
+  {
+    "artist": "The Crow Original Soundtrack",
+    "title": "Ghost Rider",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/crowthe_thecroworiginal_07_ghostrider.m4a"
+  },
+  {
+    "artist": "William Terwilliger",
+    "title": "4 Moments from Candide III: Aria Glitter and Be Gay",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/terwilligerwilliam_bernsteinviolinsonatapianotrionewtranscriptions_12_4momentsfromcandideiiiariaglitterandbegay.m4a"
+  },
+  {
+    "artist": "Pee-wee's Big Adventure OST",
+    "title": "Main Titles/Risen Shine",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/bigtoppeewee_bigtoppeeweethe_01_maintitlesrisenshine.m4a"
+  },
+  {
+    "artist": "West Side Story OST",
+    "title": "America",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/westsidestory_westsidestoryor_07_america.m4a"
+  },
+  {
+    "artist": "Skyfall OST",
+    "title": "Quartermaster",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/skyfall_skyfalloriginal_11_quartermaster.m4a"
+  },
+  {
+    "artist": "Fight Club OST",
+    "title": "What Is Fight Club",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/fightclub_fightcluborigin_03_whatisfightclub.m4a"
+  },
+  {
+    "artist": "The Crow: City of Angels OST",
+    "title": "I Wanna Be Your Dog (Live)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/crowcityofangel_thecrowcityofan_13_iwannabeyourdoglive.m4a"
+  },
+  {
+    "artist": "Rocky IV OST",
+    "title": "Living in America",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/rockyiv_rockyivoriginal_06_livinginamerica.m4a"
+  },
+  {
+    "artist": "Isaac Hayes",
+    "title": "Theme from Shaft",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/hayesisaac_gd603_25themefromshaft.m4a"
+  },
+  {
+    "artist": "Juilliard String Quartet",
+    "title": "III. Scherzo Molto Vivace",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/juilliardstring_digitalreleases_01_iiischerzomoltovivac.m4a"
+  },
+  {
+    "artist": "Chris de Burgh",
+    "title": "The Lady in Red",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/deburghchris_gd908_14theladyinred.m4a"
+  },
+  {
+    "artist": "Tina Turner",
+    "title": "The Best",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/turnertina_gd4201_01thebest.m4a"
+  },
+  {
+    "artist": "OMC",
+    "title": "How Bizarre",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/omc_ch0312_howbizarre.m4a"
+  },
+  {
+    "artist": "The Human League",
+    "title": "Keep Feeling Fascination",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/humanleaguethe_fascinationep_10_keepfeelingfascinati.m4a"
+  },
+  {
+    "artist": "A View to a Kill OST",
+    "title": "A View to a Kill",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/aviewtokill_aviewtokillorig_14_aviewtokill.m4a"
+  },
+  {
+    "artist": "New York, New York OST",
+    "title": "Theme from New York, New York",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/newyorknewyork1977_newyorknewyorkoriginalmotionpicturesoundtrack_01_themefromnewyorknewyork.m4a"
+  },
+  {
+    "artist": "O Brother, Where Art Thou? OST",
+    "title": "Down to the River to Pray",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/obrotherwherear_obrotherwherear_04_downtotherivertopray.m4a"
+  },
+  {
+    "artist": "Cinderella (1957 TV)",
+    "title": "Do I Love You Because",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/broadway/cinderella1957tv_cinderella1957tv_11doiloveyoubecause.m4a"
+  },
+  {
+    "artist": "KISS",
+    "title": "Shout It Out Loud",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/kiss_detroitrockcitymusicfromthemotionpicture_02_shoutitoutloud.m4a"
+  },
+  {
+    "artist": "Goldfinger OST",
+    "title": "Pussy Galore's Flying Circus",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/goldfinger_goldfingerorigi_04_pussygaloresflyingci.m4a"
+  },
+  {
+    "artist": "The Sound of Music OST",
+    "title": "Prelude/The Sound of Music",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/thesoundofmusic_thesoundofmusic_01_preludethesoundofmus.m4a"
+  },
+  {
+    "artist": "Diamonds Are Forever OST",
+    "title": "Diamonds Are Forever Main Title",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/diamondsarefore_diamondsarefore_01_diamondsareforeverma.m4a"
+  },
+  {
+    "artist": "You Only Live Twice OST",
+    "title": "Capsule in Space",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/youonlylivetwic_youonlylivetwic_02_capsuleinspace.m4a"
+  },
+  {
+    "artist": "West Side Story OST",
+    "title": "Maria",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/westsidestory_westsidestoryor_06_maria.m4a"
+  },
+  {
+    "artist": "Bedknobs and Broomsticks OST",
+    "title": "With a Flair",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/bedknobsandbroomsticks_bedknobsandbroomsticksoriginalmotionpicturesoundtrack_03_withaflair.m4a"
+  },
+  {
+    "artist": "Fabio Frizzi",
+    "title": "Tenebre Viventi",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/frizzifabio_pauranellacittd_10_tenebreviventi.m4a"
+  },
+  {
+    "artist": "Bernard Herrmann",
+    "title": "The City",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/herrmannbernard_psychooriginalm_02_thecity.m4a"
+  },
+  {
+    "artist": "Beavis and Butt-Head OST",
+    "title": "White Trash",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/beavisandbutthe_beavisandbutthe_10_whitetrash.m4a"
+  },
+  {
+    "artist": "A Complete Unknown OST",
+    "title": "Girl from the North Country",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/completeunknowna_acompleteunknownoriginalmotionpicturesoundtrack_04_girlfromthenorthcountry.m4a"
+  },
+  {
+    "artist": "Mary Poppins OST",
+    "title": "Supercalifragilisticexpialidocious",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/marypoppins_marypoppins_08_supercalifragilistic.m4a"
+  },
+  {
+    "artist": "Pinocchio OST",
+    "title": "A Real Boy",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/pinocchio_thelegacycollectionpinocchio_25_arealboy.m4a"
+  },
+  {
+    "artist": "Hitchcock OST",
+    "title": "Selling Psycho",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/hitchcock_hitchcockorigin_17_sellingpsycho.m4a"
+  },
+  {
+    "artist": "Drive OST",
+    "title": "He Had a Good Time",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/drive_driveoriginalmo_08_hehadagoodtime.m4a"
+  },
+  {
+    "artist": "Annie Get Your Gun OST",
+    "title": "There's No Business Like Show Business",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/anniegetyourgun_anniegetyourgun_09_theresnobusinesslike.m4a"
+  },
+  {
+    "artist": "Krzysztof Komeda",
+    "title": "Lullaby Variation 4",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/komedakrzysztof_rosemarysbaby_07_lullabyvariation4.m4a"
+  },
+  {
     "artist": "John Williams",
     "title": "Augie's Great Municipal Band",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/starwarsepisode_starwarsepisode_17_augiesgreatmunicipal.m4a"
