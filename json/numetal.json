@@ -1,4 +1,14 @@
 [
+   {
+    "artist": "Puddle of Mudd",
+    "title": "She Hates Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/puddleofmudd_comeclean_06_shehatesme.m4a"
+  },
+  {
+    "artist": "Alien Ant Farm",
+    "title": "Smooth Criminal",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/alienantfarm_al0358_745-02smoothcriminal.m4a"
+  },
   {
     "artist": "Chevelle",
     "title": "Vitamin R Leading Us Along",
@@ -683,11 +693,6 @@
     "artist": "Godsmack",
     "title": "The Enemy",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/godsmack_iv_03_theenemy.m4a"
-  },
-  {
-    "artist": "Red Hot Chili Peppers",
-    "title": "Tell Me Baby",
-    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/redhotchilipepper_stadiumarcadiumma_02tellmebaby.m4a"
   },
   {
     "artist": "Buckcherry",
