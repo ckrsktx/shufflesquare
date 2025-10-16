@@ -1,5 +1,105 @@
 [
   {
+  "artist": "The Church",
+  "title": "Reptile",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/oz/thechurch_starfish_reptile.m4a"
+},
+{
+  "artist": "Vampire Weekend",
+  "title": "Giving Up the Gun",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/vampireweekend_contra_08_givingupthegun.m4a"
+},
+{
+  "artist": "Morrison, Van",
+  "title": "And It Stoned Me",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/morrisonvan_moondance_01anditstonedme.m4a"
+},
+{
+  "artist": "Gotan Project",
+  "title": "Rayuela",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/gotanproject_tango30_02_rayuela.m4a"
+},
+{
+  "artist": "Del Rey, Lana",
+  "title": "West Coast",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/lanadelrey_westcoastsingle_01_westcoast.m4a"
+},
+{
+  "artist": "Faith No More",
+  "title": "We Care a Lot",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/faithnomore_sedatedintheeight_08wecarealot.m4a"
+},
+{
+  "artist": "Art Brut",
+  "title": "Sealand",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/artbrut_brillianttragic_10_sealand.m4a"
+},
+{
+  "artist": "Talking Heads",
+  "title": "Burning Down the House",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/talkingheads_al316_burningdownthehou.m4a"
+},
+{
+  "artist": "Cage the Elephant",
+  "title": "Come a Little Closer",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/cagetheelephant_hb201333_07_comealittlecloser.m4a"
+},
+{
+  "artist": "Glovebox",
+  "title": "In the End",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/glovebox_glovebox_02_intheend.m4a"
+},
+{
+  "artist": "Bowie, David",
+  "title": "Heroes",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/bowiedavid_singles19691993di_01heroes.m4a"
+},
+{
+  "artist": "Scott-Heron, Gil",
+  "title": "Me and the Devil",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/scottherongil_imnewhere_2_meandthedevil.m4a"
+},
+{
+  "artist": "First Aid Kit",
+  "title": "My Silver Lining",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/firstaidkit_hb201433_18_mysilverlining.m4a"
+},
+{
+  "artist": "Grizzly Bear",
+  "title": "Foreground",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/grizzlybear_veckatimest_12_foreground.m4a"
+},
+{
+  "artist": "Rah Rah",
+  "title": "Art and a Wife",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/rahrah_thepoetsdead_01_artandawife.m4a"
+},
+{
+  "artist": "Costello, Elvis",
+  "title": "Alison",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/costelloelvis_myaimistrue_05alison.m4a"
+},
+{
+  "artist": "XTC",
+  "title": "You're My Drug",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/xtc_psionicpsunspot_6_youremydrug.m4a"
+},
+{
+  "artist": "CHVRCHES",
+  "title": "The Mother We Share",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/chvrches_hb201326_08_themotherweshare.m4a"
+},
+{
+  "artist": "Rayman, Allan",
+  "title": "Stitch",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/raymanallan_stitchsingle_01_stitch.m4a"
+},
+{
+  "artist": "Portugal. The Man",
+  "title": "Feel It Still",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/portugaltheman_ha201729_06_feelitstill.m4a"
+},
+  {
   "artist": "Depeche Mode",
   "title": "A Pain That I'm Used To",
   "url": "https://d1qg6pckcqcdk0.cloudfront.net/dance/depechemode_primecutsdancehd2_04apainthatimusedto.m4a"
