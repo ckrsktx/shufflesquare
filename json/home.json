@@ -1,5 +1,210 @@
 [
   {
+  "artist": "Temple of the Dog",
+  "title": "Say Hello 2 Heaven",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/templeofthedog_al0340_680-04sayhello2heavenlp.m4a"
+},
+{
+  "artist": "Talking Heads",
+  "title": "Life During Wartime",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/talkingheads_crgold004_lifeduringwartime.m4a"
+},
+{
+  "artist": "Talking Heads",
+  "title": "Take Me to the River",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/talkingheads_moresongsaboutbui_10takemetotheriver.m4a"
+},
+{
+  "artist": "Filter",
+  "title": "Hey Man, Nice Shot",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/filter_al0349_700-02heymanniceshotalb.m4a"
+},
+{
+  "artist": "The Tubes",
+  "title": "Talk to Ya Later",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/tubesthe_thecompletionba_01_talktoyalater.m4a"
+},
+{
+  "artist": "Tame Impala",
+  "title": "Borderline",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/tameimpala_borderlinesingle_01_borderline.m4a"
+},
+{
+  "artist": "T. Rex",
+  "title": "Bang a Gong (Get It On)",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/trex_crgold050_bangagonggetiton.m4a"
+},
+{
+  "artist": "Grouplove",
+  "title": "Colours",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/grouplove_hb201128_03_colours.m4a"
+},
+{
+  "artist": "Santana",
+  "title": "She's Not There",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/santana_motherearthtourcd_08shesnotthere.m4a"
+},
+{
+  "artist": "Jane's Addiction",
+  "title": "Mountain Song",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/janesaddiction_nothingsshocking_07mountainsong.m4a"
+},
+{
+  "artist": "Temple of the Dog",
+  "title": "Hunger Strike",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/templeofthedog_templeofthedog_03hungerstrike.m4a"
+},
+{
+  "artist": "Superdrag",
+  "title": "The Staggering Genius",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/superdrag_lastcallforvitriol_3_thestaggeringgenius.m4a"
+},
+{
+  "artist": "Thin Lizzy",
+  "title": "Jailbreak",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/thinlizzy_crgold018_jailbreak.m4a"
+},
+{
+  "artist": "38 Special",
+  "title": "Rockin' Into the Night",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/38special_crgold010_rockinintothenigh.m4a"
+},
+{
+  "artist": "Gogol Bordello",
+  "title": "My Gypsy Auto Pilot",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/gogolbordello_puravidaconspiracy_09_mygypsyautopilot.m4a"
+},
+{
+  "artist": "Alabama Shakes",
+  "title": "Hold On",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/alabamashakes_hb201205_11_holdon.m4a"
+},
+{
+  "artist": "10,000 Maniacs",
+  "title": "Trouble Me",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/10000maniacs_mtvunplugged_10_troubleme.m4a"
+},
+{
+  "artist": "Local H",
+  "title": "Bound for the Floor",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/localh_al0353_708-02boundforthefloor.m4a"
+},
+{
+  "artist": "Nirvana",
+  "title": "Come as You Are",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/nirvana_al339_comeasyouare.m4a"
+},
+{
+  "artist": "Train",
+  "title": "Hey, Soul Sister",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/train_hb200933_13_heysoulsister.m4a"
+},
+{
+  "artist": "Incubus",
+  "title": "I Wish You Were Here",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/incubus_al039_1616-16iwishyouwereherea.m4a"
+},
+{
+  "artist": "Queen Killing Kings",
+  "title": "Warden",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/queenkillingkingsthe_tidaleyes_9_warden.m4a"
+},
+{
+  "artist": "The Plimsouls",
+  "title": "A Million Miles Away",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/plimsoulsthe_everywhereatonce_7_amillionmilesaway.m4a"
+},
+{
+  "artist": "Plastic Nude Martini",
+  "title": "Victoria's Secret",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/plasticnudemartini_supersynaesthesia_03_victoriassecret.m4a"
+},
+{
+  "artist": "Tegan and Sara",
+  "title": "The Con",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/teganandsara_thecon_thecon.m4a"
+},
+{
+  "artist": "Tegan and Sara",
+  "title": "Closer",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/teganandsara_hb201241_08_closer.m4a"
+},
+{
+  "artist": "Tristen",
+  "title": "Heart and Hope to Die",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/tristen_charlatansatthegardengate_07_heartandhopetodie.m4a"
+},
+{
+  "artist": "Talk Talk",
+  "title": "Talk Talk",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/talktalk_thepartysover_01_talktalk.m4a"
+},
+{
+  "artist": "Jail",
+  "title": "Thank Us Later",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/jaill_thatshowweburn_04_thankuslater.m4a"
+},
+{
+  "artist": "Traveling Wilburys",
+  "title": "Handle With Care",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/travelingwilbur_travelingwilbur_01_handlewithcare.m4a"
+},
+{
+  "artist": "The Tornadoes",
+  "title": "Telstar",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/tornadoes_25hitsfromthe_09telstarthe.m4a"
+},
+{
+  "artist": "Twenty One Pilots",
+  "title": "Heathens",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/twentyonepilots_ha201629_02_heathens.m4a"
+},
+{
+  "artist": "Three Dog Night",
+  "title": "Celebrate",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/threedognight_gd408_08celebrate.m4a"
+},
+{
+  "artist": "Tantric",
+  "title": "Breakdown",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/tantric_al037_1613-04breakdown.m4a"
+},
+{
+  "artist": "Thin Lizzy",
+  "title": "Angel From the Coast",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/thinlizzy_jailbreak_02angelfromthecoast.m4a"
+},
+{
+  "artist": "Velvet Underground",
+  "title": "Stephanie Says",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/velvetunderground_peelslowlyandseed_14stephaniesays.m4a"
+},
+{
+  "artist": "Hemmit",
+  "title": "Killing Zombies",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/hemmit_antimatter_07_killingzombies.m4a"
+},
+{
+  "artist": "Lenker, Adrianne & Meekbuck",
+  "title": "Indiana",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/lenkeradriannemeekbuck_asides_05_indiana.m4a"
+},
+{
+  "artist": "The Troggs",
+  "title": "Wild Thing",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/variousartists_moreparty_09thetroggswild.m4a"
+},
+{
+  "artist": "Simone, Nina",
+  "title": "I Put a Spell on You",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/simonenina_iputaspellonyou_1_iputaspellonyou.m4a"
+},
+{
+  "artist": "Kings of Leon",
+  "title": "Molly's Chambers",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/kingsofleon_youthandyoungmanhood_08_mollyschambers.m4a"
+},
+  {
   "artist": "The Church",
   "title": "Reptile",
   "url": "https://d1qg6pckcqcdk0.cloudfront.net/oz/thechurch_starfish_reptile.m4a"
