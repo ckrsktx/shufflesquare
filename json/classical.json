@@ -1,5 +1,165 @@
 [
   {
+    "artist": "New Philharmonia Orchestra",
+    "title": "Suite No. 4 in G Op. 61 Mozart",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/newphilharmonia_tchaikovskythec_08_suiteno4ingop61mozar.m4a"
+  },
+  {
+    "artist": "Isaac Stern",
+    "title": "Sinfonia Concertante",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/sternisaac_vivaldithefoursea_16sinfoniaconcertan.m4a"
+  },
+  {
+    "artist": "Jonas Kaufmann",
+    "title": "Das Lied von der Erde II",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/kaufmannjonas_mahlerdasliedvo_02_dasliedvondererdeiid.m4a"
+  },
+  {
+    "artist": "London Philharmonic Orchestra",
+    "title": "Symphony in E Flat Major",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/londonphilharmo_112londonsympho_09_symphonyineflatmajor.m4a"
+  },
+  {
+    "artist": "Giulia Carmignola",
+    "title": "Violin Concerto in G Major",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/carmignolagiuli_haydnviolinconc_07_violinconcertoingmaj.m4a"
+  },
+  {
+    "artist": "Marc-André Hamelin",
+    "title": "Keyboard Sonata in D Major",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/andrehamelinmar_josephhaydnpian_07_keyboardsonataindmaj.m4a"
+  },
+  {
+    "artist": "Leipzig Gewandhaus Orchestra",
+    "title": "Symphony No. 1 in C Minor",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/leipziggewandha_mendelssohncomp_03_symphonyno1incminoro.m4a"
+  },
+  {
+    "artist": "Christoph Eschenbach",
+    "title": "Sonata in C Major K. 545",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/eschenbachchris_mozartthepianos_05_sonataincmajork5452n.m4a"
+  },
+  {
+    "artist": "Christina Walevska",
+    "title": "Rondo Allegro Concerto",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/walevskachristi_mastersofbow1_07_iiirondoallegroconce.m4a"
+  },
+  {
+    "artist": "Philharmonia Virtuosi",
+    "title": "Rondeau First Symphony",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/philharmoniavir_greatesthitsof1_06_rondeaufirstsymphoni.m4a"
+  },
+  {
+    "artist": "Anne Sofie von Otter",
+    "title": "Songs for Voice and Piano",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/sofievonotteran_beethovenmeyerb_12_songs2forvoicepianow.m4a"
+  },
+  {
+    "artist": "Concentus Musicus",
+    "title": "Symphony No. 73 in D Major",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/concentusmusicu_symphoniesnos31_12_symphonyno73indmajor.m4a"
+  },
+  {
+    "artist": "Quartetto di Cremona",
+    "title": "Quartet Op. 2 No. 6 in C Major",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/quartettodicrem_italianjourney_10_quartetop2no6incmajo.m4a"
+  },
+  {
+    "artist": "Cypress String Quartet",
+    "title": "String Quartet in A Op. 18",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/cypressstringqu_beethovenearlys_10_stringquartetinaop18.m4a"
+  },
+  {
+    "artist": "Nemanja Radulovic",
+    "title": "Air from Orchestral Suite",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/radulovicnemanj_bach_09_airfromorchestralsui.m4a"
+  },
+  {
+    "artist": "Amadeus Quartet",
+    "title": "Quartet in F Major K. 590",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/amadeusquartet_mozartstringqua_11_quartetinfmajorkv590.m4a"
+  },
+  {
+    "artist": "Accademia Bizantina",
+    "title": "Il Regno di Maria Assunta",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/accademiabizant_alessandroscarl_13_ilregnodimariaassunt.m4a"
+  },
+  {
+    "artist": "Academy of Ancient Music",
+    "title": "Concerto for 4 Violins",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/academyofancien_vivaldiconcerto_24_concertofor4violinsc.m4a"
+  },
+  {
+    "artist": "Choir of King's College",
+    "title": "Nelson Mass H. 22/11",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/choirofkingscol_haydnnelsonmass_07_nelsonmassh2211etres.m4a"
+  },
+  {
+    "artist": "Murray Perahia",
+    "title": "Suite No. 1 in D Minor BWV 812",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/perahiamurray_bachthefrenchsu_01_suiteno1indminorbwv8.m4a"
+  },
+  {
+    "artist": "Györi Omicsill",
+    "title": "Sonata for Flute and Piano",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/gyorinaomicsill_glowingsonoriti_06_sonataforfluteandpia.m4a"
+  },
+  {
+    "artist": "Luciano Pavarotti",
+    "title": "Piscatore 'e Pusilleco",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/pavarottilucian_osolemio_10_piscatoreepusilleco.m4a"
+  },
+  {
+    "artist": "Daniel Behle",
+    "title": "Fierrabras D. 796",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/behledaniel_schubertariasov_13_fierabrasd796deraben.m4a"
+  },
+  {
+    "artist": "Musica Antiqua Köln",
+    "title": "Tafelmusik Production III",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/musicaantiquako_tafelmusik_14_productioniiiiconcer.m4a"
+  },
+  {
+    "artist": "Tafelmusik Baroque Orchestra",
+    "title": "Le Temple de la Gloire",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/tafelmusikbaroq_rameaudardanusl_27_letempledelagloireft.m4a"
+  },
+  {
+    "artist": "Mayo Yo",
+    "title": "Ave Maria",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/mayoyo_yoyomaplaysbach_17_avemaria.m4a"
+  },
+  {
+    "artist": "Ensemble Caprice",
+    "title": "Double Trumpet Concerto",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/ensemblecaprice_vivalditheretur_19_doubletrumpetconcert.m4a"
+  },
+  {
+    "artist": "Stile Antico",
+    "title": "Mass for Four Voices: Gloria",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/stileantico_thegoldenrenaissancewilliambyrd_06_massforfourvoicesiiagloria.m4a"
+  },
+  {
+    "artist": "Chorus Viennensis",
+    "title": "Canon in 6 Parts in B Flat",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/chorusviennensi_mozartvocalmusi_10_canonin6partsinbflat.m4a"
+  },
+  {
+    "artist": "Luigi Cozzolino",
+    "title": "Varie Sonate alla Francese",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/cozzolinoluigi_gbvitalisonatas_01_variesonateallafranc.m4a"
+  },
+  {
+    "artist": "Ensemble Artemus",
+    "title": "Sinfonia No. 4 in D",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/ensembleartemus_alessandrostrad_33_sinfoniano4ind2ndmov.m4a"
+  },
+  {
+    "artist": "Musica Amphion",
+    "title": "Concerto Grosso in D Major",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/musicaamphion_arcangelocorell_33_concertogrossoindmaj.m4a"
+  },
+  {
     "artist": "Bang on a Can",
     "title": "I Buried Paul",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/bangonacan_renegadeheaven_03_iburiedpaul.m4a"
