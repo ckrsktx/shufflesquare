@@ -1,5 +1,115 @@
 [
   {
+    "artist": "Bang on a Can",
+    "title": "I Buried Paul",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/bangonacan_renegadeheaven_03_iburiedpaul.m4a"
+  },
+  {
+    "artist": "Chicago Symphony Orchestra",
+    "title": "Pavane for a Dead Princess",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/chicagosymphony_livingstereoaud_08_pavanforadeadprinces.m4a"
+  },
+  {
+    "artist": "Vienna Philharmonic",
+    "title": "Eine Kleine Nachtmusik",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicalfull/viennaphilharmo_mozartthewindco_04_einekleinenachtmusik.m4a"
+  },
+  {
+    "artist": "Claire Jones",
+    "title": "Flower Duet from Lakmé",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/jonesclaire_royalharpstring_07_flowerduetfromlakme.m4a"
+  },
+  {
+    "artist": "Gilbert Kalish",
+    "title": "Music for a Summer Evening",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/kalishgilbertfr_crumbancientvoi_09_musicforasummereveni.m4a"
+  },
+  {
+    "artist": "London Symphony Orchestra",
+    "title": "Symphony No. 9 in E Minor",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/londonsymphony_dvoraksymphony_02symphonyno9ine.m4a"
+  },
+  {
+    "artist": "Vienna State Opera",
+    "title": "Madama Butterfly Opera",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/viennastateoper_grandoperachoru_07_madamabutterflyopera.m4a"
+  },
+  {
+    "artist": "Cincinnati Pops Orchestra",
+    "title": "Polovtsian Dances",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/cincinnatipopsorc_russiannights_04polovtsiandancesf.m4a"
+  },
+  {
+    "artist": "Berlin Philharmonic",
+    "title": "Symphonie Nr. 5 C-moll",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/berlinphilharmoni_symphoniennos56pa_04symphonienr5cmoll.m4a"
+  },
+  {
+    "artist": "Mayo Yo",
+    "title": "Lullaby Wiegenlied Op. 4",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/mayoyo_songsfromthearc_02_lullabywiegenliedop4.m4a"
+  },
+  {
+    "artist": "Manitoba Chamber Orchestra",
+    "title": "Suite from The Hours",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/manitobachamber_symphonyno3theh_02_suitefromthehoursmov.m4a"
+  },
+  {
+    "artist": "Philharmonia Orchestra",
+    "title": "The Thieving Magpie Overture",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/philharmoniaorchestra_rossinithethievingmagpie_02_thetheivingmagpieovertureallegro.m4a"
+  },
+  {
+    "artist": "BBC Concert Orchestra",
+    "title": "Che Gelida Manina from La Bohème",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/bbcconcertorche_operawithoutwor_09_chegelidamaninafroml.m4a"
+  },
+  {
+    "artist": "Metropolitan Opera Orchestra",
+    "title": "Die Walküre: Ride of the Valkyries",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/metorchestrathe_wagnerorchestra_02_diewalkrederrittderw.m4a"
+  },
+  {
+    "artist": "Evgeny Kissin",
+    "title": "Military March No. 1",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/kissinevgenyandja_thecarnegiehallco_06militarymarchno1i.m4a"
+  },
+  {
+    "artist": "James Galway",
+    "title": "Ave Maria D. 839",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/jamesgalway_wingsofsong_03avemariad839.m4a"
+  },
+  {
+    "artist": "Chamber Orchestra",
+    "title": "Marriage of Figaro Overture",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/chamberorchestr_mozartlenozzedi_01_marriageoffigaroover.m4a"
+  },
+  {
+    "artist": "Julian Lloyd Webber",
+    "title": "Robert Schumann: Träumerei",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/lloydwebberjulian_travelswithmycell_04robertshumantraum.m4a"
+  },
+  {
+    "artist": "Luciano Pavarotti",
+    "title": "O Sole Mio",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical2/pavarottilucian_osolemio_01_osolemio.m4a"
+  },
+  {
+    "artist": "Itzhak Perlman",
+    "title": "Allegro Spring Concerto",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/perlmanitzhak_vivaldithefoursea_01iallegrospringcon.m4a"
+  },
+  {
+    "artist": "Various Artists",
+    "title": "Beethoven: Für Elise",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/variousartists_100masterpieces_07beethovenfur.m4a"
+  },
+  {
+    "artist": "Five Browns",
+    "title": "In the Hall of the Mountain King",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classical/fivebrowns_fivebrowns_11inthehallofthemou.m4a"
+  },
+  {
     "artist": "John Williams",
     "title": "Augie's Great Municipal Band",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/soundtracks/starwarsepisode_starwarsepisode_17_augiesgreatmunicipal.m4a"
