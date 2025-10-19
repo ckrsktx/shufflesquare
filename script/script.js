@@ -21,6 +21,23 @@ let playlists = {}, originalPool = [], pool = [],
 const FAV_KEY = 'favShuffleSquare';
 let favPool = JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
 
+/* ========== TIMER (bloco único) ========== */
+const timerDiv = document.createElement('div');
+timerDiv.id = 'timer';
+timerDiv.textContent = '0:00 / 0:00';
+document.querySelector('#container').appendChild(timerDiv);
+
+function fmt(t) {
+  const m = Math.floor(t / 60), s = Math.floor(t % 60);
+  return `${m}:${s < 10 ? '0' : ''}${s}`;
+}
+function updateTimer() {
+  if (!a.duration) { timerDiv.textContent = '0:00 / 0:00'; return; }
+  timerDiv.textContent = `${fmt(a.currentTime)} / ${fmt(a.duration)}`;
+}
+a.addEventListener('timeupdate', updateTimer);
+a.addEventListener('loadedmetadata', updateTimer);
+
 /* ========== UTILS ========== */
 function safeKeyForTrack(t) {
   if (!t) return 'unknown';
@@ -49,23 +66,6 @@ function clearStartTimeout() {
   if (startTimeoutId) { clearTimeout(startTimeoutId); startTimeoutId = null; }
 }
 
-/* ========== TIMER ========== */
-const timerDiv = document.createElement('div');
-timerDiv.id = 'timer';
-timerDiv.textContent = '0:00 / 0:00';
-document.querySelector('#container').appendChild(timerDiv);
-
-function fmt(t) {
-  const m = Math.floor(t / 60), s = Math.floor(t % 60);
-  return `${m}:${s < 10 ? '0' : ''}${s}`;
-}
-function updateTimer() {
-  if (!a.duration) { timerDiv.textContent = '0:00 / 0:00'; return; }
-  timerDiv.textContent = `${fmt(a.currentTime)} / ${fmt(a.duration)}`;
-}
-a.addEventListener('timeupdate', updateTimer);
-a.addEventListener('loadedmetadata', updateTimer);
-
 /* ========== INIT ========== */
 (async function initPlayer() {
   loader.textContent = 'Carregando playlists...';
@@ -77,14 +77,12 @@ a.addEventListener('loadedmetadata', updateTimer);
     return;
   }
   fillMenu();
-  // Seleciona a primeira playlist automaticamente
   currentPl = Object.keys(playlists)[0] || '';
   playlistName.textContent = currentPl || '–';
   if (!currentPl) {
     loader.textContent = 'Nenhuma playlist encontrada!';
     return;
   }
-  // Carrega o pool de músicas dessa playlist
   await loadPool({ resetIdx: true, stopPlayback: false });
   idx = Math.max(0, Math.floor(Math.random() * (pool.length || 1)));
   loader.style.display = 'none';
@@ -179,7 +177,6 @@ async function loadPool({ resetIdx = false, stopPlayback = true } = {}) {
     pool = shuffleOn ? shuffleArray(originalPool) : [...originalPool];
     if (resetIdx) idx = 0;
     recentPlayed.clear(); playsSinceReset = 0; lastCountedKey = null; playedInCycle.clear(); clearStartTimeout();
-    // Debug para checar pool
     console.log('[POOL]', currentPl, pool);
   } catch (e) {
     originalPool = [];
@@ -274,7 +271,6 @@ async function loadTrack({ autoplay = false } = {}) {
   capa.src = FALLBACK;
   capa.style.opacity = '1';
   isLoading = false;
-  // tenta trocar capa em background
   getCoverForTrack(t).then(url => { if (url !== FALLBACK) capa.src = url; }).catch(() => {});
   updateMediaSession();
   if (autoplay) {
@@ -288,7 +284,6 @@ async function loadTrack({ autoplay = false } = {}) {
   updatePlayButton();
   updateHeartStatus();
   insertHeart();
-  // debug
   console.log('[PLAYING]', t.url, t.title, t.artist);
 }
 
@@ -442,7 +437,7 @@ a.addEventListener('play',     () => { clearStartWatch(); });
 a.addEventListener('playing',  () => { clearStartWatch(); });
 a.addEventListener('error',    () => { clearStartWatch(); goToNext(true).catch(() => {}); });
 
-/* ===== FAVORITOS + TIMER + CORAÇÕES ===== */
+/* ===== FAVORITOS + CORAÇÕES ===== */
 function createHeart() {
   const h = document.createElement('button');
   h.className = 'heart';
@@ -480,8 +475,8 @@ favBtn.onclick = () => {
 };
 function enterFavorites() {
   if (favPool.length === 0) { alert('Nenhuma faixa favorita.'); return; }
-  // ... aqui vá o seu código de troca para favoritos
+  // aqui vá o seu código para trocar o pool para favoritos
 }
 function exitFavorites() {
-  // ... aqui vá o seu código de saída de favoritos
+  // aqui vá o seu código para voltar para a playlist anterior
 }
