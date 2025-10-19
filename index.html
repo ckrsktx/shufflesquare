@@ -43,27 +43,24 @@
       <!-- O coração por faixa será inserido aqui pelo JS -->
     </section>
 
-    <!-- Player de áudio (oculto) -->
-    <audio id="a" preload="auto"></audio>
+  <!-- Controles do player -->
+<div id="ctrl" role="group" aria-label="Controles">
+  <button id="prev" title="Anterior" aria-label="Faixa anterior" tabindex="0">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+  </button>
 
-    <!-- Controles do player -->
-    <div id="ctrl" role="group" aria-label="Controles">
-      <button id="prev" title="Anterior" aria-label="Faixa anterior" tabindex="0">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
-</button>
+  <button id="playBtn" title="Play/Pause" aria-pressed="false" aria-label="Tocar/Pausar" tabindex="0">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+  </button>
 
-<button id="playBtn" title="Play/Pause" aria-pressed="false" aria-label="Tocar/Pausar" tabindex="0">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-</button>
+  <button id="next" title="Próxima" aria-label="Próxima faixa" tabindex="0">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+  </button>
 
-<button id="next" title="Próxima" aria-label="Próxima faixa" tabindex="0">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
-</button>
-
-<button id="shufBtn" title="Shuffle" aria-pressed="false" aria-label="Embaralhar" tabindex="0">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
-</button>
-    </div>
+  <button id="shufBtn" title="Shuffle" aria-pressed="false" aria-label="Embaralhar" tabindex="0">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
+  </button>
+</div>
   </main>
 
   <script src="script/script.js"></script>
