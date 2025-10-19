@@ -1,9 +1,8 @@
-/* ========== CONFIG ========== */
 const PLAYLIST_URL = 'json/playlists.json';
 const FALLBACK = 'img/cd.png';
 const $ = s => document.querySelector(s);
 
-/* ========== DOM ========== */
+/* ========== ELEMENTOS ========== */
 const a = $('#a'),
       capa = $('#capa'),
       tit = $('#tit'),
@@ -20,7 +19,6 @@ const a = $('#a'),
 
 /* ========== TIMER (SEM DUPLICAÇÃO) ========== */
 const timerDiv = $('#timer');
-
 function fmt(t) {
   const m = Math.floor(t / 60), s = Math.floor(t % 60);
   return `${m}:${s < 10 ? '0' : ''}${s}`;
@@ -32,7 +30,8 @@ function updateTimer() {
 a.addEventListener('timeupdate', updateTimer);
 a.addEventListener('loadedmetadata', updateTimer);
 
-/* ========== STATE ========== */
+/* ======================================= */
+/* ========== ESTADO ========== */
 let playlists = {}, originalPool = [], pool = [],
     idx = 0, shuffleOn = false, isLoading = false, currentPl = '',
     coverCache = new Map(), COVER_TIMEOUT = 4000, RESET_AFTER = 5,
@@ -44,7 +43,25 @@ const FAV_KEY = 'favShuffleSquare';
 let favPool = JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
 let previousPlaylist = '', previousIdx = 0;
 
-/* ========== FAVORITOS: atualizar o botão VISUALMENTE ========== */
+/* ========== FUNÇÃO NOTIFICAÇÃO BLACKOUT FAVORITOS ========== */
+function showNoFavOverlay(msg = "Nenhuma faixa favorita.") {
+  let overlay = document.getElementById('noFavOverlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.id = 'noFavOverlay';
+    overlay.innerHTML = msg;
+    document.body.appendChild(overlay);
+  } else {
+    overlay.innerHTML = msg;
+    overlay.classList.remove('hide');
+  }
+  setTimeout(() => {
+    overlay.classList.add('hide');
+    setTimeout(() => { if (overlay) overlay.remove(); }, 400);
+  }, 1800);
+}
+
+/* ========== ATUALIZA VISUAL DO BOTÃO FAVORITOS ========== */
 function updateFavBtnStatus() {
   favBtn.classList.toggle('active', currentPl === 'Favoritos');
 }
@@ -54,7 +71,7 @@ function updateFavBtnStatus() {
   loader.textContent = 'Carregando playlists...';
   try {
     playlists = await fetchJsonWithTimestamp(PLAYLIST_URL);
-    console.log('[PLAYLISTS]', playlists);
+    //console.log('[PLAYLISTS]', playlists);
   } catch {
     loader.textContent = 'Erro ao carregar playlists 😕';
     return;
@@ -92,7 +109,7 @@ function fillMenu() {
         idx = Math.max(0, Math.floor(Math.random() * (pool.length || 1)));
         await loadTrack({ autoplay: false });
         preloadNext();
-        updateFavBtnStatus(); // Atualizar o visual do botão favoritos
+        updateFavBtnStatus();
       } catch (e) {
         alert('Erro ao trocar playlist');
       }
@@ -130,7 +147,7 @@ function shuffleArray(a) {
   return arr;
 }
 
-/* ========== POOL ========== */
+/* ========== CARREGA POOL ========== */
 async function loadPool({ resetIdx = false, stopPlayback = true } = {}) {
   try {
     const url = playlists[currentPl] || playlists[Object.keys(playlists)[0]];
@@ -162,7 +179,7 @@ async function loadPool({ resetIdx = false, stopPlayback = true } = {}) {
     pool = shuffleOn ? shuffleArray(originalPool) : [...originalPool];
     if (resetIdx) idx = 0;
     recentPlayed.clear(); playsSinceReset = 0; lastCountedKey = null; playedInCycle.clear(); clearStartTimeout();
-    console.log('[POOL]', currentPl, pool);
+    //console.log('[POOL]', currentPl, pool);
   } catch (e) {
     originalPool = [];
     pool = [];
@@ -171,7 +188,7 @@ async function loadPool({ resetIdx = false, stopPlayback = true } = {}) {
   }
 }
 
-/* ========== COVER (não bloqueia play) ========== */
+/* ========== CAPA DO ÁLBUM ========== */
 async function getCoverForTrack(t) {
   const key = safeKeyForTrack(t);
   if (coverCache.has(key)) return coverCache.get(key);
@@ -215,7 +232,6 @@ async function getCoverForTrack(t) {
   coverCache.set(key, FALLBACK); return FALLBACK;
 }
 
-/* ========== PRELOAD NEXT (apenas 1x, no ended) ========== */
 async function preloadNext() {
   if (!pool.length) return;
   let nextIdx = (idx + 1) % pool.length;
@@ -230,10 +246,8 @@ async function preloadNext() {
   getCoverForTrack(nextT).catch(() => {});
 }
 
-/* ========== CURRENT TRACK HELPERS ========== */
 function currentTrack() { return pool && pool[idx]; }
 
-/* ========== LOAD & PLAY ========== */
 async function loadTrack({ autoplay = false } = {}) {
   if (isLoading) return;
   const t = currentTrack();
@@ -244,7 +258,7 @@ async function loadTrack({ autoplay = false } = {}) {
     capa.style.opacity = '1';
     updatePlayButton();
     updateFavBtnStatus();
-    console.warn('[LOAD TRACK] Sem faixa no pool ou erro.');
+    //console.warn('[LOAD TRACK] Sem faixa no pool ou erro.');
     return;
   }
   isLoading = true;
@@ -271,10 +285,9 @@ async function loadTrack({ autoplay = false } = {}) {
   updateHeartStatus();
   insertHeart();
   updateFavBtnStatus();
-  console.log('[PLAYING]', t.url, t.title, t.artist);
 }
 
-/* ========== PLAY BUTTON UI ========== */
+/* ========== PLAY BUTTON ========== */
 function updatePlayButton() {
   const playing = a && !a.paused && !a.ended;
   playBtn.innerHTML = playing
@@ -301,7 +314,7 @@ a.addEventListener('playing', () => {
   updateFavBtnStatus();
 });
 
-/* ========== NEXT / PREV (throttle 200 ms) ========== */
+/* ========== AVANÇAR / VOLTAR ========== */
 let lastSkip = 0;
 async function goToNext(autoplay = true) {
   const now = Date.now(); if (now - lastSkip < 200) return; lastSkip = now; clearStartTimeout();
@@ -333,7 +346,7 @@ a.addEventListener('ended', () => { preloadNext(); goToNext(true); });
 function updateMediaSession() {
   if ('mediaSession' in navigator) {
     try {
-      navigator.mediaSession.metadata = new MediaMetadata({
+      navigator.mediaSession.metadata = new window.MediaMetadata({
         title: tit.textContent || '',
         artist: art.textContent || '',
         artwork: [{ src: capa.src || FALLBACK, sizes: '300x300', type: 'image/png' }]
@@ -343,94 +356,23 @@ function updateMediaSession() {
           (action === 'play' ? a.play() : action === 'pause' ? a.pause() : action === 'previoustrack' ? prev.click() : next.click())
         )
       );
-    } catch (e) { console.warn('mediaSession erro:', e); }
+    } catch (e) { /* ignore */ }
   }
 }
 
-/* ========== OBSERVE CHANGES ========== */
+/* ========== OBS ========== */
 const obs = new MutationObserver(() => { document.title = `${tit.textContent} – ${art.textContent}`; });
 obs.observe(tit,   { childList: true, characterData: true, subtree: true });
 obs.observe(art,   { childList: true, characterData: true, subtree: true });
 
-/* ========== WAKE LOCK ========== */
-let wakeLock = null, cpuLock = null;
-async function requestWakeLock() { try { if ('wakeLock' in navigator) wakeLock = await navigator.wakeLock.request('screen'); } catch {} }
-async function lockCPU()         { try { if ('wakeLock' in navigator && 'cpu' in WakeLockType) cpuLock = await navigator.wakeLock.request('cpu'); } catch {} }
-a.addEventListener('play',  () => { requestWakeLock(); lockCPU(); });
-a.addEventListener('pause', () => { if (wakeLock && wakeLock.release) wakeLock.release().catch(() => {}); if (cpuLock && cpuLock.release) cpuLock.release().catch(() => {}); wakeLock = null; cpuLock = null; });
-
-/* ========== KEYBOARD ========== */
+/* ========== TECLADO ========== */
 document.addEventListener('keydown', e => {
   if (e.code === 'Space')      { e.preventDefault(); togglePlay(); }
   else if (e.code === 'ArrowRight') next.click();
   else if (e.code === 'ArrowLeft')  prev.click();
 });
 
-/* ========== PUBLIC ========== */
-window.changePlaylist = async function (name) {
-  if (!playlists[name]) throw new Error('playlist não encontrada: ' + name);
-  a.pause(); a.currentTime = 0; recentPlayed.clear(); playsSinceReset = 0; lastCountedKey = null; playedInCycle.clear(); clearStartTimeout();
-  currentPl = name; playlistName.textContent = name; await loadPool({ resetIdx: true, stopPlayback: true });
-  idx = Math.floor(Math.random() * pool.length); await loadTrack({ autoplay: false });
-  updateFavBtnStatus();
-};
-
-/* ========== DEBUG ========== */
-window._playerState = () => ({
-  idx, shuffleOn, currentPl,
-  poolLength: pool.length,
-  playsSinceReset, recentPlayedSize: recentPlayed.size,
-  playedInCycleSize: playedInCycle.size,
-  startTimeout: !!startTimeoutId
-});
-
-/* ===== ANSIEDADE (sem animação pesada) ===== */
-let skipCount = 0, lastSkipTime = 0; const SKIP_WINDOW = 1500, SKIP_LIMIT = 5;
-const toast = document.createElement('div'); toast.innerHTML = 'Ei, calma!<br>Menos ansiedade, curta a playlist. ;)';
-Object.assign(toast.style, { position: 'fixed', top: `${capa.getBoundingClientRect().top + capa.offsetHeight/2}px`, left: `${capa.getBoundingClientRect().left + capa.offsetWidth/2}px`, transform: 'translate(-50%,-50%)', background: 'rgba(0,0,0,.55)', color: '#fff', padding: '1.2rem 1.8rem', borderRadius: '1rem', fontSize: '1.05rem', textAlign: 'center', lineHeight: '1.4', zIndex: '999', pointerEvents: 'none', opacity: '0', willChange: 'opacity' }); document.body.appendChild(toast);
-function showToast() { toast.style.top = `${capa.getBoundingClientRect().top + capa.offsetHeight/2}px`; toast.style.left = `${capa.getBoundingClientRect().left + capa.offsetWidth/2}px`; toast.style.opacity = '1'; setTimeout(() => toast.style.opacity = '0', 3000); }
-[next, prev].forEach(btn => btn.addEventListener('click', () => { const now = Date.now(); if (now - lastSkipTime < SKIP_WINDOW) skipCount++; else skipCount = 1; lastSkipTime = now; if (skipCount >= SKIP_LIMIT) { skipCount = 0; showToast(); } }));
-
-/* ===== TEXTO SIMPLES “Escolha a playlist ;)” ===== */
-(() => {
-  const menu = $('#menuBtn'); if (!menu) return; const texto = document.createElement('div'); texto.innerHTML = 'Escolha a playlist ;)';
-  Object.assign(texto.style, { position: 'fixed', top: '4.2rem', right: '1.2rem', color: 'var(--fg)', fontSize: '.85rem', opacity: '0', willChange: 'opacity' }); document.body.appendChild(texto);
-  requestAnimationFrame(() => texto.style.opacity = '1');
-  const esconde = () => { texto.style.opacity = '0'; menu.removeEventListener('click', esconde); setTimeout(() => texto.remove(), 400); };
-  menu.addEventListener('click', esconde);
-})();
-
-/* ===== HEARTBEAT LEVE (15 s) ===== */
-setInterval(() => { if (!a.paused && a.src) fetch(PLAYLIST_URL, { mode: 'no-cors' }); }, 15000);
-
-/* ===== AUTO-SKIP SE NÃO COMEÇAR EM 5 s ===== */
-let startWatchId = null;
-const START_WATCH_MS = 5000;
-
-function clearStartTimeout() {
-  if (startTimeoutId) { clearTimeout(startTimeoutId); startTimeoutId = null; }
-}
-
-function clearStartWatch() {
-  if (startWatchId) { clearTimeout(startWatchId); startWatchId = null; }
-}
-function watchStart() {
-  clearStartWatch();
-  if (a.paused || a.currentTime > 0) return;
-  startWatchId = setTimeout(() => {
-    if (a.currentTime === 0 && !a.paused) {
-      console.warn('[AUTO-SKIP] Faixa não iniciou em 5 s – pulando...');
-      goToNext(true).catch(() => {});
-    }
-    clearStartWatch();
-  }, START_WATCH_MS);
-}
-a.addEventListener('loadstart', watchStart);
-a.addEventListener('play',     () => { clearStartWatch(); });
-a.addEventListener('playing',  () => { clearStartWatch(); });
-a.addEventListener('error',    () => { clearStartWatch(); goToNext(true).catch(() => {}); });
-
-/* ===== FAVORITOS + CORAÇÕES ===== */
+/* ========== FAVORITOS + CORAÇÕES PEQUENOS ========== */
 function createHeart() {
   const h = document.createElement('button');
   h.className = 'heart';
@@ -471,7 +413,10 @@ favBtn.onclick = () => {
   updateFavBtnStatus();
 };
 function enterFavorites() {
-  if (favPool.length === 0) { alert('Nenhuma faixa favorita.'); return; }
+  if (favPool.length === 0) {
+    showNoFavOverlay("Nenhuma faixa favorita.");
+    return;
+  }
   previousPlaylist = currentPl; previousIdx = idx;
   currentPl = 'Favoritos';
   playlistName.textContent = 'Favoritos';
@@ -514,4 +459,9 @@ function normalizeText(s) {
 function fetchWithTimeout(url, opts = {}, timeout = 4000) {
   const controller = new AbortController(), id = setTimeout(() => controller.abort(), timeout);
   return fetch(url, {...opts, signal: controller.signal}).finally(() => clearTimeout(id));
+}
+
+/* ========== OUTRAS FUNÇÕES OPCIONAIS (desempenho, toast, etc) ========== */
+function clearStartTimeout() {
+  if (startTimeoutId) { clearTimeout(startTimeoutId); startTimeoutId = null; }
 }
