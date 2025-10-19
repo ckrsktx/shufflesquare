@@ -16,6 +16,11 @@ let playlists = {}, originalPool = [], pool = [], idx = 0, shuffleOn = false,
     lastCountedKey = null, playedInCycle = new Set(),
     startTimeoutId = null, START_TIMEOUT_MS = 4000;
 
+/* ========== FAVORITOS ========== */
+const FAV_KEY = 'favShuffleSquare';
+let favPool = JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
+let previousPlaylist = '', previousIdx = 0;
+
 /* ========== UTILS ========== */
 function safeKeyForTrack(t) {
   if (!t) return 'unknown';
@@ -23,13 +28,13 @@ function safeKeyForTrack(t) {
   return t.url || (typeof t === 'string' ? t : JSON.stringify(t));
 }
 async function fetchJsonWithTimestamp(url) {
-  const res = await fetch(url + '?t=' + Date.now(), {cache: 'no-store'});
+  const res = await fetch(url + '?t=' + Date.now(), {cache:'no-store'});
   if (!res.ok) throw new Error('fetch error ' + res.status);
   return res.json();
 }
 function normalizeText(s) {
   if (!s) return '';
-  return (''+s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^\w\s]/g, '').replace(/\s+/g, ' ').trim();
+  return (''+s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\w\s]/g,'').replace(/\s+/g,' ').trim();
 }
 function fetchWithTimeout(url, opts = {}, timeout = COVER_TIMEOUT) {
   const controller = new AbortController(), id = setTimeout(() => controller.abort(), timeout);
@@ -39,9 +44,26 @@ function clearStartTimeout() {
   if (startTimeoutId) { clearTimeout(startTimeoutId); startTimeoutId = null; }
 }
 
+/* ========== TIMER ========== */
+const timerDiv = document.createElement('div');
+timerDiv.id = 'timer';
+timerDiv.textContent = '0:00 / 0:00';
+document.querySelector('#container').appendChild(timerDiv);
+
+function fmt(t) {
+  const m = Math.floor(t / 60), s = Math.floor(t % 60);
+  return `${m}:${s < 10 ? '0' : ''}${s}`;
+}
+function updateTimer() {
+  if (!a.duration) { timerDiv.textContent = '0:00 / 0:00'; return; }
+  timerDiv.textContent = `${fmt(a.currentTime)} / ${fmt(a.duration)}`;
+}
+a.addEventListener('timeupdate', updateTimer);
+a.addEventListener('loadedmetadata', updateTimer);
+
 /* ========== INIT ========== */
 (async () => {
-  try { playlists = await fetchJsonWithTimestamp(PLAYLIST_URL); } catch (err) {
+  try { playlists = await fetchJsonWithTimestamp(PLAYLIST_URL); } catch {
     loader.textContent = 'erro ao carregar playlists'; return;
   }
   fillMenu();
@@ -52,7 +74,7 @@ function clearStartTimeout() {
   idx = Math.floor(Math.random() * pool.length);
   loader.style.display = 'none';
   await loadTrack({ autoplay: false });
-  preloadNext();               // apenas 1x
+  preloadNext();
 })();
 
 /* ========== MENU ========== */
@@ -61,11 +83,17 @@ function fillMenu() {
   Object.keys(playlists).forEach(g => {
     const div = document.createElement('div'); div.className = 'menuItem'; div.textContent = g;
     div.onclick = async () => {
-      a.pause(); a.currentTime = 0; currentPl = g; playlistName.textContent = g;
-      recentPlayed.clear(); playsSinceReset = 0; lastCountedKey = null; playedInCycle.clear(); clearStartTimeout();
-      await loadPool({ resetIdx: true, stopPlayback: true });
-      idx = Math.floor(Math.random() * pool.length);
-      await loadTrack({ autoplay: false }); preloadNext(); dropMenu.style.display = 'none';
+      dropMenu.style.display = 'none';
+      menuBtn.disabled = true;
+      (async () => {
+        a.pause(); a.currentTime = 0; currentPl = g; playlistName.textContent = g;
+        recentPlayed.clear(); playsSinceReset = 0; lastCountedKey = null; playedInCycle.clear(); clearStartTimeout();
+        await loadPool({ resetIdx: true, stopPlayback: true });
+        idx = Math.floor(Math.random() * pool.length);
+        await loadTrack({ autoplay: false });
+        preloadNext();
+        menuBtn.disabled = false;
+      })();
     }; dropMenu.appendChild(div);
   });
 }
@@ -115,10 +143,10 @@ async function loadPool({ resetIdx = false, stopPlayback = true } = {}) {
     pool = shuffleOn ? shuffleArray(originalPool) : [...originalPool];
     if (resetIdx) idx = 0;
     recentPlayed.clear(); playsSinceReset = 0; lastCountedKey = null; playedInCycle.clear(); clearStartTimeout();
-  } catch (err) { console.error('loadPool error', err); originalPool = []; pool = []; }
+  } catch { originalPool = []; pool = []; }
 }
 
-/* ========== COVER (máx. 3 tentativas) ========== */
+/* ========== COVER (não bloqueia play) ========== */
 async function getCoverForTrack(t) {
   const key = safeKeyForTrack(t);
   if (coverCache.has(key)) return coverCache.get(key);
@@ -131,11 +159,11 @@ async function getCoverForTrack(t) {
   const attempts = [];
   if (artist && title && year) attempts.push({ term: `${artist} ${title} ${year}`, entity: wantMovie ? 'movie' : 'song' });
   if (artist && title) attempts.push({ term: `${artist} ${title}`, entity: wantMovie ? 'movie' : 'song' });
-  if (title) attempts.push({ term: `${title}`, entity: wantMovie ? 'movie' : 'song' }); // apenas 3
+  if (title) attempts.push({ term: `${title}`, entity: wantMovie ? 'movie' : 'song' });
   for (const att of attempts) {
     const q = encodeURIComponent(att.term), entity = att.entity === 'movie' ? 'movie' : 'song';
     try {
-      const resp = await fetchWithTimeout(`https://itunes.apple.com/search?term=${q}&limit=3&entity=${entity}`, {}, 4000);
+      const resp = await fetchWithTimeout(`https://itunes.apple.com/search?term=${q}&limit=3&entity=${entity}`, {}, 3000);
       if (!resp.ok) continue;
       const json = await resp.json();
       if (!Array.isArray(json.results) || !json.results.length) continue;
@@ -153,7 +181,7 @@ async function getCoverForTrack(t) {
         if (score > bestScore) { bestScore = score; best = r; }
       }
       if (best && bestScore >= 4) {
-        const artUrl = (best.artworkUrl100 || best.artworkUrl60 || '').replace('100x100', '300x300'); // menor
+        const artUrl = (best.artworkUrl100 || best.artworkUrl60 || '').replace('100x100', '300x300');
         if (artUrl) { coverCache.set(key, artUrl); return artUrl; }
       }
     } catch {}
@@ -166,7 +194,7 @@ async function preloadNext() {
   if (!pool.length) return;
   let nextIdx = (idx + 1) % pool.length;
   if (shuffleOn) {
-    for (let i = 0; i < 10; i++) { // limite menor
+    for (let i = 0; i < 10; i++) {
       const cand = Math.floor(Math.random() * pool.length);
       if (cand !== idx && !playedInCycle.has(safeKeyForTrack(pool[cand]))) { nextIdx = cand; break; }
     }
@@ -179,23 +207,23 @@ async function preloadNext() {
 /* ========== CURRENT TRACK HELPERS ========== */
 function currentTrack() { return pool && pool[idx]; }
 
-/* ========== LOAD & PLAY ========== */
+/* ========== LOAD & PLAY (fallback primeiro) ========== */
 async function loadTrack({ autoplay = false } = {}) {
   if (isLoading) return;
   const t = currentTrack();
   if (!t) { tit.textContent = art.textContent = '–'; a.removeAttribute('src'); capa.src = FALLBACK; capa.style.opacity = '1'; updatePlayButton(); return; }
   isLoading = true; a.pause(); a.currentTime = 0; capa.style.opacity = '0';
   tit.textContent = t.title || '—'; art.textContent = t.artist || '—'; a.src = t.url;
-  /* capa: não bloqueia o play */
-capa.src = FALLBACK;                 // aparece NA HORA
-capa.style.opacity = '1';
-isLoading = false;                   // libera os controles
-/* busca real em background */
-getCoverForTrack(t).then(url => { if (url !== FALLBACK) capa.src = url; }).catch(() => {});
-
-  capa.onload = () => { capa.style.opacity = '1'; isLoading = false; };
-  capa.onerror = () => { capa.style.opacity = '1'; isLoading = false; };
-  updateMediaSession(); if (autoplay) { a.play().catch(() => {}); startTimeoutId = setTimeout(() => { if (a.paused || a.readyState < 3) goToNext(true).catch(() => {}); clearStartTimeout(); }, START_TIMEOUT_MS); } updatePlayButton();
+  /* capa padrão NA HORA */
+  capa.src = FALLBACK; capa.style.opacity = '1'; isLoading = false;
+  /* real em background */
+  getCoverForTrack(t).then(url => { if (url !== FALLBACK) capa.src = url; }).catch(() => {});
+  updateMediaSession();
+  if (autoplay) {
+    a.play().catch(() => {});
+    clearStartTimeout(); startTimeoutId = setTimeout(() => { if (a.paused || a.readyState < 3) goToNext(true).catch(() => {}); clearStartTimeout(); }, START_TIMEOUT_MS);
+  }
+  updatePlayButton();
 }
 
 /* ========== PLAY BUTTON UI ========== */
@@ -214,14 +242,17 @@ a.addEventListener('playing', () => {
   playedInCycle.add(key); if (playedInCycle.size >= pool.length) playedInCycle.clear(); updatePlayButton();
 });
 
-/* ========== NEXT / PREV ========== */
+/* ========== NEXT / PREV (throttle 200 ms) ========== */
+let lastSkip = 0;
 async function goToNext(autoplay = true) {
-  if (!pool.length) return; clearStartTimeout();
+  const now = Date.now(); if (now - lastSkip < 200) return; lastSkip = now;
+  clearStartTimeout();
   if (shuffleOn) { let unplayed = pool.map((_, i) => i).filter(i => i !== idx && !playedInCycle.has(safeKeyForTrack(pool[i]))); if (!unplayed.length) { playedInCycle.clear(); unplayed = pool.map((_, i) => i).filter(i => i !== idx); } idx = unplayed.length ? unplayed[Math.floor(Math.random() * unplayed.length)] : (idx + 1) % pool.length; } else { idx = (idx + 1) % pool.length; }
   await loadTrack({ autoplay });
 }
 async function goToPrev(autoplay = true) {
-  if (!pool.length) return; clearStartTimeout();
+  const now = Date.now(); if (now - lastSkip < 200) return; lastSkip = now;
+  clearStartTimeout();
   if (shuffleOn) { let candidate = idx, attempts = 0; do { candidate = Math.floor(Math.random() * pool.length); attempts++; } while (candidate === idx && attempts < 40); idx = candidate; } else { idx = (idx - 1 + pool.length) % pool.length; }
   await loadTrack({ autoplay });
 }
@@ -280,7 +311,7 @@ function showToast() { toast.style.top = `${capa.getBoundingClientRect().top + c
 
 /* ===== HEARTBEAT LEVE (15 s) ===== */
 setInterval(() => { if (!a.paused && a.src) fetch(PLAYLIST_URL, { mode: 'no-cors' }); }, 15_000);
-          
+         
 /* ===== AUTO-SKIP SE NÃO COMEÇAR EM 5 s ===== */
 let startWatchId = null;
 const START_WATCH_MS = 5000;
@@ -289,12 +320,11 @@ function clearStartWatch() {
   if (startWatchId) { clearTimeout(startWatchId); startWatchId = null; }
 }
 
-/* observa o tempo real do áudio */
 function watchStart() {
   clearStartWatch();
-  if (a.paused || a.currentTime > 0) return;          // já rodando ou falhou antes
+  if (a.paused || a.currentTime > 0) return;
   startWatchId = setTimeout(() => {
-    if (a.currentTime === 0 && !a.paused) {           // 5 s e ainda 0:00
+    if (a.currentTime === 0 && !a.paused) {
       console.warn('[AUTO-SKIP] Faixa não iniciou em 5 s – pulando...');
       goToNext(true).catch(() => {});
     }
@@ -302,37 +332,15 @@ function watchStart() {
   }, START_WATCH_MS);
 }
 
-/* liga o observador sempre que uma nova faixa começar */
 a.addEventListener('loadstart', watchStart);
-a.addEventListener('play', () => { clearStartWatch(); });   // cancela se começou
+a.addEventListener('play', () => { clearStartWatch(); });
 a.addEventListener('playing', () => { clearStartWatch(); });
 a.addEventListener('error', () => { clearStartWatch(); goToNext(true).catch(() => {}); });
 
-
-
-
-/* ===== FAVORITOS + TIMER ===== */
+/* ===== FAVORITOS + TIMER + CORAÇÕES ===== */
 const FAV_KEY = 'favShuffleSquare';
 let favPool = JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
-let previousPlaylist = '';      // playlist antes de entrar em Favoritos
-let previousIdx = 0;
-
-/* ---------- TIMER CENTRALIZADO ---------- */
-const timerDiv = document.createElement('div');
-timerDiv.id = 'timer';
-timerDiv.textContent = '0:00 / 0:00';
-document.querySelector('#container').appendChild(timerDiv);
-
-function fmt(t) {
-  const m = Math.floor(t / 60), s = Math.floor(t % 60);
-  return `${m}:${s < 10 ? '0' : ''}${s}`;
-}
-function updateTimer() {
-  if (!a.duration) { timerDiv.textContent = '0:00 / 0:00'; return; }
-  timerDiv.textContent = `${fmt(a.currentTime)} / ${fmt(a.duration)}`;
-}
-a.addEventListener('timeupdate', updateTimer);
-a.addEventListener('loadedmetadata', updateTimer);
+let previousPlaylist = '', previousIdx = 0;
 
 /* ---------- CORAÇÃO POR FAIXA (DENTRO DO #info) ---------- */
 function createHeart() {
@@ -344,11 +352,8 @@ function createHeart() {
 function toggleFavorite(t, el) {
   const key = safeKeyForTrack(t);
   const idxFav = favPool.findIndex(f => safeKeyForTrack(f) === key);
-  if (idxFav === -1) {                  // adiciona
-    favPool.push(t); el.classList.add('active');
-  } else {                              // remove
-    favPool.splice(idxFav, 1); el.classList.remove('active');
-  }
+  if (idxFav === -1) { favPool.push(t); el.classList.add('active'); }
+  else { favPool.splice(idxFav, 1); el.classList.remove('active'); }
   localStorage.setItem(FAV_KEY, JSON.stringify(favPool));
 }
 function updateHeartStatus() {
@@ -358,15 +363,14 @@ function updateHeartStatus() {
   h.classList.toggle('active', favPool.some(f => safeKeyForTrack(f) === key));
 }
 
-/* insere coração no #info (abaixo da capa) */
 function insertHeart() {
   if (document.querySelector('.heart')) return;
   const heart = createHeart();
   document.querySelector('#info').appendChild(heart);
 }
 insertHeart();
-updateHeartStatus();                       // primeira vez
-/* observa mudanças de faixa para atualizar coração */
+updateHeartStatus();
+
 const heartObs = new MutationObserver(updateHeartStatus);
 heartObs.observe(tit, { childList: true, characterData: true, subtree: true });
 heartObs.observe(art, { childList: true, characterData: true, subtree: true });
@@ -374,44 +378,9 @@ heartObs.observe(art, { childList: true, characterData: true, subtree: true });
 /* ---------- BOTÃO FAVORITOS (coração grande à ESQUERDA) ---------- */
 const favBtn = $('#favBtn');
 favBtn.onclick = () => {
-  if (currentPl === 'Favoritos') {           // já está dentro: volta
-    exitFavorites();
-  } else {                                   // entra na lista
-    enterFavorites();
-  }
+  if (currentPl === 'Favoritos') { exitFavorites(); }
+  else { enterFavorites(); }
 };
 
-/* ---------- ENTRAR / SAIR FAVORITOS ---------- */
 function enterFavorites() {
   if (favPool.length === 0) { alert('Nenhuma faixa favorita.'); return; }
-  previousPlaylist = currentPl;
-  previousIdx = idx;
-  currentPl = 'Favoritos';
-  playlistName.textContent = 'Favoritos';
-  originalPool = [...favPool];
-  pool = shuffleOn ? shuffleArray(originalPool) : [...originalPool];
-  idx = 0;
-  loadTrack({ autoplay: false });
-  preloadNext();
-}
-function exitFavorites() {
-  currentPl = previousPlaylist;
-  playlistName.textContent = currentPl;
-  originalPool = []; pool = [];
-  loadPool({ resetIdx: false, stopPlayback: true }).then(() => {
-    idx = previousIdx;
-    loadTrack({ autoplay: false });
-    preloadNext();
-  });
-}
-
-/* ---------- AO TERMINAR UMA FAIXA DENTRO DE FAVORITOS ---------- */
-const originalEnded = a.onended;
-a.onended = function () {
-  if (currentPl === 'Favoritos') {
-    goToNext(true);                  // próxima favorita
-  } else {
-    originalEnded?.call(this);       // comportamento normal
-  }
-};
-                         
