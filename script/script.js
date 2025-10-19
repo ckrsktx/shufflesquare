@@ -308,15 +308,25 @@ a.addEventListener('play', () => { clearStartWatch(); });   // cancela se começ
 a.addEventListener('playing', () => { clearStartWatch(); });
 a.addEventListener('error', () => { clearStartWatch(); goToNext(true).catch(() => {}); });
 
+
+
+
 /* ===== FAVORITOS + TIMER ===== */
 const FAV_KEY = 'favShuffleSquare';
 let favPool = JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
-let previousPlaylist = '';          // playlist ativa antes de entrar em Favoritos
-let previousIdx = 0;                // índice ativo antes de entrar em Favoritos
+let previousPlaylist = '';      // playlist antes de entrar em Favoritos
+let previousIdx = 0;
 
-/* ---------- TIMER NA TELA ---------- */
-const timerDiv = $('#timer');
-function fmt(t) { const m = Math.floor(t / 60), s = Math.floor(t % 60); return `${m}:${s < 10 ? '0' : ''}${s}`; }
+/* ---------- TIMER CENTRALIZADO ---------- */
+const timerDiv = document.createElement('div');
+timerDiv.id = 'timer';
+timerDiv.textContent = '0:00 / 0:00';
+document.querySelector('#container').appendChild(timerDiv);
+
+function fmt(t) {
+  const m = Math.floor(t / 60), s = Math.floor(t % 60);
+  return `${m}:${s < 10 ? '0' : ''}${s}`;
+}
 function updateTimer() {
   if (!a.duration) { timerDiv.textContent = '0:00 / 0:00'; return; }
   timerDiv.textContent = `${fmt(a.currentTime)} / ${fmt(a.duration)}`;
@@ -324,7 +334,7 @@ function updateTimer() {
 a.addEventListener('timeupdate', updateTimer);
 a.addEventListener('loadedmetadata', updateTimer);
 
-/* ---------- CORAÇÃO DA FAIXA ---------- */
+/* ---------- CORAÇÃO POR FAIXA (DENTRO DO #info) ---------- */
 function createHeart() {
   const h = document.createElement('button');
   h.className = 'heart'; h.innerHTML = '♥'; h.title = 'Favoritar';
@@ -348,41 +358,42 @@ function updateHeartStatus() {
   h.classList.toggle('active', favPool.some(f => safeKeyForTrack(f) === key));
 }
 
-/* ---------- INSERE CORAÇÃO NO DOM ---------- */
+/* insere coração no #info (abaixo da capa) */
 function insertHeart() {
-  if (document.querySelector('.heart')) return;                   // já existe
+  if (document.querySelector('.heart')) return;
   const heart = createHeart();
   document.querySelector('#info').appendChild(heart);
 }
-insertHeart();                                                      // primeira vez
-obs.observe(tit, { childList: true, characterData: true, subtree: true }); // atualiza quando título mudar
-obs.observe(art, { childList: true, characterData: true, subtree: true });
-obs.observe(document.querySelector('#info'), { childList: true, subtree: true }); // caso heart seja removido
+insertHeart();
+updateHeartStatus();                       // primeira vez
+/* observa mudanças de faixa para atualizar coração */
+const heartObs = new MutationObserver(updateHeartStatus);
+heartObs.observe(tit, { childList: true, characterData: true, subtree: true });
+heartObs.observe(art, { childList: true, characterData: true, subtree: true });
 
-/* ---------- BOTÃO FAVORITOS (coração ao lado do menu) ---------- */
+/* ---------- BOTÃO FAVORITOS (coração grande à ESQUERDA) ---------- */
 const favBtn = $('#favBtn');
 favBtn.onclick = () => {
-  if (currentPl === 'Favoritos') {                       // já está dentro: volta pra anterior
+  if (currentPl === 'Favoritos') {           // já está dentro: volta
     exitFavorites();
-  } else {                                               // entra na lista
+  } else {                                   // entra na lista
     enterFavorites();
   }
 };
 
 /* ---------- ENTRAR / SAIR FAVORITOS ---------- */
 function enterFavorites() {
-  if (favPool.length === 0) { alert('Nenhuma faixa favorita ainda.'); return; }
-  previousPlaylist = currentPl;                          // salva onde estava
+  if (favPool.length === 0) { alert('Nenhuma faixa favorita.'); return; }
+  previousPlaylist = currentPl;
   previousIdx = idx;
   currentPl = 'Favoritos';
   playlistName.textContent = 'Favoritos';
-  originalPool = [...favPool];                           // cópia para não quebrar lógica
+  originalPool = [...favPool];
   pool = shuffleOn ? shuffleArray(originalPool) : [...originalPool];
   idx = 0;
   loadTrack({ autoplay: false });
   preloadNext();
 }
-
 function exitFavorites() {
   currentPl = previousPlaylist;
   playlistName.textContent = currentPl;
@@ -398,8 +409,9 @@ function exitFavorites() {
 const originalEnded = a.onended;
 a.onended = function () {
   if (currentPl === 'Favoritos') {
-    goToNext(true);                                      // próxima favorita
+    goToNext(true);                  // próxima favorita
   } else {
-    originalEnded?.call(this);                           // comportamento normal
+    originalEnded?.call(this);       // comportamento normal
   }
 };
+                         
