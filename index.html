@@ -1,83 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
   <title>ShuffleSquare</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <!-- viewport única – BLOQUEIA ZOOM -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+  <div id="loader">carregando…</div>
 
-  <!-- Loader (tela de carregamento) -->
-  <div id="loader" aria-live="assertive">carregando…</div>
-
-  <!-- Botão de Favoritos (grande, fixo à esquerda) -->
-  <button id="favBtn" title="Favoritos" aria-label="Favoritos" tabindex="0">
-    <svg viewBox="0 0 24 24">
-      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
-               2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
-               C13.09 3.81 14.76 3 16.5 3
-               19.58 3 22 5.42 22 8.5
-               c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-    </svg>
-  </button>
-
-  <!-- Botão do Menu (3 bolinhas, fixo à direita) -->
-  <button id="menuBtn" title="Abrir playlists" aria-label="Abrir playlists" tabindex="0">
+  <button id="menuBtn" title="Playlists">
     <span></span><span></span><span></span>
   </button>
 
-  <!-- Menu suspenso com playlists -->
   <nav id="dropMenu" role="menu" aria-hidden="true"></nav>
 
-  <!-- PLAYER -->
   <main id="container" aria-live="polite">
+    <h1 id="playlistName">–</h1>
 
-    <!-- Nome da Playlist -->
-    <h1 id="playlistName" tabindex="0" aria-live="polite">–</h1>
+    <img id="capa" style="opacity:0" alt="Capa do álbum"/>
 
-    <!-- Capa do álbum/música -->
-    <img id="capa" alt="Capa do álbum" draggable="false" />
-
-    <!-- Timer (posição da música) -->
-    <div id="timer">0:00 / 0:00</div>
-
-    <!-- Informações da faixa atual -->
-    <section id="info" aria-label="Informações da faixa atual">
+    <section id="info">
       <h2 id="tit">–</h2>
       <p id="art">–</p>
-      <!-- O botão de coração por faixa será inserido aqui via JS -->
     </section>
 
-    <!-- Controles do Player -->
+    <audio id="a" preload="auto"></audio>
+
     <div id="ctrl" role="group" aria-label="Controles">
-      <button id="prev" title="Anterior" aria-label="Faixa anterior" tabindex="0">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-        </svg>
+      <button id="prev" title="anterior" aria-label="Anterior">
+        <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg>
       </button>
 
-      <button id="playBtn" title="Play/Pause" aria-pressed="false" aria-label="Tocar/Pausar" tabindex="0">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M8 5v14l11-7z"/>
-        </svg>
+      <button id="playBtn" title="play/pause" aria-pressed="false">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
       </button>
 
-      <button id="next" title="Próxima" aria-label="Próxima faixa" tabindex="0">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
-        </svg>
+      <button id="next" title="próxima" aria-label="Próxima">
+        <svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
       </button>
 
-      <button id="shufBtn" title="Shuffle" aria-pressed="false" aria-label="Embaralhar" tabindex="0">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 
-                   5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 
-                   3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/>
-        </svg>
+      <button id="shufBtn" title="shuffle" aria-pressed="false">
+        <svg viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
       </button>
     </div>
-
   </main>
 
   <script src="script/script.js"></script>
