@@ -281,3 +281,29 @@ function showToast() { toast.style.top = `${capa.getBoundingClientRect().top + c
 /* ===== HEARTBEAT LEVE (15 s) ===== */
 setInterval(() => { if (!a.paused && a.src) fetch(PLAYLIST_URL, { mode: 'no-cors' }); }, 15_000);
           
+/* ===== AUTO-SKIP SE NÃO COMEÇAR EM 5 s ===== */
+let startWatchId = null;
+const START_WATCH_MS = 5000;
+
+function clearStartWatch() {
+  if (startWatchId) { clearTimeout(startWatchId); startWatchId = null; }
+}
+
+/* observa o tempo real do áudio */
+function watchStart() {
+  clearStartWatch();
+  if (a.paused || a.currentTime > 0) return;          // já rodando ou falhou antes
+  startWatchId = setTimeout(() => {
+    if (a.currentTime === 0 && !a.paused) {           // 5 s e ainda 0:00
+      console.warn('[AUTO-SKIP] Faixa não iniciou em 5 s – pulando...');
+      goToNext(true).catch(() => {});
+    }
+    clearStartWatch();
+  }, START_WATCH_MS);
+}
+
+/* liga o observador sempre que uma nova faixa começar */
+a.addEventListener('loadstart', watchStart);
+a.addEventListener('play', () => { clearStartWatch(); });   // cancela se começou
+a.addEventListener('playing', () => { clearStartWatch(); });
+a.addEventListener('error', () => { clearStartWatch(); goToNext(true).catch(() => {}); });
