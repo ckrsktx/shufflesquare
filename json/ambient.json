@@ -1,5 +1,135 @@
 [
   {
+    "artist": "Okkervil River",
+    "title": "For The Captain",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/okkervilriver_starstoosmallto_04_forthecaptain.m4a"
+  },
+  {
+    "artist": "Akron/Family",
+    "title": "Sun Will Shine Warmth Of",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/akronfamily_setemwildsetemf_10_sunwillshinewarmthof.m4a"
+  },
+  {
+    "artist": "Okkervil River",
+    "title": "Seas Too Far To Reach",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/okkervilriver_downtheriverofg_11_seastoofartoreach.m4a"
+  },
+  {
+    "artist": "of Montreal",
+    "title": "The Party's Crashing",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/ofmontreal_thesunlandictwins_07thepartyscrashing.m4a"
+  },
+  {
+    "artist": "Dodos",
+    "title": "Fools",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/dodosthe_visiter_04_fools.m4a"
+  },
+  {
+    "artist": "Iron & Wine",
+    "title": "Free Until They Cut Me Down",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/ironandwine_ourendlessnumbe_09_freeuntiltheycutmedo.m4a"
+  },
+  {
+    "artist": "Dirty Projectors",
+    "title": "Police Story",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/dirtyprojectors_riseabove_00_policestory.m4a"
+  },
+  {
+    "artist": "Billy Bragg & Wilco",
+    "title": "Blood Of The Lamb",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/braggbillyandwilc_mermaidavenuevolu_09bloodofthelamb.m4a"
+  },
+  {
+    "artist": "Simon Joyner",
+    "title": "The Shortest Distance Between Two Points",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/joynersimon_roomtemperature_02_theshortestdistanceb.m4a"
+  },
+  {
+    "artist": "Billy Bragg",
+    "title": "The Marching Song Of The Covert Battalions",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/braggbilly_internationaleliv_12themarchingsongof.m4a"
+  },
+  {
+    "artist": "Gospel Claws",
+    "title": "Walk Me Down",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/gospelclaws_thisisflyingbla_07_walkmedown.m4a"
+  },
+  {
+    "artist": "Teen Girl Scientist Monthly",
+    "title": "Games",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/teengirlscienti_hypertrophy_03_games.m4a"
+  },
+  {
+    "artist": "Psychic Ills",
+    "title": "One More Time",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/psychicills_onetrackmind_01_onemoretime.m4a"
+  },
+  {
+    "artist": "The Thermals",
+    "title": "How We Know",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/thethermals_fuckina_03_howweknow.m4a"
+  },
+  {
+    "artist": "Alvvays",
+    "title": "Archie, Marry Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/alvvays_alvvays_02_archiemarryme.m4a"
+  },
+  {
+    "artist": "Diane Alela",
+    "title": "Oh My Mama",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/dianealela_thepiratesgospe_11_ohmymama.m4a"
+  },
+  {
+    "artist": "Jay Reatard",
+    "title": "See Saw",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/reatardjay_matadorsingles0_01_seesaw.m4a"
+  },
+  {
+    "artist": "Cloud Nothings",
+    "title": "Even If It Worked Out",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/cloudnothings_didntyou7_00_evenifitworkedout.m4a"
+  },
+  {
+    "artist": "Sun Club",
+    "title": "Spring Diamond",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/sunclub_dadclapsatthemo_02_springdiamond.m4a"
+  },
+  {
+    "artist": "Blow",
+    "title": "The Democracy Of Small Things",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/blowthe_bonusalbum_01thedemocracyofsma.m4a"
+  },
+  {
+    "artist": "Cajun Gems",
+    "title": "Everyone's Side",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/cajungems_richardbyrdatli_06_everyonesside.m4a"
+  },
+  {
+    "artist": "Parquet Courts",
+    "title": "You've Got Me Wonderin' Now",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/parquetcourts_tallyallthethin_01_youvegotmewonderinno.m4a"
+  },
+  {
+    "artist": "José González",
+    "title": "Stay In The Shade",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/gonzalezjose_veneer_08_stayintheshade.m4a"
+  },
+  {
+    "artist": "Lightning Love",
+    "title": "I Think We're Alright",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/lightninglove_novemberbirthda_09_ithinkwerealright.m4a"
+  },
+  {
+    "artist": "Teenage Moods",
+    "title": "Psychic Playlist",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/teenagemoods_teenagemoods_01_psychicplaylist.m4a"
+  },
+  {
+    "artist": "Jawbreaker Reunion",
+    "title": "My Own",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/jawbreakerreuni_tearingdownpost_02_myown.m4a"
+  },
+  {
     "artist": "Laika",
     "title": "If You Miss",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/laika_silverapplesofthemoon_06_ifyoumiss.m4a"
