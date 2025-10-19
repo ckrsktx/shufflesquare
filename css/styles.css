@@ -327,6 +327,30 @@ button svg {
   }
 }
 
+
+
+
+/* Container de Controles */
+#ctrl {
+  display: flex;
+  gap: 1rem; /* Ajuste o gap para o espaço entre os botões */
+  align-items: center;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  width: auto; /* Ajuste a largura para auto para que ocupe apenas o espaço necessário */
+  padding: 0.25rem 0.5rem; /* Reduza o padding para tornar o container mais compacto */
+  background: var(--card-bg); /* Fundo do container */
+  border-radius: 0.5rem; /* Borda arredondada do container */
+  box-shadow: var(--card-shadow); /* Sombra do container */
+  position: fixed; /* Fixa o container no rodapé */
+  bottom: 1rem; /* Distância do rodapé */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajuste para centralização perfeita */
+  z-index: 10; /* Garante que o container esteja acima de outros elementos */
+  height: 3rem; /* Ajuste a altura para tornar o container mais compacto */
+}
+
+
+
 /* Botões Ovalados com Fundo (Tamanho Reduzido) */
 button {
   background: var(--card-bg);
