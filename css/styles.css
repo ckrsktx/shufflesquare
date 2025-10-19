@@ -1,189 +1,37 @@
+/* ===== CÓDIGO ANTERIOR (SEU) ===== */
 :root {
   --accent: #00ffff;
   --bg: #111;
   --fg: #fff;
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg);
-  color: var(--fg);
-  font-family: system-ui, sans-serif;
-  overflow: hidden;
-  position: relative;
+  height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: var(--bg); color: var(--fg); font-family: system-ui, sans-serif;
+  overflow: hidden; position: relative;
 }
+#loader { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: .86rem; opacity: .6; z-index: 20; }
+#menuBtn { position: fixed; top: 1rem; right: 1rem; width: 40px; height: 40px; background: rgba(255,255,255,.06); border: none; border-radius: .5rem; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 30; }
+#menuBtn span { width: 4px; height: 4px; background: var(--fg); border-radius: 50%; margin: 0 2px; }
+#dropMenu { position: fixed; top: 3rem; right: 1rem; width: 240px; max-height: 70vh; overflow-y: auto; background: rgba(20,20,20,.6); border-radius: .8rem; border: 1px solid rgba(255,255,255,.06); padding: .4rem 0; display: none; flex-direction: column; gap: .25rem; z-index: 30; scrollbar-width: none; }
+#dropMenu::-webkit-scrollbar { display: none; }
+.menuItem { padding: .6rem 1rem; font-size: .88rem; cursor: pointer; transition: background .12s; border-radius: .4rem; }
+.menuItem:hover { background: rgba(255,255,255,.04); }
+#container { position: relative; z-index: 10; display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: 1rem; }
+#playlistName { font-weight: 700; font-size: 1rem; text-align: center; margin-bottom: .25rem; }
+#capa { width: 55vmin; max-width: 320px; aspect-ratio: 1; border-radius: .8rem; object-fit: cover; box-shadow: 0 0 1rem rgba(0,0,0,.5); transition: opacity .25s; }
+#info { text-align: center; width: 86%; display: flex; flex-direction: column; align-items: center; gap: .2rem; }
+#tit { font-size: 1.05rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#art { font-size: .9rem; opacity: .78; }
+#ctrl { display: flex; gap: 1.2rem; align-items: center; }
+button { background: none; border: none; color: var(--fg); cursor: pointer; padding: .5rem; border-radius: 50%; transition: background .2s; }
+button:hover { background: rgba(255,255,255,.06); }
+button svg { width: 24px; height: 24px; fill: currentColor; }
+#playBtn { width: 56px; height: 56px; background: transparent; color: var(--accent) !important; }
+#playBtn:hover { filter: brightness(1.08); }
+#shufBtn.active { background: var(--accent); color: #000; }
 
-#loader {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: .86rem;
-  opacity: .6;
-  z-index: 20;
-}
-
-#menuBtn {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  width: 40px;
-  height: 40px;
-  background: rgba(255,255,255,.06);
-  border: none;
-  border-radius: .5rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 30;
-}
-#menuBtn span {
-  width: 4px;
-  height: 4px;
-  background: var(--fg);
-  border-radius: 50%;
-  margin: 0 2px;
-}
-
-#dropMenu {
-  position: fixed;
-  top: 3rem;
-  right: 1rem;
-  width: 240px;
-  max-height: 70vh;
-  overflow-y: auto;            /* mantém rolagem */
-  background: rgba(20, 20, 20, .6);
-  backdrop-filter: blur(14px);
-  border-radius: .8rem;
-  border: 1px solid rgba(255, 255, 255, .06);
-  padding: .4rem 0;
-  display: none;
-  flex-direction: column;
-  gap: .25rem;
-  z-index: 30;
-
-  /* ESCONDE A BARRA */
-  scrollbar-width: none;       /* Firefox */
-}
-#dropMenu::-webkit-scrollbar {
-  display: none;               /* Chrome / Safari / Edge */
-}
-
-.menuItem {
-  padding: .6rem 1rem;
-  font-size: .88rem;
-  cursor: pointer;
-  transition: background .12s;
-  border-radius: .4rem;
-}
-.menuItem:hover {
-  background: rgba(255,255,255,.04);
-}
-
-#container {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-#playlistName {
-  font-weight: 700;
-  font-size: 1rem;
-  text-align: center;
-  margin-bottom: .25rem;
-}
-
-#capa {
-  width: 55vmin;
-  max-width: 320px;
-  aspect-ratio: 1;
-  border-radius: .8rem;
-  object-fit: cover;
-  box-shadow: 0 0 1rem rgba(0,0,0,.5);
-  transition: opacity .25s;
-}
-
-#info {
-  text-align: center;
-  width: 86%;
-}
-#tit {
-  font-size: 1.05rem;
-  font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-#art {
-  font-size: .9rem;
-  opacity: .78;
-}
-
-#ctrl {
-  display: flex;
-  gap: 1.2rem;
-  align-items: center;
-}
-button {
-  background: none;
-  border: none;
-  color: var(--fg);
-  cursor: pointer;
-  padding: .5rem;
-  border-radius: 50%;
-  transition: background .2s;
-}
-button:hover {
-  background: rgba(255,255,255,.06);
-}
-button svg {
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
-}
-
-#playBtn {
-  width: 56px;
-  height: 56px;
-  background: transparent;
-  color: var(--accent) !important;
-}
-#playBtn:hover {
-  filter: brightness(1.08);
-}
-
-#shufBtn.active {
-  background: var(--accent);
-  color: #000;
-}
-
-@media (max-width: 420px) {
-  #capa {
-    width: 72vmin;
-  }
-  #container {
-    gap: .8rem;
-  }
-
-
-
+/* ===== MELHORIAS: TIMER + CORAÇÕES ===== */
 /* coração grande à ESQUERDA */
 #favBtn {
   position: fixed;
@@ -202,6 +50,7 @@ button svg {
   z-index: 30;
 }
 #favBtn svg { width: 24px; height: 24px; fill: currentColor; }
+#favBtn.active { color: #ff004c; }          /* vermelho quando em Favoritos */
 
 /* timer CENTRALIZADO abaixo da capa */
 #timer {
@@ -214,7 +63,7 @@ button svg {
 
 /* coração por faixa (dentro do #info) */
 .heart {
-  margin-left: .6rem;
+  margin-top: .3rem;
   background: none;
   border: none;
   color: #aaa;
@@ -224,4 +73,8 @@ button svg {
   transition: color .2s;
 }
 .heart.active { color: #ff004c; }
-  
+
+@media (max-width: 420px) {
+  #capa { width: 72vmin; }
+  #container { gap: .8rem; }
+}
