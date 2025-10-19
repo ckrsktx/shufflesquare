@@ -327,9 +327,6 @@ button svg {
   }
 }
 
-
-
-
 /* Container de Controles */
 #ctrl {
   display: flex;
@@ -348,8 +345,6 @@ button svg {
   z-index: 10; /* Garante que o container esteja acima de outros elementos */
   height: 3rem; /* Ajuste a altura para tornar o container mais compacto */
 }
-
-
 
 /* Botões Ovalados com Fundo (Tamanho Reduzido) */
 button {
