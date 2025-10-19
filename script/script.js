@@ -43,14 +43,15 @@ const FAV_KEY = 'favShuffleSquare';
 let favPool = JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
 let previousPlaylist = '', previousIdx = 0;
 
-/* ========== FUNÇÃO NOTIFICAÇÃO BLACKOUT FAVORITOS ========== */
+/* ========== FUNÇÃO NOTIFICAÇÃO BLACKOUT FAVORITOS (centralizada no player) ========== */
 function showNoFavOverlay(msg = "Nenhuma faixa favorita.") {
   let overlay = document.getElementById('noFavOverlay');
+  const parent = $('#container');
   if (!overlay) {
     overlay = document.createElement('div');
     overlay.id = 'noFavOverlay';
     overlay.innerHTML = msg;
-    document.body.appendChild(overlay);
+    parent.appendChild(overlay);
   } else {
     overlay.innerHTML = msg;
     overlay.classList.remove('hide');
@@ -71,7 +72,6 @@ function updateFavBtnStatus() {
   loader.textContent = 'Carregando playlists...';
   try {
     playlists = await fetchJsonWithTimestamp(PLAYLIST_URL);
-    //console.log('[PLAYLISTS]', playlists);
   } catch {
     loader.textContent = 'Erro ao carregar playlists 😕';
     return;
@@ -179,7 +179,6 @@ async function loadPool({ resetIdx = false, stopPlayback = true } = {}) {
     pool = shuffleOn ? shuffleArray(originalPool) : [...originalPool];
     if (resetIdx) idx = 0;
     recentPlayed.clear(); playsSinceReset = 0; lastCountedKey = null; playedInCycle.clear(); clearStartTimeout();
-    //console.log('[POOL]', currentPl, pool);
   } catch (e) {
     originalPool = [];
     pool = [];
@@ -193,7 +192,6 @@ async function getCoverForTrack(t) {
   const key = safeKeyForTrack(t);
   if (coverCache.has(key)) return coverCache.get(key);
   if (t.cover && typeof t.cover === 'string' && t.cover.trim()) { coverCache.set(key, t.cover); return t.cover; }
-  // procura por movie/artista/ano
   const wantMovie = (() => {
     const pl = (currentPl || '').toLowerCase(), typ = (t.type || '').toLowerCase(), titleLower = (t.title || '').toLowerCase();
     return typ.includes('movie') || typ.includes('filme') || pl.includes('filmes') || pl.includes('filme') || /\bfilme\b/.test(titleLower);
@@ -258,7 +256,6 @@ async function loadTrack({ autoplay = false } = {}) {
     capa.style.opacity = '1';
     updatePlayButton();
     updateFavBtnStatus();
-    //console.warn('[LOAD TRACK] Sem faixa no pool ou erro.');
     return;
   }
   isLoading = true;
@@ -356,7 +353,7 @@ function updateMediaSession() {
           (action === 'play' ? a.play() : action === 'pause' ? a.pause() : action === 'previoustrack' ? prev.click() : next.click())
         )
       );
-    } catch (e) { /* ignore */ }
+    } catch (e) {}
   }
 }
 
@@ -372,7 +369,7 @@ document.addEventListener('keydown', e => {
   else if (e.code === 'ArrowLeft')  prev.click();
 });
 
-/* ========== FAVORITOS + CORAÇÕES PEQUENOS ========== */
+/* ========== FAVORITOS + CORAÇÕES PEQUENOS (com auto-remover do pool) ========== */
 function createHeart() {
   const h = document.createElement('button');
   h.className = 'heart';
@@ -384,8 +381,34 @@ function createHeart() {
 function toggleFavorite(t, el) {
   const key = safeKeyForTrack(t);
   const idxFav = favPool.findIndex(f => safeKeyForTrack(f) === key);
-  if (idxFav === -1) { favPool.push(t); el.classList.add('active'); }
-  else { favPool.splice(idxFav, 1); el.classList.remove('active'); }
+  if (idxFav === -1) {
+    favPool.push(t);
+    el.classList.add('active');
+  } else {
+    favPool.splice(idxFav, 1);
+    el.classList.remove('active');
+    // Se estiver exibindo Favoritos, remove do pool ativo imediatamente!
+    if (currentPl === 'Favoritos') {
+      const poolIdx = pool.findIndex(f => safeKeyForTrack(f) === key);
+      if (poolIdx !== -1) {
+        pool.splice(poolIdx, 1);
+        originalPool.splice(poolIdx, 1);
+        if (pool.length === 0) {
+          showNoFavOverlay("Nenhuma faixa favorita.");
+          exitFavorites();
+          localStorage.setItem(FAV_KEY, JSON.stringify(favPool));
+          updateHeartStatus();
+          return;
+        }
+        // Corrige idx (se removido atrás do atual)
+        if (idx >= pool.length) idx = 0;
+        loadTrack({ autoplay: false });
+        localStorage.setItem(FAV_KEY, JSON.stringify(favPool));
+        updateHeartStatus();
+        return;
+      }
+    }
+  }
   localStorage.setItem(FAV_KEY, JSON.stringify(favPool));
   updateHeartStatus();
 }
@@ -460,8 +483,6 @@ function fetchWithTimeout(url, opts = {}, timeout = 4000) {
   const controller = new AbortController(), id = setTimeout(() => controller.abort(), timeout);
   return fetch(url, {...opts, signal: controller.signal}).finally(() => clearTimeout(id));
 }
-
-/* ========== OUTRAS FUNÇÕES OPCIONAIS (desempenho, toast, etc) ========== */
 function clearStartTimeout() {
   if (startTimeoutId) { clearTimeout(startTimeoutId); startTimeoutId = null; }
 }
