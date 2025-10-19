@@ -327,21 +327,22 @@ button svg {
   }
 }
 
-/* Botões Ovalados com Fundo */
+/* Botões Ovalados com Fundo (Tamanho Reduzido) */
 button {
   background: var(--card-bg);
   border: none;
   color: var(--fg);
   cursor: pointer;
-  padding: 0.75rem;
+  padding: 0.5rem;
   border-radius: 50%;
   transition: background 0.2s, color 0.2s, box-shadow 0.15s, transform 0.2s;
   outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1rem; /* Ajuste o tamanho da fonte se necessário */
 }
 button:focus-visible {
   outline: 2px solid var(--accent);
@@ -352,7 +353,7 @@ button:active {
   transform: scale(1.05);
 }
 button svg {
-  width: 24px;
-  height: 24px;
+  width: 18px; /* Ajuste o tamanho do ícone */
+  height: 18px; /* Ajuste o tamanho do ícone */
   fill: currentColor;
 }
