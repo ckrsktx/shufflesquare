@@ -4,24 +4,21 @@ const FALLBACK = 'img/cd.png';
 const $ = s => document.querySelector(s);
 
 /* ========== DOM ========== */
-const a = $('#a'), capa = $('#capa'), tit = $('#tit'), art = $('#art'),
-      playBtn = $('#playBtn'), prev = $('#prev'), next = $('#next'),
-      loader = $('#loader'), menuBtn = $('#menuBtn'), dropMenu = $('#dropMenu'),
-      shufBtn = $('#shufBtn'), playlistName = $('#playlistName'),
+const a = $('#a'),
+      capa = $('#capa'),
+      tit = $('#tit'),
+      art = $('#art'),
+      playBtn = $('#playBtn'),
+      prev = $('#prev'),
+      next = $('#next'),
+      loader = $('#loader'),
+      menuBtn = $('#menuBtn'),
+      dropMenu = $('#dropMenu'),
+      shufBtn = $('#shufBtn'),
+      playlistName = $('#playlistName'),
       favBtn = $('#favBtn');
 
-/* ========== STATE ========== */
-let playlists = {}, originalPool = [], pool = [],
-    idx = 0, shuffleOn = false, isLoading = false, currentPl = '',
-    coverCache = new Map(), COVER_TIMEOUT = 4000, RESET_AFTER = 5,
-    recentPlayed = new Set(), playsSinceReset = 0, lastCountedKey = null,
-    playedInCycle = new Set(), startTimeoutId = null, START_TIMEOUT_MS = 4000;
-
-/* ========== FAVORITOS ========== */
-const FAV_KEY = 'favShuffleSquare';
-let favPool = JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
-
-// Seleciona o timer do HTML, sem criar outro!
+/* ========== TIMER (SEM DUPLICAÇÃO) ========== */
 const timerDiv = $('#timer');
 
 function fmt(t) {
@@ -35,32 +32,21 @@ function updateTimer() {
 a.addEventListener('timeupdate', updateTimer);
 a.addEventListener('loadedmetadata', updateTimer);
 
-/* ========== UTILS ========== */
-function safeKeyForTrack(t) {
-  if (!t) return 'unknown';
-  if (t.artist && t.title) return `${(t.artist+'').trim().toLowerCase()}|${(t.title+'').trim().toLowerCase()}`;
-  return t.url || (typeof t === 'string' ? t : JSON.stringify(t));
-}
-async function fetchJsonWithTimestamp(url) {
-  try {
-    const res = await fetch(url + '?t=' + Date.now(), {cache:'no-store'});
-    if (!res.ok) throw new Error('fetch error ' + res.status);
-    return res.json();
-  } catch (e) {
-    console.error('Erro ao carregar JSON:', url, e);
-    throw e;
-  }
-}
-function normalizeText(s) {
-  if (!s) return '';
-  return (''+s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\w\s]/g,'').replace(/\s+/g,' ').trim();
-}
-function fetchWithTimeout(url, opts = {}, timeout = COVER_TIMEOUT) {
-  const controller = new AbortController(), id = setTimeout(() => controller.abort(), timeout);
-  return fetch(url, {...opts, signal: controller.signal}).finally(() => clearTimeout(id));
-}
-function clearStartTimeout() {
-  if (startTimeoutId) { clearTimeout(startTimeoutId); startTimeoutId = null; }
+/* ========== STATE ========== */
+let playlists = {}, originalPool = [], pool = [],
+    idx = 0, shuffleOn = false, isLoading = false, currentPl = '',
+    coverCache = new Map(), COVER_TIMEOUT = 4000, RESET_AFTER = 5,
+    recentPlayed = new Set(), playsSinceReset = 0, lastCountedKey = null,
+    playedInCycle = new Set(), startTimeoutId = null, START_TIMEOUT_MS = 4000;
+
+/* ========== FAVORITOS ========== */
+const FAV_KEY = 'favShuffleSquare';
+let favPool = JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
+let previousPlaylist = '', previousIdx = 0;
+
+/* ========== FAVORITOS: atualizar o botão VISUALMENTE ========== */
+function updateFavBtnStatus() {
+  favBtn.classList.toggle('active', currentPl === 'Favoritos');
 }
 
 /* ========== INIT ========== */
@@ -85,6 +71,7 @@ function clearStartTimeout() {
   loader.style.display = 'none';
   await loadTrack({ autoplay: false });
   preloadNext();
+  updateFavBtnStatus();
 })();
 
 /* ========== MENU ========== */
@@ -105,6 +92,7 @@ function fillMenu() {
         idx = Math.max(0, Math.floor(Math.random() * (pool.length || 1)));
         await loadTrack({ autoplay: false });
         preloadNext();
+        updateFavBtnStatus(); // Atualizar o visual do botão favoritos
       } catch (e) {
         alert('Erro ao trocar playlist');
       }
@@ -255,6 +243,7 @@ async function loadTrack({ autoplay = false } = {}) {
     capa.src = FALLBACK;
     capa.style.opacity = '1';
     updatePlayButton();
+    updateFavBtnStatus();
     console.warn('[LOAD TRACK] Sem faixa no pool ou erro.');
     return;
   }
@@ -281,6 +270,7 @@ async function loadTrack({ autoplay = false } = {}) {
   updatePlayButton();
   updateHeartStatus();
   insertHeart();
+  updateFavBtnStatus();
   console.log('[PLAYING]', t.url, t.title, t.artist);
 }
 
@@ -308,6 +298,7 @@ a.addEventListener('playing', () => {
   playedInCycle.add(key);
   if (playedInCycle.size >= pool.length) playedInCycle.clear();
   updatePlayButton();
+  updateFavBtnStatus();
 });
 
 /* ========== NEXT / PREV (throttle 200 ms) ========== */
@@ -381,6 +372,7 @@ window.changePlaylist = async function (name) {
   a.pause(); a.currentTime = 0; recentPlayed.clear(); playsSinceReset = 0; lastCountedKey = null; playedInCycle.clear(); clearStartTimeout();
   currentPl = name; playlistName.textContent = name; await loadPool({ resetIdx: true, stopPlayback: true });
   idx = Math.floor(Math.random() * pool.length); await loadTrack({ autoplay: false });
+  updateFavBtnStatus();
 };
 
 /* ========== DEBUG ========== */
@@ -414,6 +406,10 @@ setInterval(() => { if (!a.paused && a.src) fetch(PLAYLIST_URL, { mode: 'no-cors
 /* ===== AUTO-SKIP SE NÃO COMEÇAR EM 5 s ===== */
 let startWatchId = null;
 const START_WATCH_MS = 5000;
+
+function clearStartTimeout() {
+  if (startTimeoutId) { clearTimeout(startTimeoutId); startTimeoutId = null; }
+}
 
 function clearStartWatch() {
   if (startWatchId) { clearTimeout(startWatchId); startWatchId = null; }
@@ -467,13 +463,55 @@ heartObs.observe(tit, { childList: true, characterData: true, subtree: true });
 heartObs.observe(art, { childList: true, characterData: true, subtree: true });
 
 favBtn.onclick = () => {
-  if (currentPl === 'Favoritos') { exitFavorites(); }
-  else { enterFavorites(); }
+  if (currentPl === 'Favoritos') {
+    exitFavorites();
+  } else {
+    enterFavorites();
+  }
+  updateFavBtnStatus();
 };
 function enterFavorites() {
   if (favPool.length === 0) { alert('Nenhuma faixa favorita.'); return; }
-  // aqui vá o seu código para trocar o pool para favoritos
+  previousPlaylist = currentPl; previousIdx = idx;
+  currentPl = 'Favoritos';
+  playlistName.textContent = 'Favoritos';
+  originalPool = [...favPool];
+  pool = shuffleOn ? shuffleArray(originalPool) : [...originalPool];
+  idx = Math.max(0, Math.floor(Math.random() * (pool.length || 1)));
+  loadTrack({autoplay:false});
+  updateFavBtnStatus();
 }
 function exitFavorites() {
-  // aqui vá o seu código para voltar para a playlist anterior
+  currentPl = previousPlaylist || Object.keys(playlists)[0] || '';
+  playlistName.textContent = currentPl;
+  loadPool({resetIdx: false, stopPlayback: true}).then(()=>{
+    idx = previousIdx || 0;
+    loadTrack({autoplay:false});
+    updateFavBtnStatus();
+  });
+}
+
+/* ========== UTILS ========= */
+function safeKeyForTrack(t) {
+  if (!t) return 'unknown';
+  if (t.artist && t.title) return `${(t.artist+'').trim().toLowerCase()}|${(t.title+'').trim().toLowerCase()}`;
+  return t.url || (typeof t === 'string' ? t : JSON.stringify(t));
+}
+async function fetchJsonWithTimestamp(url) {
+  try {
+    const res = await fetch(url + '?t=' + Date.now(), {cache:'no-store'});
+    if (!res.ok) throw new Error('fetch error ' + res.status);
+    return res.json();
+  } catch (e) {
+    console.error('Erro ao carregar JSON:', url, e);
+    throw e;
+  }
+}
+function normalizeText(s) {
+  if (!s) return '';
+  return (''+s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\w\s]/g,'').replace(/\s+/g,' ').trim();
+}
+function fetchWithTimeout(url, opts = {}, timeout = 4000) {
+  const controller = new AbortController(), id = setTimeout(() => controller.abort(), timeout);
+  return fetch(url, {...opts, signal: controller.signal}).finally(() => clearTimeout(id));
 }
