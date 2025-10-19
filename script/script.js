@@ -15,7 +15,25 @@ const a = $('#a'),
       dropMenu = $('#dropMenu'),
       shufBtn = $('#shufBtn'),
       playlistName = $('#playlistName'),
-      favBtn = $('#favBtn');
+
+
+      const favBtn = $('#favBtn');
+favBtn.addEventListener('click', () => {
+  const curKey = safeKeyForTrack(currentTrack());
+  if (favBtn.classList.toggle('active')) {
+    favs.add(curKey);
+    localStorage.setItem('favs', JSON.stringify([...favs]));
+  } else {
+    favs.delete(curKey);
+    localStorage.setItem('favs', JSON.stringify([...favs]));
+  }
+  updateFavBtnStatus();
+});
+
+function updateFavBtnStatus() {
+  const curKey = safeKeyForTrack(currentTrack());
+  favBtn.classList.toggle('active', favs.has(curKey));
+}
 
 /* ========== TIMER (SEM DUPLICAÇÃO) ========== */
 const timerDiv = $('#timer');
