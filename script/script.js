@@ -21,11 +21,8 @@ let playlists = {}, originalPool = [], pool = [],
 const FAV_KEY = 'favShuffleSquare';
 let favPool = JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
 
-/* ========== TIMER (bloco único) ========== */
-const timerDiv = document.createElement('div');
-timerDiv.id = 'timer';
-timerDiv.textContent = '0:00 / 0:00';
-document.querySelector('#container').appendChild(timerDiv);
+// Seleciona o timer do HTML, sem criar outro!
+const timerDiv = $('#timer');
 
 function fmt(t) {
   const m = Math.floor(t / 60), s = Math.floor(t % 60);
