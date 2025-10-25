@@ -1,5 +1,115 @@
 [
   {
+  "artist": "Jackson, Michael",
+  "title": "Man in the Mirror",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/eighties/michaeljackson_numberones_10maninthemirror.m4a"
+},
+{
+  "artist": "Fergie",
+  "title": "Big Girls Don't Cry",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/fergie_ha200725_04biggirlsdontcry.m4a"
+},
+{
+  "artist": "Adams, Bryan",
+  "title": "(Everything I Do) I Do It for You",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/adamsbryan_chrgold01_everythingidoidoi.m4a"
+},
+{
+  "artist": "Womack, Lee Ann",
+  "title": "I Hope You Dance",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/womackleeann_chrgold56_ihopeyoudancesing.m4a"
+},
+{
+  "artist": "Aguilera, Christina",
+  "title": "Beautiful",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/christina_gd1907_14beautifulalbum.m4a"
+},
+{
+  "artist": "3 Doors Down",
+  "title": "Here Without You",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/3doorsdown_gd830_02herewithoutyou3.m4a"
+},
+{
+  "artist": "Backstreet Boys",
+  "title": "Quit Playing Games (With My Heart)",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/backstreetboys_chrgold56_quitplayinggamesw.m4a"
+},
+{
+  "artist": "Swift, Taylor",
+  "title": "Blank Space",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/swifttaylor_ha201445_05_blankspace.m4a"
+},
+{
+  "artist": "Pink",
+  "title": "Blow Me (One Last Kiss)",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/pink_ha201228_12_blowmeonelastkiss.m4a"
+},
+{
+  "artist": "Madonna",
+  "title": "Borderline",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/madonna_chrgold19_borderlinesinglev.m4a"
+},
+{
+  "artist": "Wham!",
+  "title": "Wake Me Up Before You Go-Go",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/wham_gd223_13wakemeupbeforeyou.m4a"
+},
+{
+  "artist": "Lightfoot, Gordon",
+  "title": "If You Could Read My Mind",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/lightfootgordon_chrgold18_ifyoucouldreadmym.m4a"
+},
+{
+  "artist": "Maroon 5",
+  "title": "One More Night",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/maroon5_ha201229_03_onemorenight.m4a"
+},
+{
+  "artist": "Perry, Katy",
+  "title": "California Gurls",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/perrykaty_ha201020_05_californiagurls.m4a"
+},
+{
+  "artist": "Rihanna",
+  "title": "We Found Love",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/rihanna_ha201140_15_wefoundlove.m4a"
+},
+{
+  "artist": "Guetta, David",
+  "title": "Titanium",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/guettadavid_ha2012230_13_titanium.m4a"
+},
+{
+  "artist": "Taylor, James",
+  "title": "How Sweet It Is (To Be Loved by You)",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/taylorjames_chrgold28_howsweetitistobel.m4a"
+},
+{
+  "artist": "Backstreet Boys",
+  "title": "As Long as You Love Me",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/backstreetboys_chrgold56_aslongasyouloveme.m4a"
+},
+{
+  "artist": "Pink",
+  "title": "Who Knew",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/pink_ha200621_01whoknew.m4a"
+},
+{
+  "artist": "The Weeknd",
+  "title": "Blinding Lights",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/weekndthe_blindinglightssingle_01_blindinglights.m4a"
+},
+{
+  "artist": "Mr. Big",
+  "title": "To Be With You",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/mrbig_ch0357_tobewithyou.m4a"
+},
+{
+  "artist": "Maroon 5",
+  "title": "Memories",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/maroon5_memoriessingle_01_memories.m4a"
+},
+  {
   "artist": "Temple of the Dog",
   "title": "Say Hello 2 Heaven",
   "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/templeofthedog_al0340_680-04sayhello2heavenlp.m4a"
