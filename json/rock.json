@@ -1,5 +1,230 @@
 [
   {
+    "artist": "Television",
+    "title": "Marquee Moon",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/television_marqueemoon_04marqueemoon.m4a"
+  },
+  {
+    "artist": "Frank Zappa",
+    "title": "Willie the Pimp",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/zappafrank_hotrats_02_williethepimp.m4a"
+  },
+  {
+    "artist": "Lynyrd Skynyrd",
+    "title": "Free Bird",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/lynyrdskynyrd_crgold046_freebird.m4a"
+  },
+  {
+    "artist": "Metallica",
+    "title": "Master of Puppets",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/metal/metallica_masterofpuppets_02masterofpuppets.m4a"
+  },
+  {
+    "artist": "Funkadelic",
+    "title": "Maggot Brain",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/funkadelic_onenationundera_09_maggotbrain.m4a"
+  },
+  {
+    "artist": "The Rolling Stones",
+    "title": "Can't You Hear Me Knocking",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrockdiscogs/rollingstonesthe_crgold020_cantyouhearmeknoc.m4a"
+  },
+  {
+    "artist": "Derek and The Dominos",
+    "title": "Layla",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/derekandthedomino_laylaandotherasso_13layla.m4a"
+  },
+  {
+    "artist": "The Smiths",
+    "title": "How Soon Is Now",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/thesmiths_thebritboxdisc1_01howsoonisnow.m4a"
+  },
+  {
+    "artist": "The Eagles",
+    "title": "Hotel California",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/eaglesthe_crgold062_hotelcalifornia.m4a"
+  },
+  {
+    "artist": "Radiohead",
+    "title": "Paranoid Android",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/radiohead_okcomputer_02paranoidandroid.m4a"
+  },
+  {
+    "artist": "Pink Floyd",
+    "title": "Comfortably Numb",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/pinkfloyd_thewall_06comfortablynumb.m4a"
+  },
+  {
+    "artist": "My Morning Jacket",
+    "title": "Run Thru",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/mymorningjacket_itstillmoves_08_runthru.m4a"
+  },
+  {
+    "artist": "U2",
+    "title": "Where the Streets Have No Name",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/u2_al318_wherethestreetsha.m4a"
+  },
+  {
+    "artist": "Led Zeppelin",
+    "title": "Whole Lotta Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrockdiscogs/ledzeppelin_crgold046_wholelottalove.m4a"
+  },
+  {
+    "artist": "Creedence Clearwater Revival",
+    "title": "Born on the Bayou",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/creedenceclearwat_chroniclevol2_03bornonthebayou.m4a"
+  },
+  {
+    "artist": "Jimi Hendrix Experience",
+    "title": "Voodoo Child (Slight Return)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/jimihendrixexperi_electricladyland_16voodoochildslight.m4a"
+  },
+  {
+    "artist": "Pink Floyd",
+    "title": "Wish You Were Here",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrockdiscogs/pinkfloyd_crgold039_wishyouwerehere.m4a"
+  },
+  {
+    "artist": "Cream",
+    "title": "White Room",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/cream_theverybestofcrea_12whiteroom.m4a"
+  },
+  {
+    "artist": "Ozzy Osbourne",
+    "title": "Crazy Train",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/osbourneozzy_crgold015_crazytrain.m4a"
+  },
+  {
+    "artist": "The Police",
+    "title": "Message in a Bottle",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/police_al317_messageinabottle.m4a"
+  },
+  {
+    "artist": "The Beatles",
+    "title": "While My Guitar Gently Weeps",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/beatlesthe_thebeatlesremas_07_whilemyguitargentlyw.m4a"
+  },
+  {
+    "artist": "Bruce Springsteen",
+    "title": "Born in the USA",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/springsteenbruce_crgold068_bornintheusa.m4a"
+  },
+  {
+    "artist": "Nirvana",
+    "title": "Smells Like Teen Spirit",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/nirvana_ch0329_smellsliketeenspi.m4a"
+  },
+  {
+    "artist": "Weezer",
+    "title": "Say It Ain't So",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/weezer_al0362_797-16sayitaintsoremix.m4a"
+  },
+  {
+    "artist": "Guns N' Roses",
+    "title": "Sweet Child O' Mine",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/gunsnroses_ch032_sweetchildomine.m4a"
+  },
+  {
+    "artist": "The Allman Brothers Band",
+    "title": "Statesboro Blues",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/allmanbrothersban_gd572_01statesboroblues.m4a"
+  },
+  {
+    "artist": "The Stooges",
+    "title": "1969",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/thestooges_thestooges_011969.m4a"
+  },
+  {
+    "artist": "Dire Straits",
+    "title": "Money for Nothing",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/direstraits_brothersinarms_2_moneyfornothingradioedit.m4a"
+  },
+  {
+    "artist": "Prince",
+    "title": "Purple Rain",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/prince_ch0328_purplerain.m4a"
+  },
+  {
+    "artist": "The Wonder Years",
+    "title": "Summertime Blues",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/wonderyearsthe_summertime_10summertimeblues.m4a"
+  },
+  {
+    "artist": "Aerosmith",
+    "title": "Walk This Way",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/aerosmith_crgold048_walkthisway.m4a"
+  },
+  {
+    "artist": "The Byrds",
+    "title": "Eight Miles High",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/byrds_fifthdimension_04eightmileshigh.m4a"
+  },
+  {
+    "artist": "The Who",
+    "title": "My Generation",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/whothe_thewhosingsmyge_01_mygeneration.m4a"
+  },
+  {
+    "artist": "The Clash",
+    "title": "London Calling",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/clash_al333_londoncalling.m4a"
+  },
+  {
+    "artist": "John Mayall & The Bluesbreakers",
+    "title": "Hideaway",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/mayalljohn_bluesbreakerswi_02_hideaway.m4a"
+  },
+  {
+    "artist": "B.B. King",
+    "title": "How Blue Can You Get",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/wmvy/001HowBlueCanYouGet_.m4a"
+  },
+  {
+    "artist": "The Beatles",
+    "title": "I Saw Her Standing There",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/beatlesthe_pleasepleasemer_01_isawherstandingthere.m4a"
+  },
+  {
+    "artist": "Jimi Hendrix Experience",
+    "title": "Purple Haze",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrockdiscogs/jimihendrixexperi_areyouexperienced_03purplehaze.m4a"
+  },
+  {
+    "artist": "Moby Grape",
+    "title": "Omaha",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/mobygrape_mobygrape_06_omaha.m4a"
+  },
+  {
+    "artist": "The Impressions",
+    "title": "People Get Ready",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/impressions_hd440_18peoplegetready.m4a"
+  },
+  {
+    "artist": "Sam & Dave",
+    "title": "Soul Man",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/soul/samanddave_atlanticrhythmblu_27soulman.m4a"
+  },
+  {
+    "artist": "Jeff Beck",
+    "title": "Over Under Sideways Down",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/beckjeff_beckologythesampl_03overundersideways.m4a"
+  },
+  {
+    "artist": "The Ramones",
+    "title": "Blitzkrieg Bop",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/punk/ramonesthe_ramones_01_blitzkriegbop.m4a"
+  },
+  {
+    "artist": "Bill Haley",
+    "title": "Rock Around the Clock",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/haleybill_radiohitsfromthe5_01rockaroundthecloc.m4a"
+  },
+  {
+    "artist": "Elvis Presley",
+    "title": "That's All Right",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/presleyelvis_elvisatsun_03_thatsallright.m4a"
+  },
+  {
     "artist": "Red Hot Chili Peppers",
     "title": "Snow (Hey Oh)",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/redhotchilipepper_stadiumarcadiumju_02snowheyoh.m4a"
