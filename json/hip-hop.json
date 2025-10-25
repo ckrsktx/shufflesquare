@@ -1,5 +1,165 @@
 [
   {
+    "artist": "Migos",
+    "title": "Bad and Boujee",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/migos_badandboujeesingle_01_badandboujee.m4a"
+  },
+  {
+    "artist": "Murphy Lee",
+    "title": "Shake Ya",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/murphylee_gd828_09shakeya.m4a"
+  },
+  {
+    "artist": "Drake",
+    "title": "All Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/drake_ha201341_11_allme.m4a"
+  },
+  {
+    "artist": "Usher",
+    "title": "Love in This Club",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/usher_ha200808_18loveinthisclub.m4a"
+  },
+  {
+    "artist": "Drake",
+    "title": "Take Care",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/drake_ha201150_11_takecare.m4a"
+  },
+  {
+    "artist": "Shop Boyz",
+    "title": "Rockstar",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/dashopboyz_ha200713_17rockstar.m4a"
+  },
+  {
+    "artist": "The Weeknd",
+    "title": "Party Monster",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/weekndthe_starboy_2_partymonster.m4a"
+  },
+  {
+    "artist": "Mary J. Blige",
+    "title": "Be Without You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/bligemaryj_hd643_15bewithoutyou.m4a"
+  },
+  {
+    "artist": "A$AP Rocky",
+    "title": "F**kin Problems",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/aaprocky_ha201245_06_fkinproblems.m4a"
+  },
+  {
+    "artist": "Tyga",
+    "title": "Taste",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/tyga_ha201821_16_taste.m4a"
+  },
+  {
+    "artist": "Alicia Keys",
+    "title": "If I Ain't Got You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/aliciakeys_hd579a_04ifiaintgotyou.m4a"
+  },
+  {
+    "artist": "Rihanna",
+    "title": "Take a Bow",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/rihanna_ha200812_19takeabow.m4a"
+  },
+  {
+    "artist": "Omarion",
+    "title": "Post to Be",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/omarion_ha201509_11_posttobe.m4a"
+  },
+  {
+    "artist": "Chris Brown",
+    "title": "Look at Me Now",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/brownchris_ha201105_11_lookatmenow.m4a"
+  },
+  {
+    "artist": "Kendrick Lamar",
+    "title": "Alright",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/lamarkendrick_ha201524_13_alright.m4a"
+  },
+  {
+    "artist": "Jay-Z & Kanye West",
+    "title": "Ni**as in Paris",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/jayzwestkanye_ha201136_14_ninparis.m4a"
+  },
+  {
+    "artist": "Migos",
+    "title": "Hannah Montana",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/migos_ha201402_11_hannamontana.m4a"
+  },
+  {
+    "artist": "The Weeknd",
+    "title": "Earned It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/weekndthe_ha201502_16_earnedit.m4a"
+  },
+  {
+    "artist": "Tyga",
+    "title": "Faded",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/tyga_ha201205_15_faded.m4a"
+  },
+  {
+    "artist": "Kanye West",
+    "title": "Heartless",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/westkanye_ha200844_15_heartless.m4a"
+  },
+  {
+    "artist": "Tyga",
+    "title": "Coconut Juice",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/tyga_ha200819_19_coconutjuice.m4a"
+  },
+  {
+    "artist": "Tyga",
+    "title": "Rack City",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/tyga_ha201148_15_rackcity.m4a"
+  },
+  {
+    "artist": "Fetty Wap",
+    "title": "679",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/fettywap_ha201532_12_679.m4a"
+  },
+  {
+    "artist": "Beyoncé",
+    "title": "Check on It",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/beyonce_ha200607_02checkonitnorapver.m4a"
+  },
+  {
+    "artist": "Gunna",
+    "title": "WGF (feat. Burna Boy)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/gunna_thelastwun_09_wgftfeatburnaboyradio.m4a"
+  },
+  {
+    "artist": "Lil Uzi Vert",
+    "title": "XO Tour Llif3",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/liluzivert_ha201717_18_xotourllif3.m4a"
+  },
+  {
+    "artist": "Future",
+    "title": "Wicked",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/future_ha201615_17_wicked.m4a"
+  },
+  {
+    "artist": "TK Kravitz",
+    "title": "Space",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/tkkravitz_ha201733_11_space.m4a"
+  },
+  {
+    "artist": "The Larks",
+    "title": "Coffee",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/larks_thedawnofdoowop_25coffee.m4a"
+  },
+  {
+    "artist": "Tyla",
+    "title": "Jump",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/tyla_tyla_09_jump.m4a"
+  },
+  {
+    "artist": "Jack Harlow",
+    "title": "What's Poppin",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/harlowjack_whatspoppinsingle_01_whatspoppin.m4a"
+  },
+  {
+    "artist": "OhGeesy",
+    "title": "Geekaleek (Remix)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/ohgeesy_geezyworld2_23_geekaleekremix.m4a"
+  },
+  {
     "artist": "Nas",
     "title": "If I Ruled the World",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/nas_itwaswritten_14ifiruledtheworldi.m4a"
