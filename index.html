@@ -3,8 +3,238 @@
 <head>
   <meta charset="utf-8"/>
   <title>ShuffleSquare</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <style>
+    :root {
+      --accent: #00ffff;
+      --bg: #111;
+      --fg: #fff;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, sans-serif;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #loader {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .86rem;
+      opacity: .6;
+      z-index: 20;
+    }
+
+    #menuBtn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,.06);
+      border: none;
+      border-radius: .5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 30;
+    }
+    #menuBtn span {
+      width: 4px;
+      height: 4px;
+      background: var(--fg);
+      border-radius: 50%;
+      margin: 0 2px;
+    }
+
+    #dropMenu {
+      position: fixed;
+      top: 3rem;
+      right: 1rem;
+      width: 240px;
+      max-height: 70vh;
+      overflow-y: auto;
+      background: rgba(20, 20, 20, .6);
+      backdrop-filter: blur(14px);
+      border-radius: .8rem;
+      border: 1px solid rgba(255, 255, 255, .06);
+      padding: .4rem 0;
+      display: none;
+      flex-direction: column;
+      gap: .25rem;
+      z-index: 30;
+      scrollbar-width: none;
+    }
+    #dropMenu::-webkit-scrollbar {
+      display: none;
+    }
+
+    .menuItem {
+      padding: .6rem 1rem;
+      font-size: .88rem;
+      cursor: pointer;
+      transition: background .12s;
+      border-radius: .4rem;
+    }
+    .menuItem:hover {
+      background: rgba(255,255,255,.04);
+    }
+
+    #container {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    #playlistName {
+      font-weight: 700;
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: .25rem;
+    }
+
+    #capa {
+      width: 55vmin;
+      max-width: 320px;
+      aspect-ratio: 1;
+      border-radius: .8rem;
+      object-fit: cover;
+      box-shadow: 0 0 1rem rgba(0,0,0,.5);
+      transition: opacity .25s;
+    }
+
+    #info {
+      text-align: center;
+      width: 86%;
+    }
+    #tit {
+      font-size: 1.05rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #art {
+      font-size: .9rem;
+      opacity: .78;
+    }
+
+    #ctrl {
+      display: flex;
+      gap: 1.2rem;
+      align-items: center;
+    }
+
+    button {
+      background: none;
+      border: none;
+      color: var(--fg);
+      cursor: pointer;
+      padding: .5rem;
+      border-radius: 50%;
+      transition: color .2s, filter .2s;
+      outline: none;
+    }
+    button:hover {
+      color: var(--accent);
+      filter: brightness(1.2);
+    }
+    button:active, button:focus {
+      color: var(--accent);
+      background: none;
+    }
+    button svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+    #playBtn {
+      width: 56px;
+      height: 56px;
+      background: none;
+      color: var(--accent) !important;
+    }
+    #playBtn:hover {
+      filter: brightness(1.3);
+      background: none;
+    }
+
+    #shufBtn.active {
+      background: none;
+      color: var(--accent);
+      filter: brightness(1.3);
+    }
+
+    #prev:active, #next:active, #shufBtn:active, #playBtn:active {
+      background: none;
+    }
+
+    button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      background: none;
+    }
+
+    @media (max-width: 420px) {
+      #capa {
+        width: 72vmin;
+      }
+      #container {
+        gap: .8rem;
+      }
+    }
+
+    .toast {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,.55);
+      color: #fff;
+      padding: 1.2rem 1.8rem;
+      border-radius: 1rem;
+      font-size: 1.05rem;
+      text-align: center;
+      line-height: 1.4;
+      z-index: 999;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .hint {
+      position: fixed;
+      top: 4.2rem;
+      right: 1.2rem;
+      color: var(--fg);
+      font-size: .85rem;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+  </style>
 </head>
 
 <body>
@@ -19,7 +249,7 @@
   <main id="container" aria-live="polite">
     <h1 id="playlistName">–</h1>
 
-    <img id="capa" alt="Capa do álbum"/>
+    <img id="capa" style="opacity:0" alt="Capa do álbum"/>
 
     <section id="info">
       <h2 id="tit">–</h2>
@@ -47,6 +277,526 @@
     </div>
   </main>
 
-  <script src="script/script.js"></script>
+  <script>
+    // ========== CONFIG ==========
+    const PLAYLIST_URL = 'https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/playlists.json';
+    const FALLBACK = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjMjIyIi8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iNjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxwYXRoIGQ9Ik0xMjAgMTIwTDE4MCAxODBNMTIwIDE4MEwxODAgMTIwIiBzdHJva2U9IiMwMGZmZmYiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K';
+    const $ = s => document.querySelector(s);
+
+    // ========== PLAYLOADS PRÉ-DEFINIDAS ==========
+    const PRELOADED_PLAYLISTS = {
+      "Home | Mix": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/home.json",
+      "60s | 70s": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/60s70s.json", 
+      "80s | 90s": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/80s90s.json",
+      "Alternative | Now": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/alternative.json",
+      "Ambient | Lo-fi | Trip-Hop": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/ambient.json",
+      "Christian | Gospel": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/christian-gospel.json",
+      "Cinema | Soundtrack": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/cinema.json",
+      "Classical | Vocal | Opera": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/classical.json",
+      "Eletronic | House | Tech": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/eletronic.json",
+      "Hip-Hop | Rap | RnB": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/hip-hop.json",
+      "Jazz | Smooth": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/jazz.json",
+      "New Brazil | Bossa | MPB": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/new-brazil.json",
+      "Nu-Metal | Metalcore": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/numetal.json",
+      "Pop | Adult": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/pop.json",
+      "Retro | Dance | Club": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/retro-dance.json",
+      "Rock | Metal | Hard | Heavy": "https://raw.githubusercontent.com/ckrsktx/shufflesquare/main/json/rock.json"
+    };
+
+    // ========== DOM ==========
+    const a = $('#a'), capa = $('#capa'), tit = $('#tit'), art = $('#art'),
+          playBtn = $('#playBtn'), prev = $('#prev'), next = $('#next'),
+          loader = $('#loader'), menuBtn = $('#menuBtn'), dropMenu = $('#dropMenu'),
+          shufBtn = $('#shufBtn'), playlistName = $('#playlistName');
+
+    // ========== STATE ==========
+    let playlists = {}, originalPool = [], pool = [], idx = 0, shuffleOn = false,
+        isLoading = false, currentPl = '', coverCache = new Map(), COVER_TIMEOUT = 4000,
+        RESET_AFTER = 5, recentPlayed = new Set(), playsSinceReset = 0,
+        lastCountedKey = null, playedInCycle = new Set(),
+        startTimeoutId = null, START_TIMEOUT_MS = 4000;
+
+    // ========== UTILS ==========
+    function safeKeyForTrack(t) {
+      if (!t) return 'unknown';
+      if (t.artist && t.title) return `${(t.artist+'').trim().toLowerCase()}|${(t.title+'').trim().toLowerCase()}`;
+      return t.url || (typeof t === 'string' ? t : JSON.stringify(t));
+    }
+
+    async function fetchJsonWithTimestamp(url) {
+      try {
+        const res = await fetch(url + '?t=' + Date.now(), {cache: 'no-store'});
+        if (!res.ok) throw new Error('fetch error ' + res.status);
+        return res.json();
+      } catch (error) {
+        console.error('Erro ao carregar:', url, error);
+        throw error;
+      }
+    }
+
+    function normalizeText(s) {
+      if (!s) return '';
+      return (''+s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^\w\s]/g, '').replace(/\s+/g, ' ').trim();
+    }
+
+    function fetchWithTimeout(url, opts = {}, timeout = COVER_TIMEOUT) {
+      const controller = new AbortController(), id = setTimeout(() => controller.abort(), timeout);
+      return fetch(url, {...opts, signal: controller.signal}).finally(() => clearTimeout(id));
+    }
+
+    function clearStartTimeout() {
+      if (startTimeoutId) { clearTimeout(startTimeoutId); startTimeoutId = null; }
+    }
+
+    // ========== INIT ==========
+    (async () => {
+      try { 
+        // Tenta carregar do GitHub primeiro
+        playlists = await fetchJsonWithTimestamp(PLAYLIST_URL);
+        console.log('Playlists carregadas do GitHub:', Object.keys(playlists));
+      } catch (err) {
+        console.log('Usando playlists pré-definidas:', err);
+        // Fallback para playlists pré-definidas
+        playlists = PRELOADED_PLAYLISTS;
+      }
+      
+      fillMenu();
+      currentPl = Object.keys(playlists)[0] || '';
+      playlistName.textContent = currentPl || '–';
+      
+      if (!currentPl) { 
+        loader.textContent = 'nenhuma playlist encontrada'; 
+        return; 
+      }
+      
+      await loadPool({ resetIdx: true, stopPlayback: false });
+      idx = Math.floor(Math.random() * pool.length);
+      loader.style.display = 'none';
+      await loadTrack({ autoplay: false });
+      preloadNext();
+      
+      addHint();
+    })();
+
+    // ========== MENU ==========
+    function fillMenu() {
+      dropMenu.innerHTML = '';
+      Object.keys(playlists).forEach(g => {
+        const div = document.createElement('div'); 
+        div.className = 'menuItem'; 
+        div.textContent = g;
+        div.onclick = async () => {
+          a.pause(); 
+          a.currentTime = 0; 
+          currentPl = g; 
+          playlistName.textContent = g;
+          recentPlayed.clear(); 
+          playsSinceReset = 0; 
+          lastCountedKey = null; 
+          playedInCycle.clear(); 
+          clearStartTimeout();
+          await loadPool({ resetIdx: true, stopPlayback: true });
+          idx = Math.floor(Math.random() * pool.length);
+          await loadTrack({ autoplay: false }); 
+          preloadNext(); 
+          dropMenu.style.display = 'none';
+        }; 
+        dropMenu.appendChild(div);
+      });
+    }
+
+    menuBtn.onclick = () => {
+      const vis = dropMenu.style.display === 'flex';
+      dropMenu.style.display = vis ? 'none' : 'flex';
+      dropMenu.setAttribute('aria-hidden', String(!vis));
+    };
+
+    document.addEventListener('click', e => {
+      if (!e.target.closest('#menuBtn') && !e.target.closest('#dropMenu')) {
+        dropMenu.style.display = 'none';
+      }
+    });
+
+    // ========== SHUFFLE ==========
+    shufBtn.onclick = () => {
+      shuffleOn = !shuffleOn; 
+      shufBtn.classList.toggle('active', shuffleOn); 
+      shufBtn.setAttribute('aria-pressed', String(shuffleOn));
+      pool = shuffleOn ? shuffleArray(originalPool) : [...originalPool];
+      const curKey = safeKeyForTrack(currentTrack());
+      idx = Math.max(0, pool.findIndex(t => safeKeyForTrack(t) === curKey));
+      playedInCycle.clear(); 
+      preloadNext();
+    };
+
+    function shuffleArray(a) {
+      const arr = a.slice();
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    // ========== POOL ==========
+    async function loadPool({ resetIdx = false, stopPlayback = true } = {}) {
+      try {
+        const url = playlists[currentPl];
+        if (!url) { originalPool = []; pool = []; return; }
+        
+        console.log('Carregando pool de:', url);
+        const data = await fetchJsonWithTimestamp(url);
+        
+        originalPool = data.map(item => {
+          if (typeof item === 'string') return { title: item, artist: 'unknown', url: item };
+          return {
+            title: item.title || item.name || item.track || '',
+            artist: item.artist || item.artista || item.albumArtist || item.author || '',
+            url: item.url || item.src || item.stream || item.file || '',
+            year: item.year || item.releaseYear || item.ano || '',
+            type: item.type || item.category || '',
+            cover: item.cover || item.artwork || item.image || ''
+          };
+        }).filter(it => it.url && it.url.trim());
+        
+        console.log('Pool carregado com', originalPool.length, 'músicas');
+        
+        if (stopPlayback) { a.pause(); a.currentTime = 0; }
+        pool = shuffleOn ? shuffleArray(originalPool) : [...originalPool];
+        if (resetIdx) idx = 0;
+        recentPlayed.clear(); 
+        playsSinceReset = 0; 
+        lastCountedKey = null; 
+        playedInCycle.clear(); 
+        clearStartTimeout();
+      } catch (err) { 
+        console.error('loadPool error', err); 
+        originalPool = []; 
+        pool = []; 
+      }
+    }
+
+    // ========== COVER ==========
+    async function getCoverForTrack(t) {
+      const key = safeKeyForTrack(t);
+      if (coverCache.has(key)) return coverCache.get(key);
+      if (t.cover && typeof t.cover === 'string' && t.cover.trim()) { 
+        coverCache.set(key, t.cover); 
+        return t.cover; 
+      }
+      
+      const artist = (t.artist || '').trim(), 
+            title = (t.title || '').trim(), 
+            year = (t.year || '').toString().trim();
+      
+      const attempts = [];
+      if (artist && title && year) attempts.push({ term: `${artist} ${title} ${year}`, entity: 'song' });
+      if (artist && title) attempts.push({ term: `${artist} ${title}`, entity: 'song' });
+      if (title) attempts.push({ term: `${title}`, entity: 'song' });
+      
+      for (const att of attempts) {
+        const q = encodeURIComponent(att.term);
+        try {
+          const resp = await fetchWithTimeout(`https://itunes.apple.com/search?term=${q}&limit=3&entity=song`, {}, 4000);
+          if (!resp.ok) continue;
+          const json = await resp.json();
+          if (!Array.isArray(json.results) || !json.results.length) continue;
+          
+          const normTitle = normalizeText(title), normArtist = normalizeText(artist);
+          let best = null, bestScore = -1;
+          
+          for (const r of json.results) {
+            const candTitle = normalizeText(r.trackName || ''), 
+                  candArtist = normalizeText(r.artistName || '');
+            let score = 0;
+            
+            if (normTitle && candTitle.includes(normTitle)) score += 5;
+            else { 
+              const tTokens = normTitle.split(' ').filter(Boolean); 
+              score += tTokens.filter(tok => candTitle.includes(tok)).length; 
+            }
+            
+            if (normArtist && candArtist.includes(normArtist)) score += 3;
+            
+            if (year && r.releaseDate) {
+              try { 
+                if ((new Date(r.releaseDate)).getFullYear().toString() === year) score += 2; 
+              } catch {}
+            }
+            
+            if (score > bestScore) { bestScore = score; best = r; }
+          }
+          
+          if (best && bestScore >= 3) {
+            const artUrl = (best.artworkUrl100 || best.artworkUrl60 || '').replace('100x100', '300x300');
+            if (artUrl) { coverCache.set(key, artUrl); return artUrl; }
+          }
+        } catch {}
+      }
+      coverCache.set(key, FALLBACK); 
+      return FALLBACK;
+    }
+
+    // ========== PRELOAD NEXT ==========
+    async function preloadNext() {
+      if (!pool.length) return;
+      let nextIdx = (idx + 1) % pool.length;
+      if (shuffleOn) {
+        for (let i = 0; i < 10; i++) {
+          const cand = Math.floor(Math.random() * pool.length);
+          if (cand !== idx && !playedInCycle.has(safeKeyForTrack(pool[cand]))) { 
+            nextIdx = cand; 
+            break; 
+          }
+        }
+      }
+      const nextT = pool[nextIdx]; 
+      if (!nextT) return;
+      const key = safeKeyForTrack(nextT); 
+      if (coverCache.has(key)) return;
+      getCoverForTrack(nextT).catch(() => {});
+    }
+
+    // ========== CURRENT TRACK HELPERS ==========
+    function currentTrack() { return pool && pool[idx]; }
+
+    // ========== LOAD & PLAY ==========
+    async function loadTrack({ autoplay = false } = {}) {
+      if (isLoading) return;
+      const t = currentTrack();
+      if (!t) { 
+        tit.textContent = art.textContent = '–'; 
+        a.removeAttribute('src'); 
+        capa.src = FALLBACK; 
+        capa.style.opacity = '1'; 
+        updatePlayButton(); 
+        return; 
+      }
+      
+      isLoading = true; 
+      a.pause(); 
+      a.currentTime = 0; 
+      capa.style.opacity = '0';
+      tit.textContent = t.title || '—'; 
+      art.textContent = t.artist || '—'; 
+      a.src = t.url;
+      
+      capa.src = FALLBACK;
+      capa.style.opacity = '1';
+      isLoading = false;
+      
+      getCoverForTrack(t).then(url => { 
+        if (url !== FALLBACK) capa.src = url; 
+      }).catch(() => {});
+      
+      updateMediaSession(); 
+      if (autoplay) { 
+        a.play().catch(() => {}); 
+        startTimeoutId = setTimeout(() => { 
+          if (a.paused || a.readyState < 3) goToNext(true).catch(() => {}); 
+          clearStartTimeout(); 
+        }, START_TIMEOUT_MS); 
+      } 
+      updatePlayButton();
+    }
+
+    // ========== PLAY BUTTON UI ==========
+    function updatePlayButton() {
+      const playing = a && !a.paused && !a.ended;
+      playBtn.innerHTML = playing ? 
+        '<svg viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>' : 
+        '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+      playBtn.setAttribute('aria-pressed', String(playing));
+      document.title = playing ? `${tit.textContent} – ${art.textContent}` : 'ShuffleSquare';
+    }
+
+    function togglePlay() { 
+      if (a.paused) a.play().catch(() => {}); 
+      else a.pause(); 
+      updatePlayButton(); 
+    }
+
+    playBtn.onclick = togglePlay;
+    a.addEventListener('play', updatePlayButton); 
+    a.addEventListener('pause', () => { updatePlayButton(); clearStartTimeout(); }); 
+    a.addEventListener('waiting', updatePlayButton);
+    
+    a.addEventListener('playing', () => {
+      clearStartTimeout(); 
+      const t = currentTrack(); 
+      const key = safeKeyForTrack(t); 
+      if (!key) return;
+      
+      if (lastCountedKey !== key) { 
+        recentPlayed.add(key); 
+        playsSinceReset++; 
+        lastCountedKey = key; 
+        if (playsSinceReset >= RESET_AFTER) { 
+          recentPlayed.clear(); 
+          playsSinceReset = 0; 
+          lastCountedKey = null; 
+        } 
+      }
+      playedInCycle.add(key); 
+      if (playedInCycle.size >= pool.length) playedInCycle.clear(); 
+      updatePlayButton();
+    });
+
+    // ========== NEXT / PREV ==========
+    async function goToNext(autoplay = true) {
+      if (!pool.length) return; 
+      clearStartTimeout();
+      
+      if (shuffleOn) { 
+        let unplayed = pool.map((_, i) => i).filter(i => i !== idx && !playedInCycle.has(safeKeyForTrack(pool[i]))); 
+        if (!unplayed.length) { 
+          playedInCycle.clear(); 
+          unplayed = pool.map((_, i) => i).filter(i => i !== idx); 
+        } 
+        idx = unplayed.length ? unplayed[Math.floor(Math.random() * unplayed.length)] : (idx + 1) % pool.length; 
+      } else { 
+        idx = (idx + 1) % pool.length; 
+      }
+      
+      await loadTrack({ autoplay });
+    }
+
+    async function goToPrev(autoplay = true) {
+      if (!pool.length) return; 
+      clearStartTimeout();
+      
+      if (shuffleOn) { 
+        let candidate = idx, attempts = 0; 
+        do { 
+          candidate = Math.floor(Math.random() * pool.length); 
+          attempts++; 
+        } while (candidate === idx && attempts < 40); 
+        idx = candidate; 
+      } else { 
+        idx = (idx - 1 + pool.length) % pool.length; 
+      }
+      
+      await loadTrack({ autoplay });
+    }
+
+    next.onclick = () => goToNext(true); 
+    prev.onclick = () => goToPrev(true); 
+    a.addEventListener('ended', () => { preloadNext(); goToNext(true); });
+
+    // ========== MEDIA SESSION ==========
+    function updateMediaSession() {
+      if ('mediaSession' in navigator) {
+        try {
+          navigator.mediaSession.metadata = new MediaMetadata({ 
+            title: tit.textContent || '', 
+            artist: art.textContent || '', 
+            artwork: [{ src: capa.src || FALLBACK, sizes: '300x300', type: 'image/png' }] 
+          });
+          
+          ['play', 'pause', 'previoustrack', 'nexttrack'].forEach(action => 
+            navigator.mediaSession.setActionHandler(action, () => 
+              action === 'play' ? a.play() : 
+              action === 'pause' ? a.pause() : 
+              action === 'previoustrack' ? prev.click() : 
+              next.click()
+            )
+          );
+        } catch {}
+      }
+    }
+
+    // ========== OBSERVE CHANGES ==========
+    const obs = new MutationObserver(() => { 
+      const playing = a && !a.paused && !a.ended;
+      if (playing) {
+        document.title = `${tit.textContent} – ${art.textContent}`;
+      }
+    });
+    obs.observe(tit, { childList: true, characterData: true, subtree: true }); 
+    obs.observe(art, { childList: true, characterData: true, subtree: true });
+
+    // ========== WAKE LOCK ==========
+    let wakeLock = null;
+    
+    async function requestWakeLock() { 
+      try { 
+        if ('wakeLock' in navigator) wakeLock = await navigator.wakeLock.request('screen'); 
+      } catch {} 
+    }
+    
+    a.addEventListener('play', requestWakeLock);
+    a.addEventListener('pause', () => { 
+      if (wakeLock && wakeLock.release) wakeLock.release().catch(() => {}); 
+      wakeLock = null;
+    });
+
+    // ========== KEYBOARD ==========
+    document.addEventListener('keydown', e => { 
+      if (e.code === 'Space') { 
+        e.preventDefault(); 
+        togglePlay(); 
+      } else if (e.code === 'ArrowRight') next.click(); 
+      else if (e.code === 'ArrowLeft') prev.click(); 
+    });
+
+    // ========== ANSIEDADE ==========
+    let skipCount = 0, lastSkipTime = 0; 
+    const SKIP_WINDOW = 1500, SKIP_LIMIT = 5;
+    
+    function showToast() {
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.innerHTML = 'Ei, calma!<br>Menos ansiedade, curta a playlist. ;)';
+      document.body.appendChild(toast);
+      
+      setTimeout(() => toast.style.opacity = '1', 10);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
+    }
+    
+    [next, prev].forEach(btn => btn.addEventListener('click', () => { 
+      const now = Date.now(); 
+      if (now - lastSkipTime < SKIP_WINDOW) skipCount++; 
+      else skipCount = 1; 
+      lastSkipTime = now; 
+      if (skipCount >= SKIP_LIMIT) { 
+        skipCount = 0; 
+        showToast(); 
+      } 
+    }));
+
+    // ========== HINT ==========
+    function addHint() {
+      const texto = document.createElement('div'); 
+      texto.className = 'hint';
+      texto.innerHTML = 'Escolha a playlist ;)';
+      document.body.appendChild(texto);
+      
+      setTimeout(() => texto.style.opacity = '1', 100);
+      
+      const esconde = () => { 
+        texto.style.opacity = '0'; 
+        menuBtn.removeEventListener('click', esconde); 
+        setTimeout(() => texto.remove(), 400); 
+      };
+      menuBtn.addEventListener('click', esconde);
+    }
+
+    // ========== DEBUG ==========
+    window._playerState = () => ({ 
+      idx, shuffleOn, currentPl, poolLength: pool.length, 
+      playsSinceReset, recentPlayedSize: recentPlayed.size, 
+      playedInCycleSize: playedInCycle.size, startTimeout: !!startTimeoutId 
+    });
+
+    // ========== HEARTBEAT ==========
+    setInterval(() => { 
+      if (!a.paused && a.src) {
+        fetch(PLAYLIST_URL, { mode: 'no-cors' }).catch(() => {});
+      }
+    }, 15_000);
+  </script>
 </body>
 </html>
