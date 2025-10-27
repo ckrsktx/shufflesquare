@@ -15,7 +15,8 @@ let playlists = {}, pool = [], idx = 0, shuffleOn = false, currentPl = '';
 /* ========== INIT ========== */
 (async () => {
   try { 
-    playlists = await fetch(PLAYLIST_URL).then(r => r.json());
+    const response = await fetch(PLAYLIST_URL);
+    playlists = await response.json();
   } catch (err) {
     loader.textContent = 'erro ao carregar playlists'; 
     return;
@@ -31,9 +32,11 @@ let playlists = {}, pool = [], idx = 0, shuffleOn = false, currentPl = '';
   }
   
   await loadPool();
-  idx = Math.floor(Math.random() * pool.length);
+  if (pool.length > 0) {
+    idx = Math.floor(Math.random() * pool.length);
+    await loadTrack({ autoplay: false });
+  }
   loader.style.display = 'none';
-  await loadTrack({ autoplay: false });
 })();
 
 /* ========== MENU ========== */
@@ -48,8 +51,10 @@ function fillMenu() {
       currentPl = g; 
       playlistName.textContent = g;
       await loadPool();
-      idx = Math.floor(Math.random() * pool.length);
-      await loadTrack({ autoplay: false });
+      if (pool.length > 0) {
+        idx = Math.floor(Math.random() * pool.length);
+        await loadTrack({ autoplay: false });
+      }
       dropMenu.style.display = 'none';
     }; 
     dropMenu.appendChild(div);
@@ -60,13 +65,16 @@ menuBtn.onclick = () => {
   dropMenu.style.display = dropMenu.style.display === 'flex' ? 'none' : 'flex';
 };
 
+document.addEventListener('click', (e) => {
+  if (!menuBtn.contains(e.target) && !dropMenu.contains(e.target)) {
+    dropMenu.style.display = 'none';
+  }
+});
+
 /* ========== SHUFFLE ========== */
 shufBtn.onclick = () => {
   shuffleOn = !shuffleOn; 
   shufBtn.classList.toggle('active', shuffleOn);
-  if (shuffleOn) {
-    pool = shuffleArray([...pool]);
-  }
 };
 
 function shuffleArray(arr) {
@@ -87,13 +95,29 @@ async function loadPool() {
       return; 
     }
     
-    const data = await fetch(url).then(r => r.json());
-    pool = data.map(item => ({
-      title: item.title || item.name || '',
-      artist: item.artist || '',
-      url: item.url || item.src || '',
-      cover: item.cover || ''
-    })).filter(it => it.url);
+    const response = await fetch(url);
+    const data = await response.json();
+    
+    pool = data.map(item => {
+      // Se for string simples, converte para objeto
+      if (typeof item === 'string') {
+        return {
+          title: item,
+          artist: 'Artista Desconhecido',
+          url: item,
+          cover: FALLBACK
+        };
+      }
+      
+      return {
+        title: item.title || item.name || 'Sem título',
+        artist: item.artist || 'Artista Desconhecido',
+        url: item.url || item.src || '',
+        cover: item.cover || FALLBACK
+      };
+    }).filter(it => it.url && it.url.trim() !== '');
+    
+    console.log('Pool carregado:', pool.length, 'tracks');
     
   } catch (err) { 
     console.error('loadPool error', err); 
@@ -113,21 +137,32 @@ async function loadTrack({ autoplay = false } = {}) {
     art.textContent = '–'; 
     capa.src = FALLBACK;
     capa.style.opacity = '1';
+    updatePlayButton();
     return; 
   }
   
-  a.pause();
+  console.log('Carregando track:', t.title, 'URL:', t.url);
+  
+  // Atualiza UI primeiro
   tit.textContent = t.title || '—'; 
   art.textContent = t.artist || '—'; 
-  a.src = t.url;
   capa.src = t.cover || FALLBACK;
-  capa.style.opacity = '1';
   
-  if (autoplay) { 
-    a.play().catch(() => {}); 
-  }
+  // Configura o audio
+  a.src = t.url;
+  a.load(); // Importante: força o carregamento
   
   updatePlayButton();
+  
+  if (autoplay) {
+    try {
+      await a.play();
+    } catch (err) {
+      console.log('Autoplay bloqueado:', err);
+    }
+  }
+  
+  capa.style.opacity = '1';
 }
 
 /* ========== PLAYBACK CONTROLS ========== */
@@ -139,29 +174,48 @@ function updatePlayButton() {
 }
 
 function togglePlay() { 
-  a.paused ? a.play() : a.pause(); 
+  if (a.paused) {
+    a.play().catch(err => console.log('Play error:', err));
+  } else {
+    a.pause();
+  }
 }
 
 playBtn.onclick = togglePlay;
 a.addEventListener('play', updatePlayButton);
 a.addEventListener('pause', updatePlayButton);
+a.addEventListener('ended', () => {
+  console.log('Track ended, going to next');
+  goToNext();
+});
 
 /* ========== NAVIGATION ========== */
 function goToNext() {
-  if (!pool.length) return;
-  idx = shuffleOn ? Math.floor(Math.random() * pool.length) : (idx + 1) % pool.length;
+  if (pool.length === 0) return;
+  
+  if (shuffleOn) {
+    idx = Math.floor(Math.random() * pool.length);
+  } else {
+    idx = (idx + 1) % pool.length;
+  }
+  
   loadTrack({ autoplay: true });
 }
 
 function goToPrev() {
-  if (!pool.length) return;
-  idx = shuffleOn ? Math.floor(Math.random() * pool.length) : (idx - 1 + pool.length) % pool.length;
+  if (pool.length === 0) return;
+  
+  if (shuffleOn) {
+    idx = Math.floor(Math.random() * pool.length);
+  } else {
+    idx = (idx - 1 + pool.length) % pool.length;
+  }
+  
   loadTrack({ autoplay: true });
 }
 
 next.onclick = goToNext;
 prev.onclick = goToPrev;
-a.addEventListener('ended', goToNext);
 
 /* ========== KEYBOARD ========== */
 document.addEventListener('keydown', e => {
@@ -174,3 +228,18 @@ document.addEventListener('keydown', e => {
     prev.click(); 
   }
 });
+
+// Debug helper
+window.debugPlayer = () => {
+  return {
+    currentTrack: currentTrack(),
+    pool: pool,
+    idx: idx,
+    shuffleOn: shuffleOn,
+    audio: {
+      src: a.src,
+      paused: a.paused,
+      readyState: a.readyState
+    }
+  };
+};
