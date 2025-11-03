@@ -52,7 +52,10 @@ function clearStartTimeout() {
   idx = Math.floor(Math.random() * pool.length);
   loader.style.display = 'none';
   await loadTrack({ autoplay: false });
-  preloadNext();               // apenas 1x
+  preloadNext();
+  
+  // Inicializar Media Session
+  setupMediaSessionHandlers();
 })();
 
 /* ========== MENU ========== */
@@ -179,23 +182,134 @@ async function preloadNext() {
 /* ========== CURRENT TRACK HELPERS ========== */
 function currentTrack() { return pool && pool[idx]; }
 
+/* ========== MEDIA SESSION - CORRIGIDO ========== */
+function updateMediaSession() {
+  if ('mediaSession' in navigator) {
+    try {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: tit.textContent || '',
+        artist: art.textContent || '',
+        album: currentPl || 'ShuffleSquare',
+        artwork: [
+          { src: capa.src || FALLBACK, sizes: '96x96', type: 'image/png' },
+          { src: capa.src || FALLBACK, sizes: '128x128', type: 'image/png' },
+          { src: capa.src || FALLBACK, sizes: '192x192', type: 'image/png' },
+          { src: capa.src || FALLBACK, sizes: '256x256', type: 'image/png' },
+          { src: capa.src || FALLBACK, sizes: '384x384', type: 'image/png' },
+          { src: capa.src || FALLBACK, sizes: '512x512', type: 'image/png' }
+        ]
+      });
+
+      // Atualizar posição e duração
+      updateMediaPositionState();
+
+    } catch (error) {
+      console.error('MediaSession error:', error);
+    }
+  }
+}
+
+/* ========== ATUALIZAR POSIÇÃO DA MÚSICA ========== */
+function updateMediaPositionState() {
+  if ('mediaSession' in navigator && a.duration && isFinite(a.duration)) {
+    try {
+      navigator.mediaSession.setPositionState({
+        duration: a.duration,
+        playbackRate: a.playbackRate,
+        position: a.currentTime
+      });
+    } catch (error) {
+      console.error('setPositionState error:', error);
+    }
+  }
+}
+
+/* ========== CONFIGURAR HANDLERS CORRETAMENTE ========== */
+function setupMediaSessionHandlers() {
+  if (!('mediaSession' in navigator)) return;
+
+  try {
+    navigator.mediaSession.setActionHandler('play', () => {
+      a.play().catch(() => {});
+    });
+
+    navigator.mediaSession.setActionHandler('pause', () => {
+      a.pause();
+    });
+
+    navigator.mediaSession.setActionHandler('previoustrack', () => {
+      goToPrev(true).catch(() => {});
+    });
+
+    navigator.mediaSession.setActionHandler('nexttrack', () => {
+      goToNext(true).catch(() => {});
+    });
+
+    navigator.mediaSession.setActionHandler('seekto', (details) => {
+      if (details.fastSeek && 'fastSeek' in a) {
+        a.fastSeek(details.seekTime);
+      } else {
+        a.currentTime = details.seekTime;
+      }
+    });
+
+  } catch (error) {
+    console.log('MediaSession actions not supported:', error);
+  }
+}
+
 /* ========== LOAD & PLAY ========== */
 async function loadTrack({ autoplay = false } = {}) {
   if (isLoading) return;
   const t = currentTrack();
-  if (!t) { tit.textContent = art.textContent = '–'; a.removeAttribute('src'); capa.src = FALLBACK; capa.style.opacity = '1'; updatePlayButton(); return; }
-  isLoading = true; a.pause(); a.currentTime = 0; capa.style.opacity = '0';
-  tit.textContent = t.title || '—'; art.textContent = t.artist || '—'; a.src = t.url;
-  /* capa: não bloqueia o play */
-capa.src = FALLBACK;                 // aparece NA HORA
-capa.style.opacity = '1';
-isLoading = false;                   // libera os controles
-/* busca real em background */
-getCoverForTrack(t).then(url => { if (url !== FALLBACK) capa.src = url; }).catch(() => {});
+  if (!t) { 
+    tit.textContent = art.textContent = '–'; 
+    a.removeAttribute('src'); 
+    capa.src = FALLBACK; 
+    capa.style.opacity = '1'; 
+    updatePlayButton(); 
+    return; 
+  }
+  
+  isLoading = true; 
+  a.pause(); 
+  a.currentTime = 0; 
+  capa.style.opacity = '0';
+  tit.textContent = t.title || '—'; 
+  art.textContent = t.artist || '—'; 
+  a.src = t.url;
+  
+  capa.src = FALLBACK;
+  capa.style.opacity = '1';
+  isLoading = false;
 
-  capa.onload = () => { capa.style.opacity = '1'; isLoading = false; };
-  capa.onerror = () => { capa.style.opacity = '1'; isLoading = false; };
-  updateMediaSession(); if (autoplay) { a.play().catch(() => {}); startTimeoutId = setTimeout(() => { if (a.paused || a.readyState < 3) goToNext(true).catch(() => {}); clearStartTimeout(); }, START_TIMEOUT_MS); } updatePlayButton();
+  // Configurar Media Session após carregar os metadados
+  a.addEventListener('loadedmetadata', () => {
+    updateMediaSession();
+    setupMediaSessionHandlers();
+  }, { once: true });
+
+  // Buscar capa em background
+  getCoverForTrack(t).then(url => { 
+    if (url !== FALLBACK) {
+      capa.src = url;
+      // Atualizar Media Session quando a capa carregar
+      capa.onload = () => {
+        updateMediaSession();
+        setupMediaSessionHandlers();
+      };
+    }
+  }).catch(() => {});
+
+  updatePlayButton();
+  
+  if (autoplay) { 
+    a.play().catch(() => {}); 
+    startTimeoutId = setTimeout(() => { 
+      if (a.paused || a.readyState < 3) goToNext(true).catch(() => {}); 
+      clearStartTimeout(); 
+    }, START_TIMEOUT_MS); 
+  }
 }
 
 /* ========== PLAY BUTTON UI ========== */
@@ -227,15 +341,10 @@ async function goToPrev(autoplay = true) {
 }
 next.onclick = () => goToNext(true); prev.onclick = () => goToPrev(true); a.addEventListener('ended', () => { preloadNext(); goToNext(true); });
 
-/* ========== MEDIA SESSION ========== */
-function updateMediaSession() {
-  if ('mediaSession' in navigator) {
-    try {
-      navigator.mediaSession.metadata = new MediaMetadata({ title: tit.textContent || '', artist: art.textContent || '', artwork: [{ src: capa.src || FALLBACK, sizes: '300x300', type: 'image/png' }] });
-      ['play', 'pause', 'previoustrack', 'nexttrack'].forEach(action => navigator.mediaSession.setActionHandler(action, () => (action === 'play' ? a.play() : action === 'pause' ? a.pause() : action === 'previoustrack' ? prev.click() : next.click())));
-    } catch {}
-  }
-}
+/* ========== OUVINTES PARA ATUALIZAR TEMPO ========== */
+a.addEventListener('timeupdate', updateMediaPositionState);
+a.addEventListener('durationchange', updateMediaPositionState);
+a.addEventListener('loadedmetadata', updateMediaPositionState);
 
 /* ========== OBSERVE CHANGES ========== */
 const obs = new MutationObserver(() => { document.title = `${tit.textContent} – ${art.textContent}`; });
@@ -269,7 +378,7 @@ Object.assign(toast.style, { position: 'fixed', top: `${capa.getBoundingClientRe
 function showToast() { toast.style.top = `${capa.getBoundingClientRect().top + capa.offsetHeight/2}px`; toast.style.left = `${capa.getBoundingClientRect().left + capa.offsetWidth/2}px`; toast.style.opacity = '1'; setTimeout(() => toast.style.opacity = '0', 3000); }
 [next, prev].forEach(btn => btn.addEventListener('click', () => { const now = Date.now(); if (now - lastSkipTime < SKIP_WINDOW) skipCount++; else skipCount = 1; lastSkipTime = now; if (skipCount >= SKIP_LIMIT) { skipCount = 0; showToast(); } }));
 
-/* ===== TEXTO SIMPLES “Escolha a playlist ;)” ===== */
+/* ===== TEXTO SIMPLES "Escolha a playlist ;)" ===== */
 (() => {
   const menu = $('#menuBtn'); if (!menu) return; const texto = document.createElement('div'); texto.innerHTML = 'Escolha a playlist ;)';
   Object.assign(texto.style, { position: 'fixed', top: '4.2rem', right: '1.2rem', color: 'var(--fg)', fontSize: '.85rem', opacity: '0', willChange: 'opacity' }); document.body.appendChild(texto);
@@ -280,4 +389,3 @@ function showToast() { toast.style.top = `${capa.getBoundingClientRect().top + c
 
 /* ===== HEARTBEAT LEVE (15 s) ===== */
 setInterval(() => { if (!a.paused && a.src) fetch(PLAYLIST_URL, { mode: 'no-cors' }); }, 15_000);
-          
