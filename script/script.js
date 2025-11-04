@@ -16,6 +16,10 @@ let playlists = {}, originalPool = [], pool = [], idx = 0, shuffleOn = false,
     lastCountedKey = null, playedInCycle = new Set(),
     startTimeoutId = null, START_TIMEOUT_MS = 4000;
 
+// Contador de usuários online
+let onlineUsers = 1;
+let userCounterElement = null;
+
 /* ========== UTILS ========== */
 function safeKeyForTrack(t) {
   if (!t) return 'unknown';
@@ -39,6 +43,70 @@ function clearStartTimeout() {
   if (startTimeoutId) { clearTimeout(startTimeoutId); startTimeoutId = null; }
 }
 
+/* ========== CONTADOR DE USUÁRIOS ONLINE ========== */
+function createUserCounter() {
+  userCounterElement = document.createElement('div');
+  Object.assign(userCounterElement.style, {
+    position: 'fixed',
+    bottom: '1rem',
+    right: '1rem',
+    background: 'rgba(255, 255, 255, 0.08)',
+    color: 'var(--fg)',
+    padding: '0.4rem 0.8rem',
+    borderRadius: '1rem',
+    fontSize: '0.85rem',
+    fontFamily: 'system-ui, sans-serif',
+    zIndex: '100',
+    opacity: '0.7',
+    backdropFilter: 'blur(10px)',
+    border: '1px solid rgba(255, 255, 255, 0.1)',
+    minWidth: '2rem',
+    textAlign: 'center',
+    transition: 'opacity 0.3s ease'
+  });
+  
+  userCounterElement.textContent = onlineUsers;
+  userCounterElement.title = 'usuários online';
+  
+  // Efeito hover sutil
+  userCounterElement.addEventListener('mouseenter', () => {
+    userCounterElement.style.opacity = '1';
+  });
+  
+  userCounterElement.addEventListener('mouseleave', () => {
+    userCounterElement.style.opacity = '0.7';
+  });
+  
+  document.body.appendChild(userCounterElement);
+}
+
+function updateUserCounter(count) {
+  onlineUsers = count;
+  if (userCounterElement) {
+    userCounterElement.textContent = count;
+    
+    // Efeito sutil de atualização
+    userCounterElement.style.transform = 'scale(1.1)';
+    setTimeout(() => {
+      userCounterElement.style.transform = 'scale(1)';
+    }, 200);
+  }
+}
+
+// Simulação de usuários online (substituir por WebSocket real se necessário)
+function simulateOnlineUsers() {
+  // Número base aleatório entre 5-20
+  const baseUsers = Math.floor(Math.random() * 16) + 5;
+  updateUserCounter(baseUsers);
+  
+  // Atualização periódica simulada
+  setInterval(() => {
+    const change = Math.random() > 0.5 ? 1 : -1;
+    const newCount = Math.max(1, onlineUsers + change);
+    updateUserCounter(newCount);
+  }, 30000); // Atualiza a cada 30 segundos
+}
+
 /* ========== INIT ========== */
 (async () => {
   try { playlists = await fetchJsonWithTimestamp(PLAYLIST_URL); } catch (err) {
@@ -56,6 +124,10 @@ function clearStartTimeout() {
   
   // Inicializar Media Session
   setupMediaSessionHandlers();
+  
+  // Inicializar contador de usuários
+  createUserCounter();
+  simulateOnlineUsers();
 })();
 
 /* ========== MENU ========== */
@@ -498,61 +570,4 @@ a.addEventListener('loadedmetadata', updateMediaPositionState);
 const obs = new MutationObserver(() => { 
   const playing = a && !a.paused && !a.ended;
   if (playing) {
-    document.title = `${tit.textContent} – ${art.textContent}`;
-    updateMediaSession();
-  }
-});
-obs.observe(tit, { childList: true, characterData: true, subtree: true }); 
-obs.observe(art, { childList: true, characterData: true, subtree: true });
-
-/* ========== WAKE LOCK ========== */
-let wakeLock = null;
-async function requestWakeLock() { 
-  try { 
-    if ('wakeLock' in navigator) wakeLock = await navigator.wakeLock.request('screen'); 
-  } catch {} 
-}
-a.addEventListener('play', requestWakeLock);
-a.addEventListener('pause', () => { 
-  if (wakeLock && wakeLock.release) wakeLock.release().catch(() => {}); 
-  wakeLock = null;
-});
-
-/* ========== KEYBOARD ========== */
-document.addEventListener('keydown', e => { 
-  if (e.code === 'Space') { 
-    e.preventDefault(); 
-    togglePlay(); 
-  } else if (e.code === 'ArrowRight') next.click(); 
-  else if (e.code === 'ArrowLeft') prev.click(); 
-});
-
-/* ========== PUBLIC ========== */
-window.changePlaylist = async function (name) {
-  if (!playlists[name]) throw new Error('playlist não encontrada: ' + name);
-  a.pause(); a.currentTime = 0; recentPlayed.clear(); playsSinceReset = 0; lastCountedKey = null; playedInCycle.clear(); clearStartTimeout();
-  currentPl = name; playlistName.textContent = name; await loadPool({ resetIdx: true, stopPlayback: true });
-  idx = Math.floor(Math.random() * pool.length); await loadTrack({ autoplay: false });
-};
-
-/* ========== DEBUG ========== */
-window._playerState = () => ({ idx, shuffleOn, currentPl, poolLength: pool.length, playsSinceReset, recentPlayedSize: recentPlayed.size, playedInCycleSize: playedInCycle.size, startTimeout: !!startTimeoutId });
-
-/* ===== ANSIEDADE ===== */
-let skipCount = 0, lastSkipTime = 0; const SKIP_WINDOW = 1500, SKIP_LIMIT = 5;
-const toast = document.createElement('div'); toast.innerHTML = 'Ei, calma!<br>Menos ansiedade, curta a playlist. ;)';
-Object.assign(toast.style, { position: 'fixed', top: `${capa.getBoundingClientRect().top + capa.offsetHeight/2}px`, left: `${capa.getBoundingClientRect().left + capa.offsetWidth/2}px`, transform: 'translate(-50%,-50%)', background: 'rgba(0,0,0,.55)', color: '#fff', padding: '1.2rem 1.8rem', borderRadius: '1rem', fontSize: '1.05rem', textAlign: 'center', lineHeight: '1.4', zIndex: '999', pointerEvents: 'none', opacity: '0', willChange: 'opacity' }); document.body.appendChild(toast);
-function showToast() { toast.style.top = `${capa.getBoundingClientRect().top + capa.offsetHeight/2}px`; toast.style.left = `${capa.getBoundingClientRect().left + capa.offsetWidth/2}px`; toast.style.opacity = '1'; setTimeout(() => toast.style.opacity = '0', 3000); }
-[next, prev].forEach(btn => btn.addEventListener('click', () => { const now = Date.now(); if (now - lastSkipTime < SKIP_WINDOW) skipCount++; else skipCount = 1; lastSkipTime = now; if (skipCount >= SKIP_LIMIT) { skipCount = 0; showToast(); } }));
-
-/* ===== TEXTO SIMPLES "Escolha a playlist ;)" ===== */
-(() => {
-  const menu = $('#menuBtn'); if (!menu) return; const texto = document.createElement('div'); texto.innerHTML = 'Escolha a playlist ;)';
-  Object.assign(texto.style, { position: 'fixed', top: '4.2rem', right: '1.2rem', color: 'var(--fg)', fontSize: '.85rem', opacity: '0', willChange: 'opacity' }); document.body.appendChild(texto);
-  requestAnimationFrame(() => texto.style.opacity = '1');
-  const esconde = () => { texto.style.opacity = '0'; menu.removeEventListener('click', esconde); setTimeout(() => texto.remove(), 400); };
-  menu.addEventListener('click', esconde);
-})();
-
-/* ===== HEARTBEAT LEVE (15 s) ===== */
-setInterval(() => { if (!a.paused && a.src) fetch(PLAYLIST_URL, { mode: 'no-cors' }); }, 15_000);
+    document.title = `${
