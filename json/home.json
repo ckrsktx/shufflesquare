@@ -1,4 +1,159 @@
 [
+{
+  "artist": "Radiohead",
+  "title": "There There",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/radiohead_hailtothethief_09therethere.m4a"
+},
+{
+  "artist": "Swift, Taylor",
+  "title": "Peter",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/swifttaylor_thetorturedpoetsdepartmenttheanthology_28_peter.m4a"
+},
+{
+  "artist": "Oasis",
+  "title": "Bag It Up",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/oasis_digoutyoursoul_01_bagitup.m4a"
+},
+{
+  "artist": "The Youngbloods",
+  "title": "Get Together",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/various_superhits1969_22gettogetherthe.m4a"
+},
+{
+  "artist": "Pulp",
+  "title": "Disco 2000",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/pulp_differentclass_05disco2000.m4a"
+},
+{
+  "artist": "Clarkson, Kelly",
+  "title": "Already Gone",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/clarksonkelly_ha200930_04_alreadygone.m4a"
+},
+{
+  "artist": "Eilish, Billie",
+  "title": "Wildflower",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/eilishbillie_hitmehardandsoft_01_wildflower.m4a"
+},
+{
+  "artist": "The Beatles",
+  "title": "You Know My Name (Look Up the Number)",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/beatlesthe_pastmastersvol2_15_youknowmynamelookupt.m4a"
+},
+{
+  "artist": "Roan, Chappell",
+  "title": "Pink Pony Club",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/roanchappell_theriseandfallofamidwestprincess_11_pinkponyclub.m4a"
+},
+{
+  "artist": "Stefani, Gwen",
+  "title": "The Sweet Escape",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/stefanigwen_ha200650_13thesweetescape.m4a"
+},
+{
+  "artist": "Muse",
+  "title": "Starlight",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/muse_blackholesrevelat_02starlight.m4a"
+},
+{
+  "artist": "Lavigne, Avril",
+  "title": "Keep Holding On",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/lavigneavril_ha200647_05keepholdingon.m4a"
+},
+{
+  "artist": "The Script",
+  "title": "The Man Who Can't Be Moved",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/scriptthe_hc200909_17_themanwhocantbemoved.m4a"
+},
+{
+  "artist": "Wolfrem, I",
+  "title": "Cinderella",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/wolfremi_bigideas_1_cinderella.m4a"
+},
+{
+  "artist": "Lewis, Leona",
+  "title": "Better in Time",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/leonalewis_ha200823_06_betterintime.m4a"
+},
+{
+  "artist": "The Jam",
+  "title": "Brand New Start",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/jamthe_daysofspeed_10brandnewstart.m4a"
+},
+{
+  "artist": "Badly Drawn Boy",
+  "title": "Once Around the Block",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/badlydrawnboy_thehourofbewilder_09oncearoundthebloc.m4a"
+},
+{
+  "artist": "McAlpine, Lizzy",
+  "title": "I Guess",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/mcalpinelizzy_older_07_iguess.m4a"
+},
+{
+  "artist": "The Jacksons",
+  "title": "Blame It on the Boogie",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/rb/jacksonsthe_destiny_13_blameitontheboogie.m4a"
+},
+{
+  "artist": "Mars, Bruno",
+  "title": "When I Was Your Man",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/marsbruno_ha201303_06_wheniwasyourman.m4a"
+},
+{
+  "artist": "Zayn",
+  "title": "What I Am (Clean)",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/zayn_roomunderthestairs_02_whatiamclean.m4a"
+},
+{
+  "artist": "Camera Obscura",
+  "title": "If Looks Could Kill",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/cameraobscura_letsgetoutofthisc_08iflookscouldkill.m4a"
+},
+{
+  "artist": "Swim, Teddy",
+  "title": "Need You More",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/swimsteddy_ivetriedeverythingbuttherapy_01_needyoumore.m4a"
+},
+{
+  "artist": "Alexander 23",
+  "title": "IDK You Yet",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/alexander23_idkyouyetsingle_01_idkyouyet.m4a"
+},
+{
+  "artist": "Tems",
+  "title": "Love Me Jeje",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/tems_borninthewild_01_lovemejeje.m4a"
+},
+{
+  "artist": "Smith, Sam",
+  "title": "Stay With Me",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/smithsam_ha201414_02_staywithme.m4a"
+},
+{
+  "artist": "Sherman, Allan",
+  "title": "Hello Muddah, Hello Fadduh!",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/shermanallan_series171752_05hellomuddahhellof.m4a"
+},
+{
+  "artist": "Carpenter, Sabrina",
+  "title": "Nonsense",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/carpentersabrina_emailsicantsend_9_nonsense.m4a"
+},
+{
+  "artist": "Why Don't We",
+  "title": "Chills",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/whydontwe_chillssingle_01_chills.m4a"
+},
+{
+  "artist": "The Smiths",
+  "title": "This Charming Man",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/smiths_thesmiths_02thischarmingman.m4a"
+},
+{
+  "artist": "Ambor, Mark",
+  "title": "Belong Together",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/ambormark_belongtogethersingle_01_belongtogether.m4a"
+},
   {
   "artist": "Jackson, Michael",
   "title": "Man in the Mirror",
