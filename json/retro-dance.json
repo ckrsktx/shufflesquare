@@ -1,5 +1,85 @@
 [
   {
+    "artist": "First Take",
+    "title": "Oxygen",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/firsttake_videokarate2_14_oxygen.m4a"
+  },
+  {
+    "artist": "Bobby Outro",
+    "title": "Rimini Nights 1983",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/bobbyoutro_italoandroidep_03_rimininights1983.m4a"
+  },
+  {
+    "artist": "R-Try",
+    "title": "Master Control",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/rtry_outruneuropacom_05_mastercontrol.m4a"
+  },
+  {
+    "artist": "Rainsword",
+    "title": "Heart of Light",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/rainsword_the80sdreamcomp_13_heartoflight.m4a"
+  },
+  {
+    "artist": "Futurecop",
+    "title": "Eyes Like the Ocean",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/futurecop_themovie_07_eyesliketheocean.m4a"
+  },
+  {
+    "artist": "Swagbot",
+    "title": "Beast Machine",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/swagbot_the80sdreamcomp_20_beastmachine.m4a"
+  },
+  {
+    "artist": "Souls of Mischief",
+    "title": "93 'til Infinity",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/soulsofmischief_93tilinfinity_0893tilinfinity.m4a"
+  },
+  {
+    "artist": "Bruce Beer Drive",
+    "title": "Heart Valve",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/brucebeerdrive_thoughtidjustpu_07_heartvalve.m4a"
+  },
+  {
+    "artist": "Starlight",
+    "title": "Memories",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/starlight_newretrowavepre_04_memories.m4a"
+  },
+  {
+    "artist": "Garth Knight",
+    "title": "Juggernaut",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/garthknight_alpha_05_juggernaut.m4a"
+  },
+  {
+    "artist": "DJ Ten",
+    "title": "Retrological Anthem",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/djten_retrologicaldel_14_retrologicalanthem.m4a"
+  },
+  {
+    "artist": "Big Pun",
+    "title": "Still Not a Player",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/bigpun_capitalpunishment_05stillnotaplayer.m4a"
+  },
+  {
+    "artist": "Astral Stereo Pro",
+    "title": "Fast Times",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/astralstereopro_idreamintechnic_02_fasttimes.m4a"
+  },
+  {
+    "artist": "Violet Sky",
+    "title": "Lifeguard at Work",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/violetsky_the80sdreamcomp_24_lifeguardatwork.m4a"
+  },
+  {
+    "artist": "Betamaxx",
+    "title": "The Sure Thing",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/betamaxx_interface_10_thesurething.m4a"
+  },
+  {
+    "artist": "Vestron Vulture",
+    "title": "Haddonfield Night Drive",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/vestronvulture_directorscut_05_haddonfieldnightdriv.m4a"
+  },
+  {
     "artist": "Cyre",
     "title": "Last Chance",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/cyre_lastchance12_03_lastchance.m4a"
