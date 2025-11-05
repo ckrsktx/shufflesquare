@@ -1,5 +1,135 @@
 [
 {
+  "artist": "Digital Underground",
+  "title": "Doowutchyalike",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/digitalundergroun_sexpackets_09doowutchyalike.m4a"
+},
+{
+  "artist": "Sugarhill Gang",
+  "title": "Kick It Live From 9 to 5",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/sugarhillgang_thebestofsugarhil_08kickitlivefrom9to.m4a"
+},
+{
+  "artist": "Grandmaster Flash",
+  "title": "The Message",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/grandmasterflash_oldschoolrapv1_04themessage.m4a"
+},
+{
+  "artist": "Pitch Black",
+  "title": "Transient Transmission",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic/pitchblack_rudemechanicals_04_transienttransmissio.m4a"
+},
+{
+  "artist": "Run-D.M.C.",
+  "title": "30 Days",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/rundmc_rundmc_0830days.m4a"
+},
+{
+  "artist": "Cameo",
+  "title": "I Just Want to Be",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/cameo_secretomen_02_ijustwanttobe.m4a"
+},
+{
+  "artist": "Freestyle Fellowship",
+  "title": "7th Seal",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/freestylefellowsh_towhomitmayconcer_037thseal.m4a"
+},
+{
+  "artist": "Boogie Down Productions",
+  "title": "I'm Still #1",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/boogiedownproduct_aretrospective_02imstill1.m4a"
+},
+{
+  "artist": "The Pharcyde",
+  "title": "Passing Me By",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/thepharcyde_bizarrerideiithep_12passingmeby.m4a"
+},
+{
+  "artist": "D&D All Stars",
+  "title": "12 Pass It",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/danddallstars_12passitlookalivesingle_01_12passit.m4a"
+},
+{
+  "artist": "Ocean Colour Scene",
+  "title": "The Riverboat Song",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/oceancolourscene_theriverboatsong.m4a"
+},
+{
+  "artist": "Nas",
+  "title": "The World Is Yours",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiptronica/nas_illmatic_04theworldisyours.m4a"
+},
+{
+  "artist": "U2",
+  "title": "White as Snow",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/u2_nolineonthehori_09_whiteassnow.m4a"
+},
+{
+  "artist": "Too Short",
+  "title": "Rhymes",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/tooshort_lifeistooshort_02rhymes.m4a"
+},
+{
+  "artist": "A Tribe Called Quest",
+  "title": "Can I Kick It?",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/tribecalledquesta_peoplesinstinctiv_08canikickit.m4a"
+},
+{
+  "artist": "Various Artists",
+  "title": "Unknown Track",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/numeric/54000/54550.m4a"
+},
+{
+  "artist": "The DOC",
+  "title": "The Doc The Doctor",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/thedoc_noonecandoitbette_07thedocthedoctor.m4a"
+},
+{
+  "artist": "Radiohead",
+  "title": "15 Step",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/radiohead_inrainbows_0115step.m4a"
+},
+{
+  "artist": "Bentley, Dierks",
+  "title": "Every Mile a Memory",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/bentleydierks_hc200627_01everymileamemory.m4a"
+},
+{
+  "artist": "Swindell, Cole",
+  "title": "Middle of a Memory",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/swindellcole_hc201620_03_middleofamemory.m4a"
+},
+{
+  "artist": "Moore, Justin",
+  "title": "If Heaven Wasn't So Far Away",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/moorejustin_hc201107_04_ifheavenwasntsofaraw.m4a"
+},
+{
+  "artist": "The Charlatans",
+  "title": "Bad Days",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/charlatansthe_youcrossmypath_02baddays.m4a"
+},
+{
+  "artist": "Rhett, Thomas",
+  "title": "After All the Bars Are Closed",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/rhettthomas_aboutawoman_06_afterallthebarsareclosed.m4a"
+},
+{
+  "artist": "Fair Game",
+  "title": "Almost Home",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/fairgame_almosthomesingle_1_almosthome.m4a"
+},
+{
+  "artist": "Black Sheep",
+  "title": "Strobelite Honey",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/blacksheep_awolfinsheepsclot_05strobelitehoney.m4a"
+},
+{
+  "artist": "The Futureheads",
+  "title": "Fallout",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/futureheadsthe_newsandtributes_fallout.m4a"
+},
+{
   "artist": "Radiohead",
   "title": "There There",
   "url": "https://d1qg6pckcqcdk0.cloudfront.net/bored/radiohead_hailtothethief_09therethere.m4a"
