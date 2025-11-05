@@ -1,5 +1,140 @@
 [
   {
+    "artist": "Bryan Adams",
+    "title": "Please Forgive Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/adamsbryan_chrgold01_pleaseforgiveme.m4a"
+  },
+  {
+    "artist": "Bryan Adams",
+    "title": "Have You Ever Really Loved a Woman?",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/adamsbryan_chrgold01_haveyoueverreally.m4a"
+  },
+  {
+    "artist": "Beyoncé",
+    "title": "Halo",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/beyonce_ha200901_08_halo.m4a"
+  },
+  {
+    "artist": "No Doubt",
+    "title": "Don't Speak",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/nodoubt_chrgold55_dontspeakalbumver.m4a"
+  },
+  {
+    "artist": "Maroon 5",
+    "title": "She Will Be Loved",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/maroon5_hd569a_06shewillbeloved.m4a"
+  },
+  {
+    "artist": "Hootie & the Blowfish",
+    "title": "Hold My Hand",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/hootieandtheblowf_chrgold51_holdmyhand.m4a"
+  },
+  {
+    "artist": "LeAnn Rimes",
+    "title": "How Do I Live",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/rimesleann_chrgold54_howdoilivefilmmix.m4a"
+  },
+  {
+    "artist": "Lonestar",
+    "title": "I'm Already There",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/lonestar_chrgold54_imalreadythererhe.m4a"
+  },
+  {
+    "artist": "Janet Jackson",
+    "title": "Together Again",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/jacksonjanet_chrgold15_togetheragainalte.m4a"
+  },
+  {
+    "artist": "Paula Cole",
+    "title": "I Don't Want to Wait",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/colepaula_chrgold55_idontwanttowait.m4a"
+  },
+  {
+    "artist": "Avril Lavigne",
+    "title": "Complicated",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/lavigneavril_chrgold61_complicatedtomlor.m4a"
+  },
+  {
+    "artist": "Melissa Etheridge",
+    "title": "I'm the Only One",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/etheridgemelissa_chrgold37_imtheonlyone.m4a"
+  },
+  {
+    "artist": "Nelly Furtado",
+    "title": "I'm Like a Bird",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/furtadonelly_chrgold60_imlikeabird.m4a"
+  },
+  {
+    "artist": "Ricky Martin",
+    "title": "Livin' la Vida Loca",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/martinricky_chrgold55_livinlavidaloca.m4a"
+  },
+  {
+    "artist": "The Script",
+    "title": "Breakeven",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/scriptthe_ha200940_09_breakeven.m4a"
+  },
+  {
+    "artist": "Bon Jovi",
+    "title": "Who Says You Can't Go Home",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/bonjovi_hd646c_06whosaysyoucantgoh.m4a"
+  },
+  {
+    "artist": "Kelly Clarkson",
+    "title": "A Moment Like This",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/clarksonkelly_chrgold61_amomentlikethis.m4a"
+  },
+  {
+    "artist": "Nickelback",
+    "title": "Far Away",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/nickelback_ha200623_03faraway.m4a"
+  },
+  {
+    "artist": "Train",
+    "title": "Calling All Angels",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/train_gd1909_13callingall.m4a"
+  },
+  {
+    "artist": "Vanessa Williams",
+    "title": "Save the Best for Last",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/williamsvanessa_chrgold35_savethebestforlas.m4a"
+  },
+  {
+    "artist": "Five for Fighting",
+    "title": "Superman (It's Not Easy)",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/fiveforfighting_chrgold60_supermanitsnoteas.m4a"
+  },
+  {
+    "artist": "Sugar Ray",
+    "title": "When It's Over",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/sugarray_chrgold57_whenitsover.m4a"
+  },
+  {
+    "artist": "Goo Goo Dolls",
+    "title": "Slide",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/googoodolls_al0354_726-04slide.m4a"
+  },
+  {
+    "artist": "Christina Aguilera",
+    "title": "What a Girl Wants",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/aguilerachristina_chrgold58_whatagirlwants.m4a"
+  },
+  {
+    "artist": "Kelly Clarkson",
+    "title": "Behind These Hazel Eyes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/clarksonkelly_hd613a_07behindthesehazele.m4a"
+  },
+  {
+    "artist": "Sixpence None the Richer",
+    "title": "Kiss Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/sixpencenonetheri_chrgold58_kissmeradioremix.m4a"
+  },
+  {
+    "artist": "Sixpence None the Richer",
+    "title": "There She Goes",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adultcontemporary/sixpencenonetheri_chrgold58_thereshegoesbengr.m4a"
+  },
+  {
     "artist": "Britney Spears",
     "title": "From the Bottom of My Broken Heart",
     "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/spearsbritney_babyonemoretime_06fromthebottomofmy.m4a"
