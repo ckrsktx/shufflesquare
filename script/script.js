@@ -1,6 +1,6 @@
 /* ========== CONFIG ========== */
 const PLAYLIST_URL = 'json/playlists.json';
-const FALLBACK = 'img/cd.png';
+const FALLBACK = 'img/disc.gif';
 const $ = s => document.querySelector(s);
 
 /* ========== DOM ========== */
