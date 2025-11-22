@@ -1,4 +1,135 @@
+
 [
+  {
+    "artist": "The Who",
+    "title": "Quadrophenia",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/whothe_quadropheniadisc1_03quadrophenia.m4a"
+  },
+  {
+    "artist": "The Pretenders",
+    "title": "My City Was Gone",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/pretendersthe_crgold004_mycitywasgone.m4a"
+  },
+  {
+    "artist": "Unknown Artist",
+    "title": "Unknown Title",
+    "url": "https://s3.amazonaws.com/clarity.instream/716/af/afa75892d92ef0a34ed4130952228b6d.mp3"
+  },
+  {
+    "artist": "The Police",
+    "title": "Synchronicity II",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/policethe_crgold021_synchronicityii.m4a"
+  },
+  {
+    "artist": "Days of the New",
+    "title": "Touch, Peel and Stand",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/daysofthenew_al0344_715-06touchpeelandstand.m4a"
+  },
+  {
+    "artist": "Heart",
+    "title": "Misty Mountain Hop",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adult/heart_liveinatlanticcity_12_mistymountainhop.m4a"
+  },
+  {
+    "artist": "The Smithereens",
+    "title": "A Girl Like You",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/smithereens_al319_agirllikeyou.m4a"
+  },
+  {
+    "artist": "Collective Soul",
+    "title": "Run",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adult/collectivesoul_dosage_7_run.m4a"
+  },
+  {
+    "artist": "The Raconteurs",
+    "title": "Many Shades of Black",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/raconteursthe_hb200827_12_manyshadesofblack.m4a"
+  },
+  {
+    "artist": "Pink Floyd",
+    "title": "Run Like Hell",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/pinkfloyd_thewall_09runlikehell.m4a"
+  },
+  {
+    "artist": "Monster Magnet",
+    "title": "Space Lord",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/monstermagnet_al0346_722-02spacelordedit.m4a"
+  },
+  {
+    "artist": "Tommy Castro",
+    "title": "Common Ground",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/castrotommy_hb201542_10_commonground.m4a"
+  },
+  {
+    "artist": "The Eagles",
+    "title": "Victim of Love",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/eaglesthe_crgold061_victimoflove.m4a"
+  },
+  {
+    "artist": "Chicago",
+    "title": "Feelin' Stronger Every Day",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/chicago_ol0327_502-08feelinstrongereve.m4a"
+  },
+  {
+    "artist": "Foo Fighters",
+    "title": "Shame Shame",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/foofighters_medicineatnight_2_shameshame.m4a"
+  },
+  {
+    "artist": "Nickelback",
+    "title": "How You Remind Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/nickelback_al039_1616-11howyouremindmealb.m4a"
+  },
+  {
+    "artist": "Neil Young",
+    "title": "Shut It Down",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adult/youngneil_colorado_06_shutitdown.m4a"
+  },
+  {
+    "artist": "Queens of the Stone Age",
+    "title": "The Lost Art of Keeping a Secret",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/queensofthestonea_r_02thelostartofkeepi.m4a"
+  },
+  {
+    "artist": "Gary Clark Jr.",
+    "title": "What About Us",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/adult/clarkgaryjr_thisland_2_whataboutus.m4a"
+  },
+  {
+    "artist": "Bruce Springsteen",
+    "title": "The Ties That Bind",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/springsteenbruce_disc1_01thetiesthatbind.m4a"
+  },
+  {
+    "artist": "Eddie Money",
+    "title": "Baby Hold On",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/moneyeddie_crgold042_babyholdon.m4a"
+  },
+  {
+    "artist": "Kings of Leon",
+    "title": "Radioactive",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/kingsofleon_hb201038_20_radioactive.m4a"
+  },
+  {
+    "artist": "O.A.R.",
+    "title": "Love and Memories",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/oar_hd646a_05loveandmemories.m4a"
+  },
+  {
+    "artist": "Pearl Jam",
+    "title": "Wishlist",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/pearljam_al0345_721-09wishlist.m4a"
+  },
+  {
+    "artist": "The Killers",
+    "title": "Somebody Told Me",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/critics/thekillers_hotfuss_04somebodytoldme.m4a"
+  },
+  {
+    "artist": "Chad Kroeger ft. Josey Scott",
+    "title": "Hero",
+    "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/kroegerchadfeatjo_al0360_750-14heroradioversion.m4a"
+  },
   {
     "artist": "Television",
     "title": "Marquee Moon",
