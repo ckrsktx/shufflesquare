@@ -1,5 +1,85 @@
 [
 {
+  "artist": "Orbital",
+  "title": "Planet of the Shapes",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/orbital_orbital2_02_planetoftheshapes.m4a"
+},
+{
+  "artist": "Secret Machines",
+  "title": "Astral Weeks",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/secretmachines_theroadleadswhere_03astralweeks.m4a"
+},
+{
+  "artist": "Lamar, Kendrick",
+  "title": "m.A.A.d city",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/lamarkendrick_goodkidmaadcity_08_maadcity.m4a"
+},
+{
+  "artist": "Silversun Pickups",
+  "title": "Checkered Floor",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie/silversunpickups_carnavas_03checkeredfloor.m4a"
+},
+{
+  "artist": "Snoop Dogg",
+  "title": "Drop It Like It's Hot",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/snoopdoggfeat_hd582a_009dropitlikeits.m4a"
+},
+{
+  "artist": "Drake",
+  "title": "Hotline Bling",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/drake_ha201535_01_hotlinebling.m4a"
+},
+{
+  "artist": "Depeche Mode",
+  "title": "Enjoy the Silence",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/depechemode_ch0348_enjoythesilence.m4a"
+},
+{
+  "artist": "Unknown Mortal Orchestra",
+  "title": "So Good at Being in Trouble",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/indie2/unknownmortalor_ii_03_sogoodatbeingintroub.m4a"
+},
+{
+  "artist": "Coldplay",
+  "title": "Viva la Vida",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/coldplay_hb200821_16_vivalavida.m4a"
+},
+{
+  "artist": "Sia",
+  "title": "Cheap Thrills",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/sia_ha201608_07_cheapthrills.m4a"
+},
+{
+  "artist": "Post Malone",
+  "title": "Circles",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/postmalone_hollywoodsbleeding_06_circles.m4a"
+},
+{
+  "artist": "Gryffin",
+  "title": "Nobody Compares to You (Codeko Remix)",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/electronic2/gryffin_nobodycomparestoyouremixes_01_nobodycomparestoyoucodekoremix.m4a"
+},
+{
+  "artist": "Jane's Addiction",
+  "title": "Been Caught Stealing",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/janesaddiction_al0362_797-13beencaughtstealin.m4a"
+},
+{
+  "artist": "Two Door Cinema Club",
+  "title": "I Can Talk",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/twodoorcinemacl_hb201014_06_icantal.m4a"
+},
+{
+  "artist": "Lauv",
+  "title": "There's No Way",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/lauv_ha201840_04_theresnoway.m4a"
+},
+{
+  "artist": "Cameron Dove",
+  "title": "Boyfriend (Radio Edit)",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/camerondove_boyfriendsingle_2_boyfriendradioedit.m4a"
+},
+{
   "artist": "Soundgarden",
   "title": "Like Suicide",
   "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/soundgarden_songsfromthesup_04_likesuicide.m4a"
