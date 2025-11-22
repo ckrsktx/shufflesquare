@@ -1,5 +1,205 @@
 [
 {
+  "artist": "Soundgarden",
+  "title": "Like Suicide",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/soundgarden_songsfromthesup_04_likesuicide.m4a"
+},
+{
+  "artist": "Avenged Sevenfold",
+  "title": "Hail to the King",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/avengedsevenfol_hb201329_05_hailtotheking.m4a"
+},
+{
+  "artist": "Unknown Artist",
+  "title": "Unknown Track",
+  "url": "https://s3.amazonaws.com/clarity.instream/716/af/afa75892d92ef0a34ed4130952228b6d.mp3"
+},
+{
+  "artist": "T.I.",
+  "title": "Dead and Gone",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/ti_ha200850_18_deadandgone.m4a"
+},
+{
+  "artist": "Murphy, Michael",
+  "title": "Wildfire",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/murpheymichael_gd134_12wildfire.m4a"
+},
+{
+  "artist": "Jay-Z",
+  "title": "Empire State of Mind",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/jayz_ha200939_07_empirestateofmind.m4a"
+},
+{
+  "artist": "Counting Crows",
+  "title": "Mr. Jones",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chrgold/countingcrows_ch039_mrjones.m4a"
+},
+{
+  "artist": "Smashing Pumpkins",
+  "title": "Bullet With Butterfly Wings",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/smashingpumpkins_al0350_702-12bulletwithbutterf.m4a"
+},
+{
+  "artist": "Gentry, Bobbie",
+  "title": "Ode to Billie Joe",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/gentrybobbie_tc0253_1506-06odetobilliejoe.m4a"
+},
+{
+  "artist": "Thrice",
+  "title": "Black Honey",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/thrice_hb201619_01_blackhoney.m4a"
+},
+{
+  "artist": "Foo Fighters",
+  "title": "Learn to Fly",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/foofighters_al031_1601-10learntofly.m4a"
+},
+{
+  "artist": "Clark, Petula",
+  "title": "Kiss Me Goodbye",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/decades/clarkpetula_gd224_04kissmegoodbye.m4a"
+},
+{
+  "artist": "Van Halen",
+  "title": "Top of the World",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/classicrock/vanhalen_forunlawfulcarnalknowledge_11_topoftheworld.m4a"
+},
+{
+  "artist": "OneRepublic",
+  "title": "Love Runs Out",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/onerepublic_ha201416_04_loverunsout.m4a"
+},
+{
+  "artist": "Adele",
+  "title": "Oh My God",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/adele_30_05_ohmygod.m4a"
+},
+{
+  "artist": "Cheat Codes",
+  "title": "No Promises",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/cheatcodes_ha201715_06_nopromises.m4a"
+},
+{
+  "artist": "Eve 6",
+  "title": "Inside Out",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/modernrock/eve6_al0353_724-01insideoutalbumver.m4a"
+},
+{
+  "artist": "Swift, Taylor",
+  "title": "I Knew You Were Trouble (Taylor's Version)",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/swifttaylor_redtaylorsversion_4_iknewyouweretroubletaylorsversion.m4a"
+},
+{
+  "artist": "Highly Suspect",
+  "title": "Little One",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/highlysuspect_hb201710_06_littleone.m4a"
+},
+{
+  "artist": "Fifth Harmony",
+  "title": "All in My Head (Flex)",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/fifthharmony_ha201623_10_allinmyheadflex.m4a"
+},
+{
+  "artist": "AJR",
+  "title": "Way Less Sad",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/ajr_okorchestra_12_waylesssad.m4a"
+},
+{
+  "artist": "All-American Rejects",
+  "title": "Swing, Swing",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/all-americanrejects_gd829_04swingswing.m4a"
+},
+{
+  "artist": "Thomas, Rob",
+  "title": "This Is How a Heart Breaks",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/thomasrob_hitdisc621_09thisishowaheartbr.m4a"
+},
+{
+  "artist": "Pop Evil",
+  "title": "Deal with the Devil",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/currentrock/popevil_hb201332_03_dealwiththedevil.m4a"
+},
+{
+  "artist": "Gomez, Selena",
+  "title": "Hands to Myself",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/gomezselena_revival_03_handstomyself.m4a"
+},
+{
+  "artist": "Dylan, Bob",
+  "title": "Lay Lady Lay",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/dylanbob_gd407_09layladylay.m4a"
+},
+{
+  "artist": "Seether",
+  "title": "Fake It",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr/seether_hb200735_05fakeit.m4a"
+},
+{
+  "artist": "American Authors",
+  "title": "Best Day of My Life",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/americanauthors_ha201332_03_bestdayofmylife.m4a"
+},
+{
+  "artist": "The Carpenters",
+  "title": "Top of the World",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/sixties/carpentersthe_gd7023_15topoftheworld.m4a"
+},
+{
+  "artist": "Le Ray, Coi & Minaj, Nicki",
+  "title": "Blick Blick (Clean)",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/leraycoiminajnicki_blickblicksingle_01_blickblickclean.m4a"
+},
+{
+  "artist": "MKTO",
+  "title": "How Can I Forget",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/mkto_ha201846_09_howcaniforget.m4a"
+},
+{
+  "artist": "The Chainsmokers",
+  "title": "High",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/chainsmokersthe_highsingle_01_high.m4a"
+},
+{
+  "artist": "Ava Max",
+  "title": "My Head & My Heart",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/avamax_heavenandhell_01_myheadandmyheart.m4a"
+},
+{
+  "artist": "Spencer Smith, Lauren",
+  "title": "Fingers Crossed",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/spencersmithlauren_fingerscrossed_01_fingerscrossed.m4a"
+},
+{
+  "artist": "SZA",
+  "title": "I Hate U",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/sza_ihateu_01_ihateu.m4a"
+},
+{
+  "artist": "McRae, Tate",
+  "title": "You Broke Me First",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/mcraetate_youbrokemefirstsingle_1_youbrokemefirst.m4a"
+},
+{
+  "artist": "Cline, Patsy",
+  "title": "Crazy",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/clinepatsy_tc0256_1511-08crazy.m4a"
+},
+{
+  "artist": "Mendes, Sergio & Brasil '66",
+  "title": "Look of Love",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/smoothjazz/mendessergiobra_greatesthits_05_lookoflove.m4a"
+},
+{
+  "artist": "Moe Bandy & Joe Stampley",
+  "title": "Just Good Ol' Boys",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/country/bandymoejoestampl_tc0212_1056-20justgoodolboys.m4a"
+},
+{
+  "artist": "BoyWithUke",
+  "title": "IDGAF",
+  "url": "https://d1qg6pckcqcdk0.cloudfront.net/chr2/boywithuke_serotonindreams_2_idgaf.m4a"
+},
+{
   "artist": "Digital Underground",
   "title": "Doowutchyalike",
   "url": "https://d1qg6pckcqcdk0.cloudfront.net/hiphop/digitalundergroun_sexpackets_09doowutchyalike.m4a"
